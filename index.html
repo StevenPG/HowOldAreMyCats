@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>How Old Are Our Cats?!?</title></title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">So many cats tho</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,15 +31,6 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -49,15 +40,53 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
         <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
+          <li>
+            <h2 id="EliBirthday" >Eli is </h2>
+            <h2 id="UmbraBirthday" >Umbra is </h2>
+            <h2 id="BucketBirthday" >Bucket is </h2>
+            <h2 id="BittyBirthday" >Bitty is </h2>
+            <h2 id="WilsonBirthday" >Wilson is </h2>
+            <h2 id="PixieBirthday" >Pixie is </h2>
+            <h2 id="MilkyMooBirthday" >Milk is </h2>
+          </li>
         </ul>
       </div>
     </div>
   </div>
+
+  
+  <script>
+    function calculateDateDifference(name, incomingDate){
+      // get the total time from today to the birthdate
+      msDifference = new Date() - incomingDate
+      secondsDifference = msDifference / 1000
+      minutesDifference = secondsDifference / 60
+      months = Math.floor(minutesDifference / 43800)
+      years = Math.floor(minutesDifference / 525600)
+      if(years != 0){
+        return name + " is " + years + " years old"
+      } else {
+        return name + " is " + months + " months old"
+      }
+    }
+
+    EliBirthday = new Date(2010, 5, 1)
+    UmbraBirthday = new Date(2015,12,8)
+    BucketBirthday = new Date(2017,5,7)
+    BittyBirthday = new Date(2017,8,22)
+    WilsonBirthday = new Date(2018,4,27)
+    PixieBirthday = new Date(2019,4,19)
+    MilkyMooBirthday= new Date(2019,5,27)
+    document.getElementById("EliBirthday").innerHTML = calculateDateDifference("Eli", EliBirthday)
+    document.getElementById("UmbraBirthday").innerHTML = calculateDateDifference("Umbra", UmbraBirthday)
+    document.getElementById("BucketBirthday").innerHTML = calculateDateDifference("Bucket", BucketBirthday)
+    document.getElementById("BittyBirthday").innerHTML = calculateDateDifference("Bitty", BittyBirthday)
+    document.getElementById("WilsonBirthday").innerHTML = calculateDateDifference("Wilson", WilsonBirthday)
+    document.getElementById("PixieBirthday").innerHTML = calculateDateDifference("Pixie", PixieBirthday)
+    document.getElementById("MilkyMooBirthday").innerHTML = calculateDateDifference("Milky Moo", MilkyMooBirthday)
+
+  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
