@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<app-toolbar></app-toolbar>\n<app-card-container></app-card-container>\n<router-outlet></router-outlet>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-toolbar></app-toolbar>\r\n<app-card-container></app-card-container>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <div class=\"container\">\n    <div class=\"row buffer\">\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Eli\"\n          [birthday]=\"EliBirthday.toDateString()\"\n          [age]=\"EliAge\"\n          [main_card_image]=\"EliImage\"\n          [avatar]=\"EliAvatar\"\n        ></app-cat-card>\n      </div>\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Umbra\"\n          [birthday]=\"UmbraBirthday.toDateString()\"\n          [age]=\"UmbraAge\"\n          [main_card_image]=\"UmbraImage\"\n          [avatar]=\"UmbraAvatar\"\n        ></app-cat-card>\n      </div>\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Bucket\"\n          [birthday]=\"BucketBirthday.toDateString()\"\n          [age]=\"BucketAge\"\n          [main_card_image]=\"BucketImage\"\n          [avatar]=\"BucketAvatar\"\n        ></app-cat-card>\n      </div>\n    </div>\n    <div class=\"row buffer\">\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Bitty\"\n          [birthday]=\"BittyBirthday.toDateString()\"\n          [age]=\"BittyAge\"\n          [main_card_image]=\"BittyImage\"\n          [avatar]=\"BittyAvatar\"\n        ></app-cat-card>\n      </div>\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Wilson\"\n          [birthday]=\"WilsonBirthday.toDateString()\"\n          [age]=\"WilsonAge\"\n          [main_card_image]=\"WilsonImage\"\n          [avatar]=\"WilsonAvatar\"\n        ></app-cat-card>\n      </div>\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_Pixie\"\n          [birthday]=\"PixieBirthday.toDateString()\"\n          [age]=\"PixieAge\"\n          [main_card_image]=\"PixieImage\"\n          [avatar]=\"PixieAvatar\"\n        ></app-cat-card>\n      </div>\n    </div>\n    <div class=\"row buffer\">\n      <div class=\"col-sm\">\n        <app-cat-card\n          [name]=\"name_MilkyMoo\"\n          [birthday]=\"MilkyMooBirthday.toDateString()\"\n          [age]=\"MilkyMooAge\"\n          [main_card_image]=\"MilkyMooImage\"\n          [avatar]=\"MilkyMooAvatar\"\n        ></app-cat-card>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div>\r\n  <div class=\"container\">\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Eli\"\r\n          [birthday]=\"EliBirthday.toDateString()\"\r\n          [age]=\"EliAge\"\r\n          [main_card_image]=\"EliImage\"\r\n          [avatar]=\"EliAvatar\"\r\n          [timeUntilBirthday]=\"EliTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Umbra\"\r\n          [birthday]=\"UmbraBirthday.toDateString()\"\r\n          [age]=\"UmbraAge\"\r\n          [main_card_image]=\"UmbraImage\"\r\n          [avatar]=\"UmbraAvatar\"\r\n          [timeUntilBirthday]=\"UmbraTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bucket\"\r\n          [birthday]=\"BucketBirthday.toDateString()\"\r\n          [age]=\"BucketAge\"\r\n          [main_card_image]=\"BucketImage\"\r\n          [avatar]=\"BucketAvatar\"\r\n          [timeUntilBirthday]=\"BucketTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bitty\"\r\n          [birthday]=\"BittyBirthday.toDateString()\"\r\n          [age]=\"BittyAge\"\r\n          [main_card_image]=\"BittyImage\"\r\n          [avatar]=\"BittyAvatar\"\r\n          [timeUntilBirthday]=\"BittyTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Wilson\"\r\n          [birthday]=\"WilsonBirthday.toDateString()\"\r\n          [age]=\"WilsonAge\"\r\n          [main_card_image]=\"WilsonImage\"\r\n          [avatar]=\"WilsonAvatar\"\r\n          [timeUntilBirthday]=\"WilsonTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Pixie\"\r\n          [birthday]=\"PixieBirthday.toDateString()\"\r\n          [age]=\"PixieAge\"\r\n          [main_card_image]=\"PixieImage\"\r\n          [avatar]=\"PixieAvatar\"\r\n          [timeUntilBirthday]=\"PixieTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_MilkyMoo\"\r\n          [birthday]=\"MilkyMooBirthday.toDateString()\"\r\n          [age]=\"MilkyMooAge\"\r\n          [main_card_image]=\"MilkyMooImage\"\r\n          [avatar]=\"MilkyMooAvatar\"\r\n          [timeUntilBirthday]=\"MilkyMooTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<div>\n  <div class=\"container\">\n    <div class=\"row buffe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"card\">\n  <mat-card-header>\n    <div mat-card-avatar\n         [style.background-image]=\"'url(' + avatar + ')'\"\n         [style.background-size]=\"'cover'\"\n    ></div>\n    <mat-card-title>{{name}}</mat-card-title>\n    <mat-card-subtitle>{{birthday}}</mat-card-subtitle>\n  </mat-card-header>\n  <img mat-card-image [src]=\"main_card_image\" alt=\"cat image\">\n  <mat-card-content>\n    <p>{{age}}</p>\n  </mat-card-content>\n</mat-card>\n"
+module.exports = "<mat-card class=\"card\">\r\n  <mat-card-header>\r\n    <div mat-card-avatar\r\n         [style.background-image]=\"'url(' + avatar + ')'\"\r\n         [style.background-size]=\"'cover'\"\r\n    ></div>\r\n    <mat-card-title>{{name}}</mat-card-title>\r\n    <mat-card-subtitle\r\n      matTooltip=\"{{timeUntilBirthday}}\"\r\n      matTooltipPosition=\"right\"\r\n    >\r\n      {{birthday}}\r\n    </mat-card-subtitle>\r\n  </mat-card-header>\r\n  <img mat-card-image [src]=\"main_card_image\" alt=\"cat image\">\r\n  <mat-card-content>\r\n    <p>{{age}}</p>\r\n  </mat-card-content>\r\n</mat-card>\r\n"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<mat-card class=\"card\">\n  <mat-card-header>\n    <div mat-c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\" class=\"center\">\n  <mat-toolbar-row>\n    <span>So Many Cats!</span>\n  </mat-toolbar-row>\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar color=\"primary\" class=\"center\">\r\n  <mat-toolbar-row>\r\n    <span>So Many Cats!</span>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n"
 
 /***/ }),
 
@@ -162,6 +162,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _card_container_card_container_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./card-container/card-container.component */ "./src/app/card-container/card-container.component.ts");
 /* harmony import */ var _cat_card_cat_card_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./cat-card/cat-card.component */ "./src/app/cat-card/cat-card.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_10__);
+
+
 
 
 
@@ -187,7 +192,9 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatToolbarModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatTooltipModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -223,6 +230,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardContainerComponent", function() { return CardContainerComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(date_fns__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 var CardContainerComponent = /** @class */ (function () {
@@ -261,6 +271,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.PixieImage = "https://i.imgur.com/686zog1.jpg?1";
         this.MilkyMooImage = "https://i.imgur.com/xFJ5rGM.jpg?1";
         setInterval(function () {
+            // Calculate age to the second
             _this.EliAge = CardContainerComponent_1.calculateDateDifference(_this.EliBirthday);
             _this.UmbraAge = CardContainerComponent_1.calculateDateDifference(_this.UmbraBirthday);
             _this.BucketAge = CardContainerComponent_1.calculateDateDifference(_this.BucketBirthday);
@@ -268,10 +279,33 @@ var CardContainerComponent = /** @class */ (function () {
             _this.WilsonAge = CardContainerComponent_1.calculateDateDifference(_this.WilsonBirthday);
             _this.PixieAge = CardContainerComponent_1.calculateDateDifference(_this.PixieBirthday);
             _this.MilkyMooAge = CardContainerComponent_1.calculateDateDifference(_this.MilkyMooBirthday);
+            // Calculate time until birthday
+            _this.EliTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.EliBirthday);
+            _this.UmbraTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.UmbraBirthday);
+            _this.BucketTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.BucketBirthday);
+            _this.BittyTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.BittyBirthday);
+            _this.WilsonTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.WilsonBirthday);
+            _this.PixieTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.PixieBirthday);
+            _this.MilkyMooTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.MilkyMooBirthday);
         }, 990);
     }
     CardContainerComponent_1 = CardContainerComponent;
     CardContainerComponent.prototype.ngOnInit = function () {
+    };
+    CardContainerComponent.calculateDaysUntilBirthday = function (birthday) {
+        var today = new Date();
+        console.log(birthday.toDateString());
+        var upcomingBirthday = null;
+        if (today.getMonth() < birthday.getMonth() || today.getMonth() === birthday.getMonth()) {
+            // if it's before the birthday month
+            upcomingBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate(), 0, 0, 0);
+        }
+        else {
+            // if we're past the birthday month
+            // If the month (7) is less then birthday (8), and same is for day, set year to next
+            upcomingBirthday = new Date(today.getFullYear() + 1, birthday.getMonth(), birthday.getDay(), 0, 0, 0);
+        }
+        return "My birthday is in " + Object(date_fns__WEBPACK_IMPORTED_MODULE_2__["distanceInWords"])(today, upcomingBirthday, { includeSeconds: true });
     };
     CardContainerComponent.calculateDateDifference = function (birthday) {
         // get the total time from today to the birth date
@@ -286,11 +320,19 @@ var CardContainerComponent = /** @class */ (function () {
         var seconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
         var weeks = Math.floor(days / 7);
         var adjustedDays = days - (7 * weeks);
+        var output = "";
         if (years < 1) {
-            return weeks + " weeks, " + adjustedDays + " days, " + hours + " hours, " + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old";
+            output = output + (weeks != 0 ? weeks + " weeks, " : "");
+            output = output + (adjustedDays != 0 ? adjustedDays + " days, " : "");
+            output = output + (hours != 0 ? hours + " hours, " : "");
+            return output + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old";
         }
         else {
-            return years + " years, " + weeks + " weeks, " + adjustedDays + " days, " + hours + " hours, " + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old";
+            output = output + (years != 0 ? years + " years, " : "");
+            output = output + (weeks != 0 ? weeks + " weeks, " : "");
+            output = output + (adjustedDays != 0 ? adjustedDays + " days, " : "");
+            output = output + (hours != 0 ? hours + " hours, " : "");
+            return output + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old";
         }
     };
     var CardContainerComponent_1;
@@ -356,6 +398,9 @@ var CatCardComponent = /** @class */ (function () {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
     ], CatCardComponent.prototype, "avatar", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+    ], CatCardComponent.prototype, "timeUntilBirthday", void 0);
     CatCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-cat-card',
