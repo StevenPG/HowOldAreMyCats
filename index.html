@@ -69,7 +69,11 @@
       var numseconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
       var numweeks = Math.floor(numdays / 7)
       var adjustedDays = numdays - (7*numweeks)
-      return name + " is " + numyears + " years, " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
+      if(numyears < 1){
+        return name + " is " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
+      } else {
+        return name + " is " + numyears + " years, " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
+      }
     }
 
     EliBirthday = new Date('May 1, 2010 10:15:00');
