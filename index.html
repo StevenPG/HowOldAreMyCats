@@ -59,23 +59,26 @@
   <script>
     function calculateDateDifference(name, incomingDate){
       // get the total time from today to the birthdate
-      msDifference = new Date() - incomingDate
+      var today = new Date()
+      msDifference = today - incomingDate
       secondsDifference = msDifference / 1000
       var numyears = Math.floor(secondsDifference / 31536000);
       var numdays = Math.floor((secondsDifference % 31536000) / 86400);
       var numhours = Math.floor(((secondsDifference % 31536000) % 86400) / 3600);
       var numminutes = Math.floor((((secondsDifference % 31536000) % 86400) % 3600) / 60);
       var numseconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
-      return name + " is " + numyears + " years, " + numdays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
+      var months = Math.floor(numdays / 30)
+      var adjustedDays = numdays - (30 * months)
+      return name + " is " + numyears + " years, " + months + " months, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
     }
 
-    EliBirthday = new Date(2010, 5, 1)
-    UmbraBirthday = new Date(2015,12,8)
-    BucketBirthday = new Date(2017,5,7)
-    BittyBirthday = new Date(2017,8,22)
-    WilsonBirthday = new Date(2018,4,27)
-    PixieBirthday = new Date(2019,4,19)
-    MilkyMooBirthday= new Date(2019,5,27)
+    EliBirthday = new Date('May 1, 2010 00:00:00');
+    UmbraBirthday = new Date('December 8, 2015 00:00:00');new Date(2015,12,8)
+    BucketBirthday = new Date('May 7, 2017 00:00:00');new Date(2017,5,7)
+    BittyBirthday = new Date('August 22, 2017 00:00:00');new Date(2017,8,22)
+    WilsonBirthday = new Date('April 27, 2018 00:00:00');new Date(2018,4,27)
+    PixieBirthday = new Date('April 19, 2019 00:00:00');new Date(2019,4,19)
+    MilkyMooBirthday= new Date('May 27, 2019 00:00:00');new Date(2019,5,27)
 
     function writePage() {
       document.getElementById("EliBirthday").innerHTML = calculateDateDifference("Eli", EliBirthday)
