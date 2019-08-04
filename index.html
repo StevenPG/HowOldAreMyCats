@@ -40,26 +40,67 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
+          <button class="collapsible" style="margin-bottom: 1em;">Kitty Birthdays</button>
+          <div class="content">
+            <ul class="list-unstyled">
+              <li>
+                <p id="EliInfo"></p>
+                <p id="UmbraInfo"></p>
+                <p id="BucketInfo"></p>
+                <p id="BittyInfo"></p>
+                <p id="WilsonInfo"></p>
+                <p id="PixieInfo"></p>
+                <p id="MilkyMooInfo"></p>
+              </li>
+            </ul>>
+          </div>
         <ul class="list-unstyled">
           <li>
-            <h3 id="EliBirthday" >Eli is </h3>
+            <h3 id="EliBirthday" ></h3>
             <hr/>
-            <h3 id="UmbraBirthday" >Umbra is </h3>
+            <h3 id="UmbraBirthday" ></h3>
             <hr/>
-            <h3 id="BucketBirthday" >Bucket is </h3>
+            <h3 id="BucketBirthday" ></h3>
             <hr/>
-            <h3 id="BittyBirthday" >Bitty is </h3>
+            <h3 id="BittyBirthday" ></h3>
             <hr/>
-            <h3 id="WilsonBirthday" >Wilson is </h3>
+            <h3 id="WilsonBirthday" ></h3>
             <hr/>
-            <h3 id="PixieBirthday" >Pixie is </h3>
+            <h3 id="PixieBirthday" ></h3>
             <hr/>
-            <h3 id="MilkyMooBirthday" >Milk is </h3>
+            <h3 id="MilkyMooBirthday" ></h3>
           </li>
         </ul>
       </div>
     </div>
   </div>
+
+  <style>
+      .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      </style>
+      
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
 
   
   <script>
@@ -90,6 +131,14 @@
     PixieBirthday = new Date('April 19, 2019 19:10:00');
     MilkyMooBirthday= new Date('May 27, 2019 12:59:00');
 
+    document.getElementById("EliInfo").innerHTML = "Eli: " + EliBirthday.toDateString()
+    document.getElementById("UmbraInfo").innerHTML = "Umbra: " + UmbraBirthday.toDateString()
+    document.getElementById("BucketInfo").innerHTML = "Bucket: " + BucketBirthday.toDateString()
+    document.getElementById("BittyInfo").innerHTML = "Bitty: " + BittyBirthday.toDateString()
+    document.getElementById("WilsonInfo").innerHTML = "Wilson: " + WilsonBirthday.toDateString()
+    document.getElementById("PixieInfo").innerHTML = "Pixie: " + PixieBirthday.toDateString()
+    document.getElementById("MilkyMooInfo").innerHTML = "Milky Moo: " + MilkyMooBirthday.toDateString()
+   
     function writePage() {
       document.getElementById("EliBirthday").innerHTML = calculateDateDifference("Eli", EliBirthday)
       document.getElementById("UmbraBirthday").innerHTML = calculateDateDifference("Umbra", UmbraBirthday)
