@@ -67,18 +67,18 @@
       var numhours = Math.floor(((secondsDifference % 31536000) % 86400) / 3600);
       var numminutes = Math.floor((((secondsDifference % 31536000) % 86400) % 3600) / 60);
       var numseconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
-      var months = Math.floor(numdays / 30)
-      var adjustedDays = numdays - (30 * months)
-      return name + " is " + numyears + " years, " + months + " months, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
+      var numweeks = Math.floor(numdays / 7)
+      var adjustedDays = numdays - (7*numweeks)
+      return name + " is " + numyears + " years, " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
     }
 
-    EliBirthday = new Date('May 1, 2010 00:00:00');
-    UmbraBirthday = new Date('December 8, 2015 00:00:00');new Date(2015,12,8)
-    BucketBirthday = new Date('May 7, 2017 00:00:00');new Date(2017,5,7)
-    BittyBirthday = new Date('August 22, 2017 00:00:00');new Date(2017,8,22)
-    WilsonBirthday = new Date('April 27, 2018 00:00:00');new Date(2018,4,27)
-    PixieBirthday = new Date('April 19, 2019 00:00:00');new Date(2019,4,19)
-    MilkyMooBirthday= new Date('May 27, 2019 00:00:00');new Date(2019,5,27)
+    EliBirthday = new Date('May 1, 2010 10:15:00');
+    UmbraBirthday = new Date('December 8, 2015 14:26:00');
+    BucketBirthday = new Date('May 7, 2017 05:04:00');
+    BittyBirthday = new Date('August 22, 2017 02:36:00');
+    WilsonBirthday = new Date('April 27, 2018 16:45:00');
+    PixieBirthday = new Date('April 19, 2019 19:10:00');
+    MilkyMooBirthday= new Date('May 27, 2019 12:59:00');
 
     function writePage() {
       document.getElementById("EliBirthday").innerHTML = calculateDateDifference("Eli", EliBirthday)
