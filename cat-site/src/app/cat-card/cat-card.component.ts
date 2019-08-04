@@ -12,6 +12,7 @@ export class CatCardComponent implements OnInit {
   @Input() main_card_image: string;
   @Input() main_card_image_alt: string;
   @Input() avatar: string;
+  @Input() timeUntilBirthday: string;
 
   constructor() { }
 
