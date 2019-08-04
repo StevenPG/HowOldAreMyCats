@@ -4,9 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatButtonModule, MatCardModule, MatToolbarModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatToolbarModule, MatTooltipModule} from "@angular/material";
 import { CardContainerComponent } from './card-container/card-container.component';
 import { CatCardComponent } from './cat-card/cat-card.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { CatCardComponent } from './cat-card/cat-card.component';
     AppRoutingModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

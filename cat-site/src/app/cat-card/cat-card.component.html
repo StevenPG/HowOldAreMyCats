@@ -5,7 +5,12 @@
          [style.background-size]="'cover'"
     ></div>
     <mat-card-title>{{name}}</mat-card-title>
-    <mat-card-subtitle>{{birthday}}</mat-card-subtitle>
+    <mat-card-subtitle
+      matTooltip="{{timeUntilBirthday}}"
+      matTooltipPosition="right"
+    >
+      {{birthday}}
+    </mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image [src]="main_card_image" alt="cat image">
   <mat-card-content>

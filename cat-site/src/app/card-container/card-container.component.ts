@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {distanceInWords} from "date-fns";
 
 @Component({
   selector: 'app-card-container',
@@ -34,6 +35,16 @@ export class CardContainerComponent implements OnInit {
   PixieAge: string;
   MilkyMooAge: string;
 
+  // Calculated days until birthday
+  EliTimeUntil: string;
+  UmbraTimeUntil: string;
+  BucketTimeUntil: string;
+  BittyTimeUntil: string;
+  WilsonTimeUntil: string;
+  PixieTimeUntil: string;
+  MilkyMooTimeUntil: string;
+
+
   // Avatar Images
   EliAvatar = "https://i.imgur.com/sgKH3H2.jpg?1";
   UmbraAvatar = "https://i.imgur.com/TcYvgJo.jpg?1";
@@ -54,6 +65,7 @@ export class CardContainerComponent implements OnInit {
 
   constructor() {
     setInterval(() => {
+      // Calculate age to the second
       this.EliAge = CardContainerComponent.calculateDateDifference(this.EliBirthday);
       this.UmbraAge = CardContainerComponent.calculateDateDifference(this.UmbraBirthday);
       this.BucketAge = CardContainerComponent.calculateDateDifference(this.BucketBirthday);
@@ -61,10 +73,38 @@ export class CardContainerComponent implements OnInit {
       this.WilsonAge = CardContainerComponent.calculateDateDifference(this.WilsonBirthday);
       this.PixieAge = CardContainerComponent.calculateDateDifference(this.PixieBirthday);
       this.MilkyMooAge = CardContainerComponent.calculateDateDifference(this.MilkyMooBirthday);
+
+      // Calculate time until birthday
+      this.EliTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.EliBirthday);
+      this.UmbraTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.UmbraBirthday);
+      this.BucketTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.BucketBirthday);
+      this.BittyTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.BittyBirthday);
+      this.WilsonTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.WilsonBirthday);
+      this.PixieTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.PixieBirthday);
+      this.MilkyMooTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.MilkyMooBirthday);
     }, 990);
   }
 
   ngOnInit() {
+  }
+
+  static calculateDaysUntilBirthday(birthday: Date){
+    let today = new Date();
+    console.log(birthday.toDateString());
+    let upcomingBirthday: Date = null;
+    if(today.getMonth() < birthday.getMonth() || today.getMonth() === birthday.getMonth()) {
+      // if it's before the birthday month
+      upcomingBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate(), 0, 0, 0);
+    } else {
+        // if we're past the birthday month
+        // If the month (7) is less then birthday (8), and same is for day, set year to next
+        upcomingBirthday = new Date(today.getFullYear() + 1, birthday.getMonth(), birthday.getDay(), 0, 0, 0);
+      }
+    return "My birthday is in " + distanceInWords(
+      today,
+      upcomingBirthday,
+      {includeSeconds: true}
+    );
   }
 
   static calculateDateDifference(birthday: Date){
@@ -80,10 +120,18 @@ export class CardContainerComponent implements OnInit {
     let seconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
     let weeks = Math.floor(days / 7);
     let adjustedDays = days - (7*weeks);
+    let output = "";
     if(years < 1){
-      return weeks + " weeks, " + adjustedDays + " days, " + hours + " hours, " + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old"
+      output = output + (weeks != 0 ? weeks + " weeks, " : "");
+      output = output + (adjustedDays != 0 ?adjustedDays + " days, " : "");
+      output = output + (hours != 0 ? hours + " hours, " : "");
+      return output + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old"
     } else {
-      return years + " years, " + weeks + " weeks, " + adjustedDays + " days, " + hours + " hours, " + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old"
+      output = output + (years != 0 ?  years + " years, " : "");
+      output = output + (weeks != 0 ? weeks + " weeks, " : "");
+      output = output + (adjustedDays != 0 ?adjustedDays + " days, " : "");
+      output = output + (hours != 0 ? hours + " hours, " : "");
+      return output + minutes + " minutes, " + " and " + Math.floor(seconds) + " seconds old"
     }
   }
 }
