@@ -1,171 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>How Old Are Our Cats?!?</title></title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">So many cats tho</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-          <button class="collapsible" style="margin-bottom: 1em;">Kitty Birthdays</button>
-          <div class="content">
-            <ul class="list-unstyled">
-              <li>
-                <p id="EliInfo"></p>
-                <p id="UmbraInfo"></p>
-                <p id="BucketInfo"></p>
-                <p id="BittyInfo"></p>
-                <p id="WilsonInfo"></p>
-                <p id="PixieInfo"></p>
-                <p id="MilkyMooInfo"></p>
-              </li>
-            </ul>
-          </div>
-        <ul class="list-unstyled">
-          <li>
-            <h3 id="EliBirthday" ></h3>
-            <hr/>
-            <h3 id="UmbraBirthday" ></h3>
-            <hr/>
-            <h3 id="BucketBirthday" ></h3>
-            <hr/>
-            <h3 id="BittyBirthday" ></h3>
-            <hr/>
-            <h3 id="WilsonBirthday" ></h3>
-            <hr/>
-            <h3 id="PixieBirthday" ></h3>
-            <hr/>
-            <h3 id="MilkyMooBirthday" ></h3>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <style>
-      .content {
-        padding: 0 18px;
-        background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-      }
-      </style>
-      
-      <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-      </script>
-
-  
-  <script>
-    function calculateDateDifference(name, incomingDate){
-      // get the total time from today to the birthdate
-      var today = new Date()
-      msDifference = today - incomingDate
-      secondsDifference = msDifference / 1000
-      var numyears = Math.floor(secondsDifference / 31536000);
-      var numdays = Math.floor((secondsDifference % 31536000) / 86400);
-      var numhours = Math.floor(((secondsDifference % 31536000) % 86400) / 3600);
-      var numminutes = Math.floor((((secondsDifference % 31536000) % 86400) % 3600) / 60);
-      var numseconds = (((secondsDifference % 31536000) % 86400) % 3600) % 60;
-      var numweeks = Math.floor(numdays / 7)
-      var adjustedDays = numdays - (7*numweeks)
-      if(numyears < 1){
-        return name + " is " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
-      } else {
-        return name + " is " + numyears + " years, " + numweeks + " weeks, " + adjustedDays + " days, " + numhours + " hours, " + numminutes + " minutes, " + " and " + Math.floor(numseconds) + " seconds old"
-      }
-    }
-
-    EliBirthday = new Date('May 1, 2010 10:15:00');
-    UmbraBirthday = new Date('December 8, 2015 14:26:00');
-    BucketBirthday = new Date('May 7, 2017 05:04:00');
-    BittyBirthday = new Date('August 22, 2017 02:36:00');
-    WilsonBirthday = new Date('April 27, 2018 16:45:00');
-    PixieBirthday = new Date('April 19, 2019 19:10:00');
-    MilkyMooBirthday= new Date('May 27, 2019 12:59:00');
-
-    document.getElementById("EliInfo").innerHTML = "Eli: " + EliBirthday.toDateString()
-    document.getElementById("UmbraInfo").innerHTML = "Umbra: " + UmbraBirthday.toDateString()
-    document.getElementById("BucketInfo").innerHTML = "Bucket: " + BucketBirthday.toDateString()
-    document.getElementById("BittyInfo").innerHTML = "Bitty: " + BittyBirthday.toDateString()
-    document.getElementById("WilsonInfo").innerHTML = "Wilson: " + WilsonBirthday.toDateString()
-    document.getElementById("PixieInfo").innerHTML = "Pixie: " + PixieBirthday.toDateString()
-    document.getElementById("MilkyMooInfo").innerHTML = "Milky Moo: " + MilkyMooBirthday.toDateString()
-   
-    function writePage() {
-      document.getElementById("EliBirthday").innerHTML = calculateDateDifference("Eli", EliBirthday)
-      document.getElementById("UmbraBirthday").innerHTML = calculateDateDifference("Umbra", UmbraBirthday)
-      document.getElementById("BucketBirthday").innerHTML = calculateDateDifference("Bucket", BucketBirthday)
-      document.getElementById("BittyBirthday").innerHTML = calculateDateDifference("Bitty", BittyBirthday)
-      document.getElementById("WilsonBirthday").innerHTML = calculateDateDifference("Wilson", WilsonBirthday)
-      document.getElementById("PixieBirthday").innerHTML = calculateDateDifference("Pixie", PixieBirthday)
-      document.getElementById("MilkyMooBirthday").innerHTML = calculateDateDifference("Milky Moo", MilkyMooBirthday)
-    }
-
-    var t = setInterval(writePage)
-  </script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <title>Meet Our Cats!</title>
+  <base href="/">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143353820-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143353820-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-143353820-2');
-</script>
-  
-</body>
-
+      gtag('config', 'UA-143353820-2');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+<script src="runtime-es2015.js" type="module"></script><script src="polyfills-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule></script><script src="polyfills-es5.js" nomodule></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule></script><script src="scripts.js"></script><script src="vendor-es2015.js" type="module"></script><script src="main-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule></script><script src="main-es5.js" nomodule></script></body>
 </html>
