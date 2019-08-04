@@ -1,0 +1,14 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar
+         [style.background-image]="'url(' + avatar + ')'"
+         [style.background-size]="'cover'"
+    ></div>
+    <mat-card-title>{{name}}</mat-card-title>
+    <mat-card-subtitle>{{birthday}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="main_card_image" alt="cat image">
+  <mat-card-content>
+    <p>{{age}}</p>
+  </mat-card-content>
+</mat-card>
