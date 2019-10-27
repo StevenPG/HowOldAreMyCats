@@ -16,6 +16,7 @@ export class CardContainerComponent implements OnInit {
   name_Wilson = "Wilson";
   name_Pixie = "Pixie";
   name_MilkyMoo = "Milky Moo";
+  name_Bones = "Bones";
 
   // Birthdays
   EliBirthday = new Date('May 1, 2010 10:15:00');
@@ -25,6 +26,7 @@ export class CardContainerComponent implements OnInit {
   WilsonBirthday = new Date('April 27, 2018 16:45:00');
   PixieBirthday = new Date('April 19, 2019 19:10:00');
   MilkyMooBirthday= new Date('May 27, 2019 12:59:00');
+  BonesBirthday = new Date('September 18, 2019 15:23:00');
 
   // Calculated Ages
   EliAge: string;
@@ -34,6 +36,7 @@ export class CardContainerComponent implements OnInit {
   WilsonAge: string;
   PixieAge: string;
   MilkyMooAge: string;
+  BonesAge: string;
 
   // Calculated days until birthday
   EliTimeUntil: string;
@@ -43,6 +46,7 @@ export class CardContainerComponent implements OnInit {
   WilsonTimeUntil: string;
   PixieTimeUntil: string;
   MilkyMooTimeUntil: string;
+  BonesTimeUntil: string;
 
 
   // Avatar Images
@@ -53,6 +57,7 @@ export class CardContainerComponent implements OnInit {
   WilsonAvatar = "https://i.imgur.com/J2IRbrg.jpg?1";
   PixieAvatar = "https://i.imgur.com/CazLbo4.jpg?1";
   MilkyMooAvatar = "https://i.imgur.com/gEQtsnN.jpg?1";
+  BonesAvatar = "https://i.imgur.com/BYudQIp.jpg";
 
   // Main Images
   EliImage = "https://i.imgur.com/UyUY5E6.jpg?1";
@@ -62,6 +67,7 @@ export class CardContainerComponent implements OnInit {
   WilsonImage = "https://i.imgur.com/PK52q1J.jpg";
   PixieImage = "https://i.imgur.com/686zog1.jpg?1";
   MilkyMooImage = "https://i.imgur.com/xFJ5rGM.jpg?1";
+  BonesImage = "https://i.imgur.com/K0uEhAO.jpg";
 
   constructor() {
     setInterval(() => {
@@ -73,6 +79,7 @@ export class CardContainerComponent implements OnInit {
       this.WilsonAge = CardContainerComponent.calculateDateDifference(this.WilsonBirthday);
       this.PixieAge = CardContainerComponent.calculateDateDifference(this.PixieBirthday);
       this.MilkyMooAge = CardContainerComponent.calculateDateDifference(this.MilkyMooBirthday);
+      this.BonesAge = CardContainerComponent.calculateDateDifference(this.BonesBirthday);
 
       // Calculate time until birthday
       this.EliTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.EliBirthday);
@@ -82,6 +89,7 @@ export class CardContainerComponent implements OnInit {
       this.WilsonTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.WilsonBirthday);
       this.PixieTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.PixieBirthday);
       this.MilkyMooTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.MilkyMooBirthday);
+      this.BonesTimeUntil = CardContainerComponent.calculateDaysUntilBirthday(this.BonesBirthday);
     }, 990);
   }
 
