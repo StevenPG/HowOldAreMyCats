@@ -41,7 +41,7 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <div class=\"container\">\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Eli\"\r\n          [birthday]=\"EliBirthday.toDateString()\"\r\n          [age]=\"EliAge\"\r\n          [main_card_image]=\"EliImage\"\r\n          [avatar]=\"EliAvatar\"\r\n          [timeUntilBirthday]=\"EliTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Umbra\"\r\n          [birthday]=\"UmbraBirthday.toDateString()\"\r\n          [age]=\"UmbraAge\"\r\n          [main_card_image]=\"UmbraImage\"\r\n          [avatar]=\"UmbraAvatar\"\r\n          [timeUntilBirthday]=\"UmbraTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bucket\"\r\n          [birthday]=\"BucketBirthday.toDateString()\"\r\n          [age]=\"BucketAge\"\r\n          [main_card_image]=\"BucketImage\"\r\n          [avatar]=\"BucketAvatar\"\r\n          [timeUntilBirthday]=\"BucketTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bitty\"\r\n          [birthday]=\"BittyBirthday.toDateString()\"\r\n          [age]=\"BittyAge\"\r\n          [main_card_image]=\"BittyImage\"\r\n          [avatar]=\"BittyAvatar\"\r\n          [timeUntilBirthday]=\"BittyTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Wilson\"\r\n          [birthday]=\"WilsonBirthday.toDateString()\"\r\n          [age]=\"WilsonAge\"\r\n          [main_card_image]=\"WilsonImage\"\r\n          [avatar]=\"WilsonAvatar\"\r\n          [timeUntilBirthday]=\"WilsonTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Pixie\"\r\n          [birthday]=\"PixieBirthday.toDateString()\"\r\n          [age]=\"PixieAge\"\r\n          [main_card_image]=\"PixieImage\"\r\n          [avatar]=\"PixieAvatar\"\r\n          [timeUntilBirthday]=\"PixieTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_MilkyMoo\"\r\n          [birthday]=\"MilkyMooBirthday.toDateString()\"\r\n          [age]=\"MilkyMooAge\"\r\n          [main_card_image]=\"MilkyMooImage\"\r\n          [avatar]=\"MilkyMooAvatar\"\r\n          [timeUntilBirthday]=\"MilkyMooTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div>\r\n  <div class=\"container\">\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Eli\"\r\n          [birthday]=\"EliBirthday.toDateString()\"\r\n          [age]=\"EliAge\"\r\n          [main_card_image]=\"EliImage\"\r\n          [avatar]=\"EliAvatar\"\r\n          [timeUntilBirthday]=\"EliTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Umbra\"\r\n          [birthday]=\"UmbraBirthday.toDateString()\"\r\n          [age]=\"UmbraAge\"\r\n          [main_card_image]=\"UmbraImage\"\r\n          [avatar]=\"UmbraAvatar\"\r\n          [timeUntilBirthday]=\"UmbraTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bucket\"\r\n          [birthday]=\"BucketBirthday.toDateString()\"\r\n          [age]=\"BucketAge\"\r\n          [main_card_image]=\"BucketImage\"\r\n          [avatar]=\"BucketAvatar\"\r\n          [timeUntilBirthday]=\"BucketTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bitty\"\r\n          [birthday]=\"BittyBirthday.toDateString()\"\r\n          [age]=\"BittyAge\"\r\n          [main_card_image]=\"BittyImage\"\r\n          [avatar]=\"BittyAvatar\"\r\n          [timeUntilBirthday]=\"BittyTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Wilson\"\r\n          [birthday]=\"WilsonBirthday.toDateString()\"\r\n          [age]=\"WilsonAge\"\r\n          [main_card_image]=\"WilsonImage\"\r\n          [avatar]=\"WilsonAvatar\"\r\n          [timeUntilBirthday]=\"WilsonTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Pixie\"\r\n          [birthday]=\"PixieBirthday.toDateString()\"\r\n          [age]=\"PixieAge\"\r\n          [main_card_image]=\"PixieImage\"\r\n          [avatar]=\"PixieAvatar\"\r\n          [timeUntilBirthday]=\"PixieTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n    <div class=\"row buffer\">\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_MilkyMoo\"\r\n          [birthday]=\"MilkyMooBirthday.toDateString()\"\r\n          [age]=\"MilkyMooAge\"\r\n          [main_card_image]=\"MilkyMooImage\"\r\n          [avatar]=\"MilkyMooAvatar\"\r\n          [timeUntilBirthday]=\"MilkyMooTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n      <div class=\"col-sm\">\r\n        <app-cat-card\r\n          [name]=\"name_Bones\"\r\n          [birthday]=\"BonesBirthday.toDateString()\"\r\n          [age]=\"BonesAge\"\r\n          [main_card_image]=\"BonesImage\"\r\n          [avatar]=\"BonesAvatar\"\r\n          [timeUntilBirthday]=\"BonesTimeUntil\"\r\n        ></app-cat-card>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -246,6 +246,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.name_Wilson = "Wilson";
         this.name_Pixie = "Pixie";
         this.name_MilkyMoo = "Milky Moo";
+        this.name_Bones = "Bones";
         // Birthdays
         this.EliBirthday = new Date('May 1, 2010 10:15:00');
         this.UmbraBirthday = new Date('December 8, 2015 14:26:00');
@@ -254,6 +255,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.WilsonBirthday = new Date('April 27, 2018 16:45:00');
         this.PixieBirthday = new Date('April 19, 2019 19:10:00');
         this.MilkyMooBirthday = new Date('May 27, 2019 12:59:00');
+        this.BonesBirthday = new Date('September 18, 2019 15:23:00');
         // Avatar Images
         this.EliAvatar = "https://i.imgur.com/sgKH3H2.jpg?1";
         this.UmbraAvatar = "https://i.imgur.com/TcYvgJo.jpg?1";
@@ -262,6 +264,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.WilsonAvatar = "https://i.imgur.com/J2IRbrg.jpg?1";
         this.PixieAvatar = "https://i.imgur.com/CazLbo4.jpg?1";
         this.MilkyMooAvatar = "https://i.imgur.com/gEQtsnN.jpg?1";
+        this.BonesAvatar = "https://i.imgur.com/BYudQIp.jpg";
         // Main Images
         this.EliImage = "https://i.imgur.com/UyUY5E6.jpg?1";
         this.UmbraImage = "https://i.imgur.com/VMGyDVE.jpg";
@@ -270,6 +273,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.WilsonImage = "https://i.imgur.com/PK52q1J.jpg";
         this.PixieImage = "https://i.imgur.com/686zog1.jpg?1";
         this.MilkyMooImage = "https://i.imgur.com/xFJ5rGM.jpg?1";
+        this.BonesImage = "https://i.imgur.com/K0uEhAO.jpg";
         setInterval(function () {
             // Calculate age to the second
             _this.EliAge = CardContainerComponent_1.calculateDateDifference(_this.EliBirthday);
@@ -279,6 +283,7 @@ var CardContainerComponent = /** @class */ (function () {
             _this.WilsonAge = CardContainerComponent_1.calculateDateDifference(_this.WilsonBirthday);
             _this.PixieAge = CardContainerComponent_1.calculateDateDifference(_this.PixieBirthday);
             _this.MilkyMooAge = CardContainerComponent_1.calculateDateDifference(_this.MilkyMooBirthday);
+            _this.BonesAge = CardContainerComponent_1.calculateDateDifference(_this.BonesBirthday);
             // Calculate time until birthday
             _this.EliTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.EliBirthday);
             _this.UmbraTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.UmbraBirthday);
@@ -287,6 +292,7 @@ var CardContainerComponent = /** @class */ (function () {
             _this.WilsonTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.WilsonBirthday);
             _this.PixieTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.PixieBirthday);
             _this.MilkyMooTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.MilkyMooBirthday);
+            _this.BonesTimeUntil = CardContainerComponent_1.calculateDaysUntilBirthday(_this.BonesBirthday);
         }, 990);
     }
     CardContainerComponent_1 = CardContainerComponent;
@@ -520,7 +526,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Tyrsn\Development\Github\HowOldAreMyCats\cat-site\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Tyrsn\development\HowOldAreMyCats\cat-site\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Tyrsn\Development\Github\HowOldAreMyCats\cat-site\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\Tyrsn\Development\Github\HowOldAreMyCats\cat-site\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! C:\Users\Tyrsn\development\HowOldAreMyCats\cat-site\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Tyrsn\development\HowOldAreMyCats\cat-site\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })
