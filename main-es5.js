@@ -255,7 +255,7 @@ var CardContainerComponent = /** @class */ (function () {
         this.WilsonBirthday = new Date('April 27, 2018 16:45:00');
         this.PixieBirthday = new Date('April 19, 2019 19:10:00');
         this.MilkyMooBirthday = new Date('May 27, 2019 12:59:00');
-        this.BonesBirthday = new Date('September 18, 2019 15:23:00');
+        this.BonesBirthday = new Date('September 9, 2019 15:23:00');
         // Avatar Images
         this.EliAvatar = "https://i.imgur.com/sgKH3H2.jpg?1";
         this.UmbraAvatar = "https://i.imgur.com/TcYvgJo.jpg?1";

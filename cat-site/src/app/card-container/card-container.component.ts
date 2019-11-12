@@ -26,7 +26,7 @@ export class CardContainerComponent implements OnInit {
   WilsonBirthday = new Date('April 27, 2018 16:45:00');
   PixieBirthday = new Date('April 19, 2019 19:10:00');
   MilkyMooBirthday= new Date('May 27, 2019 12:59:00');
-  BonesBirthday = new Date('September 18, 2019 15:23:00');
+  BonesBirthday = new Date('September 9, 2019 15:23:00');
 
   // Calculated Ages
   EliAge: string;
