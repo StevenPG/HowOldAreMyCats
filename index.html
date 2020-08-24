@@ -318,25 +318,38 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+
   <script>
+
+    // Convert days into months weeks and days
+    function formatDays(today, birthday) {
+        var todayMoment = moment(today)
+        var birthdayMoment = moment(birthday)
+        var duration = moment.duration(birthdayMoment.diff(todayMoment, 'days'), 'days')
+        return " " + duration.months() + " months and " + duration.days() + " days."
+    }
 
     function calculateDate(birthday, birthYear) {
       var func_today = new Date()
       var thisYear = dateFns.getYear(today)
       
       if(dateFns.isAfter(today, birthday)) {
+        var year = birthday.getFullYear();
+        var month = birthday.getMonth();
+        var day = birthday.getDate();
+        var nextYearBirthday = new Date(year + 1, month, day);
         // true if first date if after second date
         // Date already happened this year
-        return "I'll be " + ((thisYear+1) - birthYear) + " " + dateFns.distanceInWords(
+        var age = thisYear - birthYear
+        return "I'm " + (thisYear - birthYear) + " and I'll be " + (age + 1) + " in " + formatDays(
           today,
-          new Date(dateFns.getYear(birthday) + 1, dateFns.getDay(birthday), dateFns.getMonth(birthday)),
-          {
-            includeSeconds: true, addSuffix: true
-          }
+          nextYearBirthday
         )
       } else {
         // Date is still to come this year
-        return "I'll be " + (thisYear - birthYear) + " " + dateFns.distanceInWords(
+        var age = (thisYear - birthYear)
+        return "I'm " + (thisYear - birthYear - 1) + " and I'll be " + age + " in " + formatDays(
           today,
           birthday,
           {
