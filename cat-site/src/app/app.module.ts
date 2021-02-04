@@ -1,31 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+// Project Components
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatButtonModule, MatCardModule, MatToolbarModule, MatTooltipModule} from "@angular/material";
-import { CardContainerComponent } from './card-container/card-container.component';
-import { CatCardComponent } from './cat-card/cat-card.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { TopbarComponent } from './topbar/topbar.component';
+import { ContentComponent } from './content/content.component';
 
-import 'hammerjs';
+// Material Components
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatGridListModule } from '@angular/material/grid-list';
+
+// Generic Components
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
-    CardContainerComponent,
-    CatCardComponent
+    TopbarComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatTooltipModule,
-    BrowserAnimationsModule
+    MatGridListModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
