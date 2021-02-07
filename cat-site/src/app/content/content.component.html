@@ -1,10 +1,48 @@
-<div>
-    <mat-grid-list cols="4" rowHeight="100px">
-        <mat-grid-tile
-            colspan=1
-            rowspan=4
-            style.background="green">
-            test
-        </mat-grid-tile>
-    </mat-grid-list>
+<!-- Centering of the content with decent margins-->
+<div fxLayoutAlign="center" fxLayout="row" fxLayout.lt-lg="column">
+
+    <div fxLayout='row' fxLayoutAlign="center" fxFlex="20%">
+        <app-instagramfeed></app-instagramfeed>
+    </div>
+    <div fxLayout='column' style="background-color: red" fxFlex="50%">
+        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: blueviolet;">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <app-catcard></app-catcard>
+                <p>Eli</p>
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Umbra</p>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: black;">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Bitty</p>
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Bucket</p>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: cadetblue;">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Wilson</p>
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Pixie</p>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: yellowgreen;">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Milk</p>
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Bones</p>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: red;">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <p>Wobbles</p>
+            </div>
+        </div>
+    </div>
+
 </div>
