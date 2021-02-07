@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  // TODO - calculate age rounded to nearest year
+  // TODO - calculate age rounded to nearest year next
+  // TODO - add background, nothing fancy
   eliName = "Eli"
   eliNickname = "Little Man"
   eliDescription = "test"
@@ -39,7 +40,7 @@ export class ContentComponent implements OnInit {
   wilsonBirthday = new Date(2018, 3, 27).toDateString()
   
   pixieName = "Pixie"
-  pixieNickname = "Pizza"
+  pixieNickname = "Pete/Pizza"
   pixieDescription = "";
   // April 19, 2019
   pixieBirthday = new Date(2019, 3, 19).toDateString()
