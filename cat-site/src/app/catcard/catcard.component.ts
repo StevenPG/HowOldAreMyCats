@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-catcard',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catcard.component.scss']
 })
 export class CatcardComponent implements OnInit {
+
+  @Input() catName: string = "";
+  @Input() catNickname: string = "";
+  @Input() catDescription: string = "";
+  @Input() catBirthday: string = "";
 
   constructor() { }
 

@@ -4,43 +4,87 @@
     <div fxLayout='row' fxLayoutAlign="center" fxFlex="20%">
         <app-instagramfeed></app-instagramfeed>
     </div>
-    <div fxLayout='column' style="background-color: red" fxFlex="50%">
-        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: blueviolet;">
+    <div fxLayout='column' fxFlex="50%">
+        <div fxLayout="row" fxLayout.lt-lg="column">
             <div fxFlex="50%" fxLayoutAlign="center">
-                <app-catcard></app-catcard>
-                <p>Eli</p>
+                <app-catcard
+                    [catName]="eliName"
+                    [catNickname]="eliNickname"
+                    [catDescription]="eliDescription"
+                    [catBirthday]="eliBirthday"
+                ></app-catcard> <!-- Eli -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Umbra</p>
-            </div>
-        </div>
-        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: black;">
-            <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Bitty</p>
-            </div>
-            <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Bucket</p>
-            </div>
-        </div>
-        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: cadetblue;">
-            <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Wilson</p>
-            </div>
-            <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Pixie</p>
+                <app-catcard
+                    [catName]="umbraName"
+                    [catNickname]="umbraNickname"
+                    [catDescription]="umbraDescription"
+                    [catBirthday]="umbraBirthday"
+                ></app-catcard> <!-- Umbra -->
             </div>
         </div>
-        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: yellowgreen;">
+        <div fxLayout="row" fxLayout.lt-lg="column">
             <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Milk</p>
+                <app-catcard
+                    [catName]="bittyName"
+                    [catNickname]="bittyNickname"
+                    [catDescription]="bittyDescription"
+                    [catBirthday]="bittyBirthday"
+                ></app-catcard> <!-- Bitty -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Bones</p>
+                <app-catcard
+                    [catName]="bucketName"
+                    [catNickname]="bucketNickname"
+                    [catDescription]="bucketDescription"
+                    [catBirthday]="bucketBirthday"
+                ></app-catcard> <!-- Bucket -->
             </div>
         </div>
-        <div fxLayout="row" fxLayout.lt-lg="column" style="background-color: red;">
+        <div fxLayout="row" fxLayout.lt-lg="column">
             <div fxFlex="50%" fxLayoutAlign="center">
-                <p>Wobbles</p>
+                <app-catcard
+                    [catName]="wilsonName"
+                    [catNickname]="wilsonNickname"
+                    [catDescription]="wilsonDescription"
+                    [catBirthday]="wilsonBirthday"
+                ></app-catcard> <!-- Wilson -->
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <app-catcard
+                    [catName]="pixieName"
+                    [catNickname]="pixieNickname"
+                    [catDescription]="pixieDescription"
+                    [catBirthday]="pixieBirthday"
+                ></app-catcard> <!-- Pixie -->
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <app-catcard
+                    [catName]="milkName"
+                    [catNickname]="milkNickname"
+                    [catDescription]="milkDescription"
+                    [catBirthday]="milkBirthday"
+                ></app-catcard> <!-- Milk -->
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <app-catcard
+                    [catName]="bonesName"
+                    [catNickname]="bonesNickname"
+                    [catDescription]="bonesDescription"
+                    [catBirthday]="bonesBirthday"
+                ></app-catcard> <!-- Bones -->
+            </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-lg="column">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                <app-catcard
+                    [catName]="wobblesName"
+                    [catNickname]="wobblesNickname"
+                    [catDescription]="wobblesDescription"
+                    [catBirthday]="wobblesBirthday"
+                ></app-catcard> <!-- Wobbles -->
             </div>
         </div>
     </div>
