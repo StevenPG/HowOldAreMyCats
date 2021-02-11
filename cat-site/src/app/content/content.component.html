@@ -4,14 +4,16 @@
     <div fxLayout='row' fxLayoutAlign="center" fxFlex="20%">
         <app-instagramfeed></app-instagramfeed>
     </div>
-    <div fxLayout='column' fxFlex="50%">
+    <div fxLayout='column' fxFlex="60%">
         <div fxLayout="row" fxLayout.lt-lg="column">
             <div fxFlex="50%" fxLayoutAlign="center">
                 <app-catcard
                     [catName]="eliName"
                     [catNickname]="eliNickname"
                     [catDescription]="eliDescription"
-                    [catBirthday]="eliBirthday"
+                    [catBirthdate]="eliBirthdate"
+                    [cardImageSrc]="eliImageSrc"
+                    [cardImageAlt]="eliImageAlt"
                 ></app-catcard> <!-- Eli -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
@@ -19,7 +21,9 @@
                     [catName]="umbraName"
                     [catNickname]="umbraNickname"
                     [catDescription]="umbraDescription"
-                    [catBirthday]="umbraBirthday"
+                    [catBirthdate]="umbraBirthdate"
+                    [cardImageSrc]="umbraImageSrc"
+                    [cardImageAlt]="umbraImageAlt"
                 ></app-catcard> <!-- Umbra -->
             </div>
         </div>
@@ -29,7 +33,9 @@
                     [catName]="bittyName"
                     [catNickname]="bittyNickname"
                     [catDescription]="bittyDescription"
-                    [catBirthday]="bittyBirthday"
+                    [catBirthdate]="bittyBirthdate"
+                    [cardImageSrc]="bittyImageSrc"
+                    [cardImageAlt]="bittyImageAlt"
                 ></app-catcard> <!-- Bitty -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
@@ -37,7 +43,9 @@
                     [catName]="bucketName"
                     [catNickname]="bucketNickname"
                     [catDescription]="bucketDescription"
-                    [catBirthday]="bucketBirthday"
+                    [catBirthdate]="bucketBirthdate"
+                    [cardImageSrc]="bucketImageSrc"
+                    [cardImageAlt]="bucketImageAlt"
                 ></app-catcard> <!-- Bucket -->
             </div>
         </div>
@@ -47,7 +55,9 @@
                     [catName]="wilsonName"
                     [catNickname]="wilsonNickname"
                     [catDescription]="wilsonDescription"
-                    [catBirthday]="wilsonBirthday"
+                    [catBirthdate]="wilsonBirthdate"
+                    [cardImageSrc]="wilsonImageSrc"
+                    [cardImageAlt]="wilsonImageAlt"
                 ></app-catcard> <!-- Wilson -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
@@ -55,7 +65,9 @@
                     [catName]="pixieName"
                     [catNickname]="pixieNickname"
                     [catDescription]="pixieDescription"
-                    [catBirthday]="pixieBirthday"
+                    [catBirthdate]="pixieBirthdate"
+                    [cardImageSrc]="pixieImageSrc"
+                    [cardImageAlt]="pixieImageAlt"
                 ></app-catcard> <!-- Pixie -->
             </div>
         </div>
@@ -65,7 +77,9 @@
                     [catName]="milkName"
                     [catNickname]="milkNickname"
                     [catDescription]="milkDescription"
-                    [catBirthday]="milkBirthday"
+                    [catBirthdate]="milkBirthdate"
+                    [cardImageSrc]="milkImageSrc"
+                    [cardImageAlt]="milkImageAlt"
                 ></app-catcard> <!-- Milk -->
             </div>
             <div fxFlex="50%" fxLayoutAlign="center">
@@ -73,7 +87,9 @@
                     [catName]="bonesName"
                     [catNickname]="bonesNickname"
                     [catDescription]="bonesDescription"
-                    [catBirthday]="bonesBirthday"
+                    [catBirthdate]="bonesBirthdate"
+                    [cardImageSrc]="bonesImageSrc"
+                    [cardImageAlt]="bonesImageAlt"
                 ></app-catcard> <!-- Bones -->
             </div>
         </div>
@@ -83,7 +99,9 @@
                     [catName]="wobblesName"
                     [catNickname]="wobblesNickname"
                     [catDescription]="wobblesDescription"
-                    [catBirthday]="wobblesBirthday"
+                    [catBirthdate]="wobblesBirthdate"
+                    [cardImageSrc]="wobblesImageSrc"
+                    [cardImageAlt]="wobblesImageAlt"
                 ></app-catcard> <!-- Wobbles -->
             </div>
         </div>
