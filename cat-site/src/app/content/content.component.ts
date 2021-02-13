@@ -57,7 +57,7 @@ export class ContentComponent implements OnInit {
   pixieImageSrc = "https://i.imgur.com/7Z5UHr3.jpg"
   pixieImageAlt = "An image of Pixie the cat"
   
-  milkName = "Milk"
+  milkName = "Milky Moo"
   milkNickname = "Milk, MooMoo"
   milkDescription = "Milk loves legs! She constantly wants to sit on your thigh and purr up a storm. She’s the smallest cat, weighing a whole 8lbs. She randomly gets the zoomies, and will just start sprinting across the house stopping to make the funniest poses. She knows her name very well and will come when you call her, but not without chirping a bunch first! Her favorite toy is her hedgehog (AKA Hedgie) and she loves to throw it in the air to herself and catch it over and over again.";
   // May 27, 2019
