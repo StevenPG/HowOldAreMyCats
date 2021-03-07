@@ -108,7 +108,7 @@ class ContentComponent {
     }
 }
 ContentComponent.ɵfac = function ContentComponent_Factory(t) { return new (t || ContentComponent)(); };
-ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContentComponent, selectors: [["app-content"]], decls: 30, vars: 60, consts: [["fxLayoutAlign", "center", "fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxLayout", "row", "fxLayoutAlign", "center", "fxFlex", "20%"], ["fxLayout", "column", "fxFlex", "60%"], ["fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxFlex", "50%", "fxLayoutAlign", "center"], [3, "catName", "catNickname", "catDescription", "catBirthdate", "cardImageSrc", "cardImageAlt"]], template: function ContentComponent_Template(rf, ctx) { if (rf & 1) {
+ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContentComponent, selectors: [["app-content"]], decls: 29, vars: 60, consts: [["fxLayoutAlign", "center", "fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxLayout", "row", "fxLayoutAlign", "center", "fxFlex", "20%"], ["fxLayout", "column", "fxFlex", "60%"], ["fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxFlex", "50%", "fxLayoutAlign", "center"], [3, "catName", "catNickname", "catDescription", "catBirthdate", "cardImageSrc", "cardImageAlt"]], template: function ContentComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-instagramfeed");
@@ -150,10 +150,8 @@ ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "app-catcard", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "app-catcard", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "app-catcard", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -177,7 +175,7 @@ ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.bonesName)("catNickname", ctx.bonesNickname)("catDescription", ctx.bonesDescription)("catBirthdate", ctx.bonesBirthdate)("cardImageSrc", ctx.bonesImageSrc)("cardImageAlt", ctx.bonesImageAlt);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.wobblesName)("catNickname", ctx.wobblesNickname)("catDescription", ctx.wobblesDescription)("catBirthdate", ctx.wobblesBirthdate)("cardImageSrc", ctx.wobblesImageSrc)("cardImageAlt", ctx.wobblesImageAlt);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.pancakeName)("catNickname", ctx.pancakeNickname)("catDescription", ctx.pancakeDescription)("catBirthdate", ctx.pancakeBirthdate)("cardImageSrc", ctx.pancakeImageSrc)("cardImageAlt", ctx.pancakeImageAlt);
     } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _instagramfeed_instagramfeed_component__WEBPACK_IMPORTED_MODULE_2__["InstagramfeedComponent"], _catcard_catcard_component__WEBPACK_IMPORTED_MODULE_3__["CatcardComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb250ZW50LmNvbXBvbmVudC5zY3NzIn0= */"] });
 
