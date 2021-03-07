@@ -105,6 +105,18 @@
                 ></app-catcard> <!-- Wobbles -->
             </div>
         </div>
+      <div fxLayout="row" fxLayout.lt-lg="column">
+        <div fxFlex="50%" fxLayoutAlign="center">
+          <app-catcard
+            [catName]="pancakeName"
+            [catNickname]="pancakeNickname"
+            [catDescription]="pancakeDescription"
+            [catBirthdate]="pancakeBirthdate"
+            [cardImageSrc]="pancakeImageSrc"
+            [cardImageAlt]="pancakeImageAlt"
+          ></app-catcard> <!-- Wobbles -->
+        </div>
+      </div>
     </div>
 
 </div>

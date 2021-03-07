@@ -7,20 +7,20 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CatcardComponent implements OnInit {
 
-  @Input() catName: string = "";
-  @Input() catNickname: string = "";
-  @Input() catDescription: string = "";
+  @Input() catName = '';
+  @Input() catNickname = '';
+  @Input() catDescription = '';
   @Input() catBirthdate: Date = new Date();
-  @Input() cardImageSrc: String = "https://material.angular.io/assets/img/examples/shiba2.jpg";
-  @Input() cardImageAlt: String = "Placeholder image of a Shiba Inu"
+  @Input() cardImageSrc: String = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
+  @Input() cardImageAlt: String = 'Placeholder image of a Shiba Inu';
 
-  catAge = "";
-  catBirthday = "";
+  catAge = '';
+  catBirthday = '';
 
   constructor() { }
 
   ngOnInit(): void {
-    this.catBirthday = this.catBirthdate.toDateString()
+    this.catBirthday = this.catBirthdate.toDateString();
 
     // Loop through fully and calculate for exact age
     const testMonths = this.countMonths(this.catBirthdate);
@@ -44,13 +44,13 @@ export class CatcardComponent implements OnInit {
 
       if (months === 0) {
         displayString = displayString + ' old';
-      } else if(months === 1) {
+      } else if (months === 1) {
         displayString = displayString + ' ' + months + ' month old';
       } else {
         displayString = displayString + ' ' + months + ' months old';
       }
 
-      this.catAge = displayString
+      this.catAge = displayString;
     }
   }
 
