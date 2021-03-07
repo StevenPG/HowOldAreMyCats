@@ -22,7 +22,7 @@ module.exports = __webpack_require__(/*! /home/tyr/Development/HowOldAreMyCats/c
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentComponent", function() { return ContentComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/flex-layout/flex */ "VDRc");
 /* harmony import */ var _instagramfeed_instagramfeed_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../instagramfeed/instagramfeed.component */ "RTyq");
 /* harmony import */ var _catcard_catcard_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../catcard/catcard.component */ "MBPw");
@@ -76,7 +76,7 @@ class ContentComponent {
         this.pixieBirthdate = new Date(2019, 3, 19);
         this.pixieImageSrc = "https://i.imgur.com/7Z5UHr3.jpg";
         this.pixieImageAlt = "An image of Pixie the cat";
-        this.milkName = "Milk";
+        this.milkName = "Milky Moo";
         this.milkNickname = "Milk, MooMoo";
         this.milkDescription = "Milk loves legs! She constantly wants to sit on your thigh and purr up a storm. She’s the smallest cat, weighing a whole 8lbs. She randomly gets the zoomies, and will just start sprinting across the house stopping to make the funniest poses. She knows her name very well and will come when you call her, but not without chirping a bunch first! Her favorite toy is her hedgehog (AKA Hedgie) and she loves to throw it in the air to herself and catch it over and over again.";
         // May 27, 2019
@@ -181,8 +181,8 @@ ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopbarComponent", function() { return TopbarComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/toolbar */ "/t3+");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/toolbar */ "l0rg");
 
 
 class TopbarComponent {
@@ -246,7 +246,7 @@ const environment = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CatcardComponent", function() { return CatcardComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/flex-layout/flex */ "VDRc");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/card */ "PDjf");
 
@@ -265,44 +265,50 @@ class CatcardComponent {
     }
     ngOnInit() {
         this.catBirthday = this.catBirthdate.toDateString();
-        let ageInMSec = Date.now() - this.catBirthdate.getTime();
-        let ageInSec = ageInMSec / 1000;
-        let ageInMin = ageInSec / 60;
-        let ageInHour = ageInMin / 60;
-        let ageInDays = ageInHour / 24;
-        let ageInWeeks = ageInDays / 7;
-        let ageInMonths = ageInWeeks / 4;
-        let ageInYear = ageInWeeks / 52;
-        let visibleMonthsAge = Math.floor(ageInMonths);
-        let visibleYearsAge = Math.floor(ageInYear);
-        if (visibleYearsAge == 0) {
-            if (visibleMonthsAge == 1) {
-                this.catAge = visibleMonthsAge + " month old";
+        // Loop through fully and calculate for exact age
+        const testMonths = this.countMonths(this.catBirthdate);
+        const years = Math.floor(testMonths / 12);
+        const months = testMonths % 12;
+        if (years === 0) {
+            if (months === 1) {
+                this.catAge = months + ' month old';
             }
             else {
-                this.catAge = visibleMonthsAge + " months old";
+                this.catAge = months + ' months old';
             }
         }
         else {
-            let months = Math.floor(ageInMonths % 12);
-            let displayString = "";
-            if (visibleYearsAge == 1) {
-                displayString = displayString + visibleYearsAge + " year";
+            let displayString = '';
+            if (years === 1) {
+                displayString = displayString + years + ' year';
             }
             else {
-                displayString = displayString + visibleYearsAge + " years";
+                displayString = displayString + years + ' years';
             }
-            if (months == 0) {
-                displayString = displayString + " old";
+            if (months === 0) {
+                displayString = displayString + ' old';
             }
-            else if (months == 1) {
-                displayString = displayString + " " + months + " month old";
+            else if (months === 1) {
+                displayString = displayString + ' ' + months + ' month old';
             }
             else {
-                displayString = displayString + " " + months + " months old";
+                displayString = displayString + ' ' + months + ' months old';
             }
             this.catAge = displayString;
         }
+    }
+    countMonths(birthDate) {
+        const stepDate = new Date(birthDate);
+        const endDate = new Date(Date.now());
+        let monthCount = 0;
+        while (stepDate <= endDate) {
+            stepDate.setMonth(stepDate.getMonth() + 1);
+            monthCount += 1;
+        }
+        if (stepDate !== endDate) {
+            monthCount -= 1;
+        }
+        return monthCount;
     }
 }
 CatcardComponent.ɵfac = function CatcardComponent_Factory(t) { return new (t || CatcardComponent)(); };
@@ -358,7 +364,7 @@ CatcardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramfeedComponent", function() { return InstagramfeedComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 
 class InstagramfeedComponent {
     constructor() { }
@@ -442,7 +448,7 @@ InstagramfeedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var _topbar_topbar_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topbar/topbar.component */ "5Lta");
 /* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/content.component */ "0btM");
 
@@ -472,18 +478,18 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "cUpR");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ "Sy1n");
 /* harmony import */ var _topbar_topbar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topbar/topbar.component */ "5Lta");
 /* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/content.component */ "0btM");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "R1ws");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/toolbar */ "/t3+");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "omvX");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/toolbar */ "l0rg");
 /* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/grid-list */ "40+f");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "PDjf");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/flex-layout */ "u9T3");
 /* harmony import */ var _instagramfeed_instagramfeed_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./instagramfeed/instagramfeed.component */ "RTyq");
 /* harmony import */ var _catcard_catcard_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./catcard/catcard.component */ "MBPw");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 
 // Project Components
 
@@ -533,8 +539,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjecto
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "cUpR");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "ZAI4");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "AytR");
 
