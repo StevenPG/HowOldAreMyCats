@@ -32,77 +32,83 @@ __webpack_require__.r(__webpack_exports__);
 
 class ContentComponent {
     constructor() {
-        // TODO - calculate age rounded to nearest year next
         // TODO - add background, nothing fancy
-        this.eliName = "Eli";
-        this.eliNickname = "Mr. Man, Bear, Woofie";
-        this.eliDescription = "Eli was adopted on July 4th, 2010. He is the most riddled with health issues and has cost too much money over the last 4 years, but we love him anyway. He gets along with everyone and loves to chase the others around the house. He’s very vocal and makes the weirdest chirpy noises. He loves grass, catnip, and playing with your hands under blankets. His favorite toy are his “Kitty fun tubes”. He carries it around and cries to it, which gives me a heart attack because it sounds like he’s dying.";
+        this.eliName = 'Eli';
+        this.eliNickname = 'Mr. Man, Bear, Woofie';
+        this.eliDescription = 'Eli was adopted on July 4th, 2010. He is the most riddled with health issues and has cost too much money over the last 4 years, but we love him anyway. He gets along with everyone and loves to chase the others around the house. He’s very vocal and makes the weirdest chirpy noises. He loves grass, catnip, and playing with your hands under blankets. His favorite toy are his “Kitty fun tubes”. He carries it around and cries to it, which gives me a heart attack because it sounds like he’s dying.';
         // May 1st 2010
         this.eliBirthdate = new Date(2010, 4, 1);
-        this.eliImageSrc = "https://i.imgur.com/9uYa4LC.jpg";
-        this.eliImageAlt = "An image of Eli the cat";
-        this.umbraName = "Umbra";
-        this.umbraNickname = "Oobie, oobie-ding, Bug, Big Lady, Ooble, Umba";
-        this.umbraDescription = "Umbra is a big girl! She was actually the runt of her litter, and the only one with short hair. She still has that dense undercoat, but no fluffiness on top. She’s the most awkward when it comes to playing, its’s almost like she doesn’t know how. She yells the most, and is probably the loudest cat. She’s grumpy and has a thing against Wilson, and they constantly are trying to attack each other… but sometimes I think it’s just playing.";
+        this.eliImageSrc = 'https://i.imgur.com/9uYa4LC.jpg';
+        this.eliImageAlt = 'An image of Eli the cat';
+        this.umbraName = 'Umbra';
+        this.umbraNickname = 'Oobie, oobie-ding, Bug, Big Lady, Ooble, Umba';
+        this.umbraDescription = 'Umbra is a big girl! She was actually the runt of her litter, and the only one with short hair. She still has that dense undercoat, but no fluffiness on top. She’s the most awkward when it comes to playing, its’s almost like she doesn’t know how. She yells the most, and is probably the loudest cat. She’s grumpy and has a thing against Wilson, and they constantly are trying to attack each other… but sometimes I think it’s just playing.';
         // December 8, 2015
         this.umbraBirthdate = new Date(2015, 11, 8);
-        this.umbraImageSrc = "https://i.imgur.com/Hq23y2e.jpg";
-        this.umbraImageAlt = "An image of Umbra the cat";
-        this.bucketName = "Bucket";
-        this.bucketNickname = "Buxter Brown, Bucky, Wings, Buckaroo";
-        this.bucketDescription = "Bucket was brought home on the day of the eclipse! He’s the weirdest one of the group. He has the strangest meow, oddest mannerisms, and is an all-around goofball! He lies to sit leaning against walls which makes him look like a walrus. Fun fact: Bucket has no hip bone! He fell into the tub and broke his femur head clean off, so he had surgery to have it completely removed. You can’t tell in the slightest (and I have his femur head in a container for keeps). He’s also a big fan of grass, and for some reason loves whistling. His favorite toy is his bird on a stick. It jingles when you swing it and he gets so excited. He carries it around and cries to it.";
+        this.umbraImageSrc = 'https://i.imgur.com/Hq23y2e.jpg';
+        this.umbraImageAlt = 'An image of Umbra the cat';
+        this.bucketName = 'Bucket';
+        this.bucketNickname = 'Buxter Brown, Bucky, Wings, Buckaroo';
+        this.bucketDescription = 'Bucket was brought home on the day of the eclipse! He’s the weirdest one of the group. He has the strangest meow, oddest mannerisms, and is an all-around goofball! He lies to sit leaning against walls which makes him look like a walrus. Fun fact: Bucket has no hip bone! He fell into the tub and broke his femur head clean off, so he had surgery to have it completely removed. You can’t tell in the slightest (and I have his femur head in a container for keeps). He’s also a big fan of grass, and for some reason loves whistling. His favorite toy is his bird on a stick. It jingles when you swing it and he gets so excited. He carries it around and cries to it.';
         //  May 7, 2017
         this.bucketBirthdate = new Date(2017, 4, 7);
-        this.bucketImageSrc = "https://i.imgur.com/ZZjSKWb.jpg";
-        this.bucketImageAlt = "An image of Bucket the cat";
-        this.bittyName = "Bitty";
-        this.bittyNickname = "Bitty Loo, Bitty Loo Francis, Bitty Ball, Fat Boy, Ittle Bittle Peanut Brittle, Momma Bitty, Bitty Bitty Butthole Licker";
-        this.bittyDescription = "Bitty is the momma of the house, even though he is a boy. He’s always cleaning someone (including their booty) and loves kittens. He’s super sweet and has the prettiest eyes. They’re so light green, they look white in some lighting. Bitty has a terrible food obsession, which has made him the fattest one in the house. Despite yelling at him, he will hover over someone else until they’re done eating just to devour their food in a bite or two. He’s also a very sensitive boy, and every time you yell at him you can tell he’s sorry, even if he keeps doing it. Bitty’s favorite toy is a worm on a string with a bell. As soon as he hears it jingle he comes running, steals it, and holds it in his mouth so no one else can play with it.";
+        this.bucketImageSrc = 'https://i.imgur.com/ZZjSKWb.jpg';
+        this.bucketImageAlt = 'An image of Bucket the cat';
+        this.bittyName = 'Bitty';
+        this.bittyNickname = 'Bitty Loo, Bitty Loo Francis, Bitty Ball, Fat Boy, Ittle Bittle Peanut Brittle, Momma Bitty, Bitty Bitty Butthole Licker';
+        this.bittyDescription = 'Bitty is the momma of the house, even though he is a boy. He’s always cleaning someone (including their booty) and loves kittens. He’s super sweet and has the prettiest eyes. They’re so light green, they look white in some lighting. Bitty has a terrible food obsession, which has made him the fattest one in the house. Despite yelling at him, he will hover over someone else until they’re done eating just to devour their food in a bite or two. He’s also a very sensitive boy, and every time you yell at him you can tell he’s sorry, even if he keeps doing it. Bitty’s favorite toy is a worm on a string with a bell. As soon as he hears it jingle he comes running, steals it, and holds it in his mouth so no one else can play with it.';
         // August 22, 2017
         this.bittyBirthdate = new Date(2017, 7, 22);
-        this.bittyImageSrc = "https://i.imgur.com/ZBYUwmF.jpg";
-        this.bittyImageAlt = "An image of Bitty the cat";
-        this.wilsonName = "Wilson";
-        this.wilsonNickname = "Wees, Weenie, Wheat Thins, Willy, Willyson, Weeson, Wesson, One-Eyed Willy";
-        this.wilsonDescription = "Wilson was born with his one eye not opened properly. It never really affected him though, so there was no need to have anything done to it. Wilson is an absolute snuggle bug. He loves to sit on your lap while you’re working at the computer or watching TV. He will beg for kisses by smashing his head into your face. He loves to go out on the deck and enjoy the sunshine. Him and Umbra have some weird nemesis thing going on, and he’s constantly following her around just to drive her nuts. Wilson’s favorite toy is a broken one, where only the stick remains. He loves to chase just the stick… for some reason.";
+        this.bittyImageSrc = 'https://i.imgur.com/ZBYUwmF.jpg';
+        this.bittyImageAlt = 'An image of Bitty the cat';
+        this.wilsonName = 'Wilson';
+        this.wilsonNickname = 'Wees, Weenie, Wheat Thins, Willy, Willyson, Weeson, Wesson, One-Eyed Willy';
+        this.wilsonDescription = 'Wilson was born with his one eye not opened properly. It never really affected him though, so there was no need to have anything done to it. Wilson is an absolute snuggle bug. He loves to sit on your lap while you’re working at the computer or watching TV. He will beg for kisses by smashing his head into your face. He loves to go out on the deck and enjoy the sunshine. Him and Umbra have some weird nemesis thing going on, and he’s constantly following her around just to drive her nuts. Wilson’s favorite toy is a broken one, where only the stick remains. He loves to chase just the stick… for some reason.';
         // April 27, 2018
         this.wilsonBirthdate = new Date(2018, 3, 27);
-        this.wilsonImageSrc = "https://i.imgur.com/lW3ZpoF.jpg";
-        this.wilsonImageAlt = "An image of Wilson the cat";
-        this.pixieName = "Pixie";
-        this.pixieNickname = "Pete, P, Pix, Puddles, Pizza";
-        this.pixieDescription = "Pixie was found in a dirty shed looking HORRIBLE. She had severe infections in both eyes and an Upper Respiratory Infection. She pulled through and managed to have both eyes intact but with bad scarring on both. Fast forward to a few months later, and her one eye had deflated. She had to have it completely removed as to not worry about infections in the future. She has never let her partial blindness stop her! She runs into things here and there, but she can get to the top of the cat tree and on the kitchen island no problem. She loves water and is always begging for you to turn the sink on for her. Her favorite toy is a fuzzy mylar crinkle ball, and she loves putting them in the water bowl.";
+        this.wilsonImageSrc = 'https://i.imgur.com/lW3ZpoF.jpg';
+        this.wilsonImageAlt = 'An image of Wilson the cat';
+        this.pixieName = 'Pixie';
+        this.pixieNickname = 'Pete, P, Pix, Puddles, Pizza';
+        this.pixieDescription = 'Pixie was found in a dirty shed looking HORRIBLE. She had severe infections in both eyes and an Upper Respiratory Infection. She pulled through and managed to have both eyes intact but with bad scarring on both. Fast forward to a few months later, and her one eye had deflated. She had to have it completely removed as to not worry about infections in the future. She has never let her partial blindness stop her! She runs into things here and there, but she can get to the top of the cat tree and on the kitchen island no problem. She loves water and is always begging for you to turn the sink on for her. Her favorite toy is a fuzzy mylar crinkle ball, and she loves putting them in the water bowl.';
         // April 19, 2019
         this.pixieBirthdate = new Date(2019, 3, 19);
-        this.pixieImageSrc = "https://i.imgur.com/7Z5UHr3.jpg";
-        this.pixieImageAlt = "An image of Pixie the cat";
-        this.milkName = "Milky Moo";
-        this.milkNickname = "Milk, MooMoo";
-        this.milkDescription = "Milk loves legs! She constantly wants to sit on your thigh and purr up a storm. She’s the smallest cat, weighing a whole 8lbs. She randomly gets the zoomies, and will just start sprinting across the house stopping to make the funniest poses. She knows her name very well and will come when you call her, but not without chirping a bunch first! Her favorite toy is her hedgehog (AKA Hedgie) and she loves to throw it in the air to herself and catch it over and over again.";
+        this.pixieImageSrc = 'https://i.imgur.com/7Z5UHr3.jpg';
+        this.pixieImageAlt = 'An image of Pixie the cat';
+        this.milkName = 'Milky Moo';
+        this.milkNickname = 'Milk, MooMoo';
+        this.milkDescription = 'Milk loves legs! She constantly wants to sit on your thigh and purr up a storm. She’s the smallest cat, weighing a whole 8lbs. She randomly gets the zoomies, and will just start sprinting across the house stopping to make the funniest poses. She knows her name very well and will come when you call her, but not without chirping a bunch first! Her favorite toy is her hedgehog (AKA Hedgie) and she loves to throw it in the air to herself and catch it over and over again.';
         // May 27, 2019
         this.milkBirthdate = new Date(2019, 4, 27);
-        this.milkImageSrc = "https://i.imgur.com/Da85dX9.jpg";
-        this.milkImageAlt = "An image of Milk the cat";
-        this.bonesName = "Bones";
-        this.bonesNickname = "Boone, Booner, Chicken Bone";
-        this.bonesDescription = "Bones was found right down the street from our house. He was only about 5 or 6 weeks old. When he was found he was covered in fleas, and so, so skinny (hence his name). Bones is the biggest chicken, and doesn’t like meeting new people. He is the biggest momma’s boy ever. He likes to jam his face into her neck and knead her. He has the tiniest meow, and is almost sounds like he’s crying when he does. He is not a huge fan of canned food, or treats, and only nibbles on his dry food. Bones was a foster fail, with initially no intention on keeping him, he became besties with Milk and we couldn’t let his weirdness leave. Bones’ favorite toy is his leather tassel toy. He loves to play tug of war with it like a dog.";
+        this.milkImageSrc = 'https://i.imgur.com/Da85dX9.jpg';
+        this.milkImageAlt = 'An image of Milk the cat';
+        this.bonesName = 'Bones';
+        this.bonesNickname = 'Boone, Booner, Chicken Bone';
+        this.bonesDescription = 'Bones was found right down the street from our house. He was only about 5 or 6 weeks old. When he was found he was covered in fleas, and so, so skinny (hence his name). Bones is the biggest chicken, and doesn’t like meeting new people. He is the biggest momma’s boy ever. He likes to jam his face into her neck and knead her. He has the tiniest meow, and is almost sounds like he’s crying when he does. He is not a huge fan of canned food, or treats, and only nibbles on his dry food. Bones was a foster fail, with initially no intention on keeping him, he became besties with Milk and we couldn’t let his weirdness leave. Bones’ favorite toy is his leather tassel toy. He loves to play tug of war with it like a dog.';
         // September 9, 2019
         this.bonesBirthdate = new Date(2019, 8, 9);
-        this.bonesImageSrc = "https://i.imgur.com/rvWHEAo.jpg";
-        this.bonesImageAlt = "An image of Bones the cat";
-        this.wobblesName = "Wobbles";
-        this.wobblesNickname = "Weebs, wobbs, Weebledy Wobbldy Woo";
-        this.wobblesDescription = "Weeble is the newest addition after a 2nd foster fail. We believe he has Cerebellar Hypoplasia, and he occasionally runs around looking like a little drunkard. He falls over from standing sometimes, and his head shakes. He was found feral with his sister at around 6 weeks old. He’s finally coming around, but it’s been a slow process. He still runs when you approach him too quickly, or if he thinks you might grab him. So far his favorite toy might be anything that moves.";
+        this.bonesImageSrc = 'https://i.imgur.com/rvWHEAo.jpg';
+        this.bonesImageAlt = 'An image of Bones the cat';
+        this.wobblesName = 'Wobbles';
+        this.wobblesNickname = 'Weebs, wobbs, Weebledy Wobbldy Woo';
+        this.wobblesDescription = 'Weeble is the newest addition after a 2nd foster fail. We believe he has Cerebellar Hypoplasia, and he occasionally runs around looking like a little drunkard. He falls over from standing sometimes, and his head shakes. He was found feral with his sister at around 6 weeks old. He’s finally coming around, but it’s been a slow process. He still runs when you approach him too quickly, or if he thinks you might grab him. So far his favorite toy might be anything that moves.';
         // November 24th, 2020
         this.wobblesBirthdate = new Date(2020, 10, 24);
-        this.wobblesImageSrc = "https://i.imgur.com/Ya8YW1P.jpg";
-        this.wobblesImageAlt = "An image of Wobbles the cat";
+        this.wobblesImageSrc = 'https://i.imgur.com/0SIhMpU.jpg';
+        this.wobblesImageAlt = 'An image of Wobbles the cat';
+        this.pancakeName = 'Pancake';
+        this.pancakeNickname = 'Cake, Panko Bread Crumbs, Hanky Panky, Hey-get-back-here-let-me-pet-you';
+        this.pancakeDescription = 'Along with Wobbles, Pancake is the newest addition after a 2nd foster fail. She absolutely loves the other cats, seeking them out and following them around until they give her attention. She was found feral with her brother at around 6 weeks old. She\'s very afraid of being picked up, but will let you pet her if you\'re slow and careful. She loves to play and is always chirping.';
+        // November 24th, 2020
+        this.pancakeBirthdate = new Date(2020, 10, 24);
+        this.pancakeImageSrc = 'https://i.imgur.com/zpnU0AK.jpg';
+        this.pancakeImageAlt = 'An image of Pancake the cat';
     }
     ngOnInit() {
     }
 }
 ContentComponent.ɵfac = function ContentComponent_Factory(t) { return new (t || ContentComponent)(); };
-ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContentComponent, selectors: [["app-content"]], decls: 27, vars: 54, consts: [["fxLayoutAlign", "center", "fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxLayout", "row", "fxLayoutAlign", "center", "fxFlex", "20%"], ["fxLayout", "column", "fxFlex", "60%"], ["fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxFlex", "50%", "fxLayoutAlign", "center"], [3, "catName", "catNickname", "catDescription", "catBirthdate", "cardImageSrc", "cardImageAlt"]], template: function ContentComponent_Template(rf, ctx) { if (rf & 1) {
+ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContentComponent, selectors: [["app-content"]], decls: 30, vars: 60, consts: [["fxLayoutAlign", "center", "fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxLayout", "row", "fxLayoutAlign", "center", "fxFlex", "20%"], ["fxLayout", "column", "fxFlex", "60%"], ["fxLayout", "row", "fxLayout.lt-lg", "column"], ["fxFlex", "50%", "fxLayoutAlign", "center"], [3, "catName", "catNickname", "catDescription", "catBirthdate", "cardImageSrc", "cardImageAlt"]], template: function ContentComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-instagramfeed");
@@ -145,6 +151,11 @@ ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "app-catcard", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "app-catcard", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -166,6 +177,8 @@ ContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.bonesName)("catNickname", ctx.bonesNickname)("catDescription", ctx.bonesDescription)("catBirthdate", ctx.bonesBirthdate)("cardImageSrc", ctx.bonesImageSrc)("cardImageAlt", ctx.bonesImageAlt);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.wobblesName)("catNickname", ctx.wobblesNickname)("catDescription", ctx.wobblesDescription)("catBirthdate", ctx.wobblesBirthdate)("cardImageSrc", ctx.wobblesImageSrc)("cardImageAlt", ctx.wobblesImageAlt);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("catName", ctx.pancakeName)("catNickname", ctx.pancakeNickname)("catDescription", ctx.pancakeDescription)("catBirthdate", ctx.pancakeBirthdate)("cardImageSrc", ctx.pancakeImageSrc)("cardImageAlt", ctx.pancakeImageAlt);
     } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _instagramfeed_instagramfeed_component__WEBPACK_IMPORTED_MODULE_2__["InstagramfeedComponent"], _catcard_catcard_component__WEBPACK_IMPORTED_MODULE_3__["CatcardComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb250ZW50LmNvbXBvbmVudC5zY3NzIn0= */"] });
 
 
@@ -254,14 +267,14 @@ __webpack_require__.r(__webpack_exports__);
 
 class CatcardComponent {
     constructor() {
-        this.catName = "";
-        this.catNickname = "";
-        this.catDescription = "";
+        this.catName = '';
+        this.catNickname = '';
+        this.catDescription = '';
         this.catBirthdate = new Date();
-        this.cardImageSrc = "https://material.angular.io/assets/img/examples/shiba2.jpg";
-        this.cardImageAlt = "Placeholder image of a Shiba Inu";
-        this.catAge = "";
-        this.catBirthday = "";
+        this.cardImageSrc = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
+        this.cardImageAlt = 'Placeholder image of a Shiba Inu';
+        this.catAge = '';
+        this.catBirthday = '';
     }
     ngOnInit() {
         this.catBirthday = this.catBirthdate.toDateString();
@@ -312,33 +325,32 @@ class CatcardComponent {
     }
 }
 CatcardComponent.ɵfac = function CatcardComponent_Factory(t) { return new (t || CatcardComponent)(); };
-CatcardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CatcardComponent, selectors: [["app-catcard"]], inputs: { catName: "catName", catNickname: "catNickname", catDescription: "catDescription", catBirthdate: "catBirthdate", cardImageSrc: "cardImageSrc", cardImageAlt: "cardImageAlt" }, decls: 15, vars: 7, consts: [["fxLayoutAlign", "center"], ["fxFlex", "90%", "fxFlex.lt-lg", "70%", 1, "margined"], [1, "mat-elevation-z8"], ["mat-card-avatar", "", 1, "example-header-image"], ["mat-card-image", "", 3, "src", "alt"]], template: function CatcardComponent_Template(rf, ctx) { if (rf & 1) {
+CatcardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CatcardComponent, selectors: [["app-catcard"]], inputs: { catName: "catName", catNickname: "catNickname", catDescription: "catDescription", catBirthdate: "catBirthdate", cardImageSrc: "cardImageSrc", cardImageAlt: "cardImageAlt" }, decls: 14, vars: 7, consts: [["fxLayoutAlign", "center"], ["fxFlex", "90%", "fxFlex.lt-lg", "70%", 1, "margined"], [1, "mat-elevation-z8"], ["mat-card-image", "", 3, "src", "alt"]], template: function CatcardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-header");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-card-title");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-title");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-card-subtitle");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-card-subtitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "mat-card-subtitle");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-card-subtitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "img", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card-content");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-card-content");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.catName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.catNickname, " - ", ctx.catAge, "");
@@ -349,7 +361,7 @@ CatcardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("alt", ctx.cardImageAlt);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.catDescription, " ");
-    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardAvatar"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardImage"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardContent"]], styles: [".example-header-image[_ngcontent-%COMP%] {\n  background-image: url(\"https://material.angular.io/assets/img/examples/shiba1.jpg\");\n  background-size: cover;\n}\n\n.margined[_ngcontent-%COMP%] {\n  margin-top: 2%;\n  margin-bottom: 2%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NhdGNhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtRkFBQTtFQUNBLHNCQUFBO0FBQ0o7O0FBRUE7RUFDSSxjQUFBO0VBQ0EsaUJBQUE7QUFDSiIsImZpbGUiOiJjYXRjYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaGVhZGVyLWltYWdlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWF0ZXJpYWwuYW5ndWxhci5pby9hc3NldHMvaW1nL2V4YW1wbGVzL3NoaWJhMS5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4ubWFyZ2luZWQge1xuICAgIG1hcmdpbi10b3A6IDIlO1xuICAgIG1hcmdpbi1ib3R0b206IDIlO1xufSJdfQ== */"] });
+    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardImage"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardContent"]], styles: [".example-header-image[_ngcontent-%COMP%] {\n  background-image: url(\"https://material.angular.io/assets/img/examples/shiba1.jpg\");\n  background-size: cover;\n}\n\n.margined[_ngcontent-%COMP%] {\n  margin-top: 2%;\n  margin-bottom: 2%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NhdGNhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtRkFBQTtFQUNBLHNCQUFBO0FBQ0o7O0FBRUE7RUFDSSxjQUFBO0VBQ0EsaUJBQUE7QUFDSiIsImZpbGUiOiJjYXRjYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaGVhZGVyLWltYWdlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWF0ZXJpYWwuYW5ndWxhci5pby9hc3NldHMvaW1nL2V4YW1wbGVzL3NoaWJhMS5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4ubWFyZ2luZWQge1xuICAgIG1hcmdpbi10b3A6IDIlO1xuICAgIG1hcmdpbi1ib3R0b206IDIlO1xufSJdfQ== */"] });
 
 
 /***/ }),
@@ -372,7 +384,7 @@ class InstagramfeedComponent {
     }
 }
 InstagramfeedComponent.ɵfac = function InstagramfeedComponent_Factory(t) { return new (t || InstagramfeedComponent)(); };
-InstagramfeedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InstagramfeedComponent, selectors: [["app-instagramfeed"]], decls: 38, vars: 0, consts: [[1, "spacing"], ["data-instgrm-captioned", "", "data-instgrm-permalink", "https://www.instagram.com/p/CKuzdQ0nPS1/?utm_source=ig_embed&utm_campaign=loading", "data-instgrm-version", "13", 1, "instagram-media", 2, "background", "#FFF", "border", "0", "border-radius", "3px", "box-shadow", "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)", "margin", "1px", "max-width", "540px", "min-width", "100px", "padding", "0", "width", "99.375%", "width", "-webkit-calc(100% - 2px)", "width", "calc(100% - 2px)"], [2, "padding", "16px"], ["href", "https://www.instagram.com/p/CKuzdQ0nPS1/?utm_source=ig_embed&utm_campaign=loading", "target", "_blank", 2, "background", "#FFFFFF", "line-height", "0", "padding", "0 0", "text-align", "center", "text-decoration", "none", "width", "100%"], [2, "display", "flex", "flex-direction", "row", "align-items", "center"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "flex-grow", "0", "height", "40px", "margin-right", "14px", "width", "40px"], [2, "display", "flex", "flex-direction", "column", "flex-grow", "1", "justify-content", "center"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "margin-bottom", "6px", "width", "100px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "width", "60px"], [2, "padding", "19% 0"], [2, "display", "block", "height", "50px", "margin", "0 auto 12px", "width", "50px"], ["width", "50px", "height", "50px", "viewBox", "0 0 60 60", "version", "1.1", "xmlns", "https://www.w3.org/2000/svg", 0, "xmlns", "xlink", "https://www.w3.org/1999/xlink"], ["stroke", "none", "stroke-width", "1", "fill", "none", "fill-rule", "evenodd"], ["transform", "translate(-511.000000, -20.000000)", "fill", "#000000"], ["d", "M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"], [2, "padding-top", "8px"], [2, "color", "#3897f0", "font-family", "Arial,sans-serif", "font-size", "14px", "font-style", "normal", "font-weight", "550", "line-height", "18px"], [2, "padding", "12.5% 0"], [2, "display", "flex", "flex-direction", "row", "margin-bottom", "14px", "align-items", "center"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "height", "12.5px", "width", "12.5px", "transform", "translateX(0px) translateY(7px)"], [2, "background-color", "#F4F4F4", "height", "12.5px", "transform", "rotate(-45deg) translateX(3px) translateY(1px)", "width", "12.5px", "flex-grow", "0", "margin-right", "14px", "margin-left", "2px"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "height", "12.5px", "width", "12.5px", "transform", "translateX(9px) translateY(-18px)"], [2, "margin-left", "8px"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "flex-grow", "0", "height", "20px", "width", "20px"], [2, "width", "0", "height", "0", "border-top", "2px solid transparent", "border-left", "6px solid #f4f4f4", "border-bottom", "2px solid transparent", "transform", "translateX(16px) translateY(-4px) rotate(30deg)"], [2, "margin-left", "auto"], [2, "width", "0px", "border-top", "8px solid #F4F4F4", "border-right", "8px solid transparent", "transform", "translateY(16px)"], [2, "background-color", "#F4F4F4", "flex-grow", "0", "height", "12px", "width", "16px", "transform", "translateY(-4px)"], [2, "width", "0", "height", "0", "border-top", "8px solid #F4F4F4", "border-left", "8px solid transparent", "transform", "translateY(-4px) translateX(8px)"], [2, "display", "flex", "flex-direction", "column", "flex-grow", "1", "justify-content", "center", "margin-bottom", "24px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "margin-bottom", "6px", "width", "224px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "width", "144px"], [2, "color", "#c9c8cd", "font-family", "Arial,sans-serif", "font-size", "14px", "line-height", "17px", "margin-bottom", "0", "margin-top", "8px", "overflow", "hidden", "padding", "8px 0 7px", "text-align", "center", "text-overflow", "ellipsis", "white-space", "nowrap"], ["href", "https://www.instagram.com/p/CKuzdQ0nPS1/?utm_source=ig_embed&utm_campaign=loading", "target", "_blank", 2, "color", "#c9c8cd", "font-family", "Arial,sans-serif", "font-size", "14px", "font-style", "normal", "font-weight", "normal", "line-height", "17px", "text-decoration", "none"]], template: function InstagramfeedComponent_Template(rf, ctx) { if (rf & 1) {
+InstagramfeedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InstagramfeedComponent, selectors: [["app-instagramfeed"]], decls: 38, vars: 0, consts: [[1, "spacing"], ["data-instgrm-captioned", "", "data-instgrm-permalink", "https://www.instagram.com/p/CLny2dcn5nP/?utm_source=ig_embed&utm_campaign=loading", "data-instgrm-version", "13", 1, "instagram-media", 2, "background", "#FFF", "border", "0", "border-radius", "3px", "box-shadow", "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)", "margin", "1px", "max-width", "540px", "min-width", "326px", "padding", "0", "width", "99.375%", "width", "-webkit-calc(100% - 2px)", "width", "calc(100% - 2px)"], [2, "padding", "16px"], ["href", "https://www.instagram.com/p/CLny2dcn5nP/?utm_source=ig_embed&utm_campaign=loading", "target", "_blank", 2, "background", "#FFFFFF", "line-height", "0", "padding", "0 0", "text-align", "center", "text-decoration", "none", "width", "100%"], [2, "display", "flex", "flex-direction", "row", "align-items", "center"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "flex-grow", "0", "height", "40px", "margin-right", "14px", "width", "40px"], [2, "display", "flex", "flex-direction", "column", "flex-grow", "1", "justify-content", "center"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "margin-bottom", "6px", "width", "100px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "width", "60px"], [2, "padding", "19% 0"], [2, "display", "block", "height", "50px", "margin", "0 auto 12px", "width", "50px"], ["width", "50px", "height", "50px", "viewBox", "0 0 60 60", "version", "1.1", "xmlns", "https://www.w3.org/2000/svg", 0, "xmlns", "xlink", "https://www.w3.org/1999/xlink"], ["stroke", "none", "stroke-width", "1", "fill", "none", "fill-rule", "evenodd"], ["transform", "translate(-511.000000, -20.000000)", "fill", "#000000"], ["d", "M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"], [2, "padding-top", "8px"], [2, "color", "#3897f0", "font-family", "Arial,sans-serif", "font-size", "14px", "font-style", "normal", "font-weight", "550", "line-height", "18px"], [2, "padding", "12.5% 0"], [2, "display", "flex", "flex-direction", "row", "margin-bottom", "14px", "align-items", "center"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "height", "12.5px", "width", "12.5px", "transform", "translateX(0px) translateY(7px)"], [2, "background-color", "#F4F4F4", "height", "12.5px", "transform", "rotate(-45deg) translateX(3px) translateY(1px)", "width", "12.5px", "flex-grow", "0", "margin-right", "14px", "margin-left", "2px"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "height", "12.5px", "width", "12.5px", "transform", "translateX(9px) translateY(-18px)"], [2, "margin-left", "8px"], [2, "background-color", "#F4F4F4", "border-radius", "50%", "flex-grow", "0", "height", "20px", "width", "20px"], [2, "width", "0", "height", "0", "border-top", "2px solid transparent", "border-left", "6px solid #f4f4f4", "border-bottom", "2px solid transparent", "transform", "translateX(16px) translateY(-4px) rotate(30deg)"], [2, "margin-left", "auto"], [2, "width", "0px", "border-top", "8px solid #F4F4F4", "border-right", "8px solid transparent", "transform", "translateY(16px)"], [2, "background-color", "#F4F4F4", "flex-grow", "0", "height", "12px", "width", "16px", "transform", "translateY(-4px)"], [2, "width", "0", "height", "0", "border-top", "8px solid #F4F4F4", "border-left", "8px solid transparent", "transform", "translateY(-4px) translateX(8px)"], [2, "display", "flex", "flex-direction", "column", "flex-grow", "1", "justify-content", "center", "margin-bottom", "24px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "margin-bottom", "6px", "width", "224px"], [2, "background-color", "#F4F4F4", "border-radius", "4px", "flex-grow", "0", "height", "14px", "width", "144px"], [2, "color", "#c9c8cd", "font-family", "Arial,sans-serif", "font-size", "14px", "line-height", "17px", "margin-bottom", "0", "margin-top", "8px", "overflow", "hidden", "padding", "8px 0 7px", "text-align", "center", "text-overflow", "ellipsis", "white-space", "nowrap"], ["href", "https://www.instagram.com/p/CLny2dcn5nP/?utm_source=ig_embed&utm_campaign=loading", "target", "_blank", 2, "color", "#c9c8cd", "font-family", "Arial,sans-serif", "font-size", "14px", "font-style", "normal", "font-weight", "normal", "line-height", "17px", "text-decoration", "none"]], template: function InstagramfeedComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "blockquote", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -427,7 +439,7 @@ InstagramfeedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "p", 32);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "a", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "A post shared by Jade Ashley (@ihaz8cats)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "A post shared by Jade Ashley (@ihaz10cats)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
