@@ -33,7 +33,7 @@ export class ContentComponent implements OnInit {
   bucketImageAlt = 'An image of Bucket the cat';
 
   bittyName = 'Bitty';
-  bittyNickname = 'Bitty Loo, Bitty Loo Francis, Bitty Ball, Fat Boy, Ittle Bittle Peanut Brittle, Momma Bitty, Bitty Bitty Butthole Licker';
+  bittyNickname = 'Bitty Loo, Bitty Loo Francis, Boodle, Bitty Ball, Fat Boy, Ittle Bittle Peanut Brittle, Momma Bitty, Bitty Bitty Butthole Licker';
   bittyDescription = 'Bitty is the momma of the house, even though he is a boy. He’s always cleaning someone (including their booty) and loves kittens. He’s super sweet and has the prettiest eyes. They’re so light green, they look white in some lighting. Bitty has a terrible food obsession, which has made him the fattest one in the house. Despite yelling at him, he will hover over someone else until they’re done eating just to devour their food in a bite or two. He’s also a very sensitive boy, and every time you yell at him you can tell he’s sorry, even if he keeps doing it. Bitty’s favorite toy is a worm on a string with a bell. As soon as he hears it jingle he comes running, steals it, and holds it in his mouth so no one else can play with it.';
   // August 22, 2017
   bittyBirthdate = new Date(2017, 7, 22);
