@@ -1,10 +1,17 @@
 <!-- Centering of the content with decent margins-->
 <div fxLayoutAlign="center" fxLayout="row" fxLayout.lt-lg="column">
 
-    <div fxLayout='row' fxLayoutAlign="center" fxFlex="20%">
-        <app-instagramfeed></app-instagramfeed>
-    </div>
-    <div fxLayout='column' fxFlex="60%">
+    <div fxLayout='column' fxFlex="80%">
+        <div fxLayout="row" fxLayout.lt-lg="column">
+            <div fxFlex="50%" fxLayoutAlign="center">
+                
+                <button mat-button color="primary">
+                    <a href="https://www.instagram.com/ihaz10cats/">
+                        Instagram
+                    </a>
+                </button>
+            </div>
+        </div>
         <div fxLayout="row" fxLayout.lt-lg="column">
             <div fxFlex="50%" fxLayoutAlign="center">
                 <app-catcard

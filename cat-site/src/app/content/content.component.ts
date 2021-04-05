@@ -85,7 +85,7 @@ export class ContentComponent implements OnInit {
   pancakeDescription = 'Along with Wobbles, Pancake is the newest addition after a 2nd foster fail. She absolutely loves the other cats, seeking them out and following them around until they give her attention. She was found feral with her brother at around 6 weeks old. She\'s very afraid of being picked up, but will let you pet her if you\'re slow and careful. She loves to play and is always chirping.';
   // November 24th, 2020
   pancakeBirthdate = new Date(2020, 10, 24);
-  pancakeImageSrc = 'https://i.imgur.com/zpnU0AK.jpg';
+  pancakeImageSrc = 'https://i.imgur.com/ybLxIrs.jpg';
   pancakeImageAlt = 'An image of Pancake the cat';
 
   constructor() { }
