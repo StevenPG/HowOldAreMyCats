@@ -77,7 +77,7 @@ export class ContentComponent implements OnInit {
   wobblesDescription = 'Weeble is the newest addition after a 2nd foster fail. We believe he has Cerebellar Hypoplasia, and he occasionally runs around looking like a little drunkard. He falls over from standing sometimes, and his head shakes. He was found feral with his sister at around 6 weeks old. He’s finally coming around, but it’s been a slow process. He still runs when you approach him too quickly, or if he thinks you might grab him. So far his favorite toy might be anything that moves.';
   // November 24th, 2020
   wobblesBirthdate = new Date(2020, 10, 24);
-  wobblesImageSrc = 'https://i.imgur.com/0SIhMpU.jpg';
+  wobblesImageSrc = 'https://i.imgur.com/Gh5x6y9.jpg';
   wobblesImageAlt = 'An image of Wobbles the cat';
 
   pancakeName = 'Pancake';
@@ -85,7 +85,7 @@ export class ContentComponent implements OnInit {
   pancakeDescription = 'Along with Wobbles, Pancake is the newest addition after a 2nd foster fail. She absolutely loves the other cats, seeking them out and following them around until they give her attention. She was found feral with her brother at around 6 weeks old. She\'s very afraid of being picked up, but will let you pet her if you\'re slow and careful. She loves to make little chirps, and will cry for your attention... but don\'t touch her! She will roll around and "flirt" with you, but trot away as soon as you get close. She\'s a sucker for Churu tubes though!';
   // November 24th, 2020
   pancakeBirthdate = new Date(2020, 10, 24);
-  pancakeImageSrc = 'https://i.imgur.com/ybLxIrs.jpg';
+  pancakeImageSrc = 'https://i.imgur.com/QdsghFM.jpg';
   pancakeImageAlt = 'An image of Pancake the cat';
 
   constructor() { }
