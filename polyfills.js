@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Tyrsn\Development\Github\HowOldAreMyCats\cat-site\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /home/tyr/Development/HowOldAreMyCats/cat-site/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
