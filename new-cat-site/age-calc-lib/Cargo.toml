@@ -1,0 +1,15 @@
+[package]
+name = "age-calc-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasm-bindgen = "0.2.87"
+num-integer = "0.1.45"
+
+[dependencies.chrono]
+features = ["serde", "wasmbind"]
+version = "0.4.31"
+
+[lib]
+crate-type = ["cdylib"]
