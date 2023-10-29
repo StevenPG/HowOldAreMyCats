@@ -1,6 +1,10 @@
 {
   "top-bar": {
-    "main-text": "Meet our eight nine ten eleven cats"
+    "main-text": {
+      "beginning": "Meet our ",
+      "struck-through": "Eight Ten",
+      "end": " Eleven Cats"
+    }
   },
   "cards": {
     "eli": {

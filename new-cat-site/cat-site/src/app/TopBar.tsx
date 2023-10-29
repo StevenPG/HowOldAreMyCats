@@ -7,25 +7,24 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import textContent from "./contents.json";
+import {makeStyles} from "@mui/material";
+import getTextDecoration from "@mui/material/Link/getTextDecoration";
 
 export default function ButtonAppBar() {
-
-    return (
-        <Box sx={{flexGrow: 1}}>
-            <AppBar position="static">
+        return (
+        <Box>
+            <AppBar style={{width: "100%"}}>
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{mr: 2}}
-                    >
-                        <MenuIcon/>
-                    </IconButton>
-                    <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                        {/*TODO - make max size of page */}
-                        { textContent["top-bar"]["main-text"] }
+                    {/* Align text with center of screen */}
+                    <Typography variant="h5" component="div">
+                        { textContent["top-bar"]["main-text"].beginning }
+                    </Typography>
+                    <Typography variant="h5" component="div" style={{textDecoration: "line-through"}}>
+                        { textContent["top-bar"]["main-text"]["struck-through"] }
+                    </Typography>
+                    {/* TODO insert a space */}
+                    <Typography variant="h5" component="div">
+                        { textContent["top-bar"]["main-text"].end}
                     </Typography>
                     {/* // TODO put strike-thrus */}
                 </Toolbar>
