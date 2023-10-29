@@ -1,13 +1,11 @@
 {
   "top-bar": {
-    "main-text": {
-      "beginning": "Meet our ",
-      "struck-through": "Eight Ten",
-      "end": " Eleven Cats"
-    }
+    "text-beginning": "Meet our ",
+    "text-struck-through": "Eight Ten",
+    "text-end": " Eleven Cats"
   },
-  "cards": {
-    "eli": {
+  "cards": [
+    {
       "name": "Eli",
       "nicknames": [
         "Mr. Man",
@@ -21,7 +19,7 @@
       ],
       "imageAlt": "Images of Eli the cat"
     },
-    "umbra": {
+    {
       "name": "Umbra",
       "nicknames": [
         "Oobie",
@@ -38,7 +36,7 @@
       ],
       "imageAlt": "Images of Umbra the cat"
     },
-    "bucket": {
+    {
       "name": "Bucket",
       "nicknames": [
         "Buxter Brown",
@@ -54,7 +52,7 @@
       ],
       "imageAlt": "Images of Bucket the cat"
     },
-    "bitty": {
+    {
       "name": "Bitty",
       "nicknames": [
         "Bitty Loo",
@@ -73,7 +71,7 @@
       ],
       "imageAlt": "Images of Bitty the cat"
     },
-    "wilson": {
+    {
       "name": "Wilson",
       "nicknames": [
         "Wees",
@@ -92,7 +90,7 @@
       ],
       "imageAlt": "Images of Wilson the cat"
     },
-    "pixie": {
+    {
       "name": "Pixie",
       "nicknames": [
         "Pete",
@@ -108,7 +106,7 @@
       ],
       "imageAlt": "Images of Pixie the cat"
     },
-    "milk": {
+    {
       "name": "Milky Moo",
       "nicknames": [
         "Milk",
@@ -121,7 +119,7 @@
       ],
       "imageAlt": "Images of Milk the cat"
     },
-    "bones": {
+    {
       "name": "Bones",
       "nicknames": [
         "Boone",
@@ -136,7 +134,7 @@
       ],
       "imageAlt": "Images of Bones the cat"
     },
-    "wobble": {
+    {
       "name": "Wobbles",
       "nicknames": [
         "Weebs",
@@ -153,7 +151,7 @@
       ],
       "imageAlt": "Images of Wobbles the cat"
     },
-    "pancake": {
+    {
       "name": "Pancake",
       "nicknames": [
         "Cake",
@@ -168,7 +166,7 @@
       ],
       "imageAlt": "Images of Pancake the cat"
     },
-    "triscuit": {
+    {
       "name": "Triscuit",
       "nicknames": [
         "Triz",
@@ -180,5 +178,5 @@
       "images": [],
       "imageAlt": "Images of Triscuit the cat"
     }
+    }
   }
-}
