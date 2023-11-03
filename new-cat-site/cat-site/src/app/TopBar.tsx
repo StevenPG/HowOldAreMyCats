@@ -7,9 +7,8 @@ import Typography from '@mui/material/Typography';
 import textContent from "./contents.json";
 
 export default function ButtonAppBar() {
-    // TODO - remove the ts-ignore and fix the error
-        // @ts-ignore
-    let initialText = textContent["top-bar"]["main-text"].beginning;
+
+    const initialText = textContent["topBar"]["textBeginning"];
 
     return (
         <Box>
@@ -20,13 +19,11 @@ export default function ButtonAppBar() {
                         { initialText }
                     </Typography>
                     <Typography variant="h5" component="div" style={{textDecoration: "line-through"}}>
-                        {/*@ts-ignore*/}
-                        { textContent["top-bar"]["main-text"]["struck-through"] }
+                        { textContent["topBar"]["textStruckThrough"] }
                     </Typography>
                     {/* TODO insert a space */}
                     <Typography variant="h5" component="div">
-                        {/*@ts-ignore*/}
-                        { textContent["top-bar"]["main-text"].end}
+                        { textContent["topBar"]["textEnd"]}
                     </Typography>
                     {/* // TODO put strike-thrus */}
                 </Toolbar>

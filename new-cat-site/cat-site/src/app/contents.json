@@ -1,8 +1,8 @@
 {
-  "top-bar": {
-    "text-beginning": "Meet our ",
-    "text-struck-through": "Eight Ten",
-    "text-end": " Eleven Cats"
+  "topBar": {
+    "textBeginning": "Meet our ",
+    "textStruckThrough": "Eight Ten",
+    "textEnd": " Eleven Cats"
   },
   "cards": [
     {
@@ -178,5 +178,5 @@
       "images": [],
       "imageAlt": "Images of Triscuit the cat"
     }
-    }
-  }
+  ]
+}

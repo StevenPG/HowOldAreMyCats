@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import init, {time_since} from "age-calc-lib";
 import BasicCard from "./app/catcard/Card";
@@ -8,28 +8,11 @@ import textContent from "./app/contents.json"
 
 function App() {
 
-    // TODO - remove and add to lower card where calculation occurs
-    useEffect(() => {
-        init().then(() => {
-            console.log(time_since("2019-10-12T07:20:50.52Z"));
-        })
+    // TODO -
+
+    init().then(() => {
+        console.log(time_since("2019-10-12T07:20:50.52Z"))
     })
-
-    let cardJson = JSON.parse(textContent["cards"])
-
-    let cardList = cardJson.map(
-        (element: {
-            name: string;
-            nicknames: string;
-            description: string; }, index: number) => (
-            <BasicCard
-                name={element.name}
-                // TODO - get this from a method call that adds a list
-                nicknames={element.nicknames}
-                description={element.description}
-            />
-        )
-    );
 
     // TODO - add carousel to images in card: https://www.npmjs.com/package/react-responsive-carousel
     return (
@@ -38,6 +21,18 @@ function App() {
                 {/*// TODO - rename and stretch across whole screen*/}
                 {/*// TODO - add a filter that will hide cards when you type in the filter*/}
                 <ButtonAppBar/>
+                {
+                        textContent.cards.map(item => (
+                            <BasicCard
+                                name={item.name}
+                                nicknames={item.nicknames}
+                                description={item.description}
+                                // TODO - run the calculation per input correctly
+                                // age={time_since(item.birthdate)}
+                                age="1"
+                            />
+                        ))
+                }
                 {/* TODO Change this into a loop that passes base object if possible */}
                 {/*TODO - make cards side by side with space in between the cards*/}
             </header>

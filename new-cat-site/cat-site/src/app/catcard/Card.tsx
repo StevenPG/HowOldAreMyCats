@@ -1,11 +1,8 @@
 import * as React from 'react';
 import AspectRatio from '@mui/joy/AspectRatio';
-import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 
 /**
  * TODO - add props type AND format location better
@@ -16,7 +13,7 @@ export default function BasicCard(props: any) {
         <Card sx={{ width: "40%" }}>
             <div>
                 <Typography level="title-lg">{props.name}</Typography>
-                <Typography level="body-sm">{props.nicknames} - N Years Old</Typography>
+                <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
             <AspectRatio minHeight="120px" maxHeight="200px">
                 <img
