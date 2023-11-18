@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import textContent from "./contents.json";
 
-export default function ButtonAppBar() {
+export default function TopBar() {
 
     const initialText = textContent["topBar"]["textBeginning"];
 
@@ -18,10 +18,11 @@ export default function ButtonAppBar() {
                     <Typography variant="h5" component="div">
                         { initialText }
                     </Typography>
+                    &nbsp;
                     <Typography variant="h5" component="div" style={{textDecoration: "line-through"}}>
                         { textContent["topBar"]["textStruckThrough"] }
                     </Typography>
-                    {/* TODO insert a space */}
+                    &nbsp;
                     <Typography variant="h5" component="div">
                         { textContent["topBar"]["textEnd"]}
                     </Typography>
