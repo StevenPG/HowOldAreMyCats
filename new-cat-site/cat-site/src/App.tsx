@@ -5,11 +5,14 @@ import BasicCard from "./app/catcard/Card";
 import TopBar from "./app/TopBar";
 
 import textContent from "./app/contents.json"
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Unstable_Grid2';
+import {text} from "stream/consumers"; // Grid version 2
 
 function App() {
 
-    // TODO -
+    // TODO - put map of ages on load, and then pass map into thing referenced by name
+    // TODO - insert by name
+    let ageMap = textContent.cards.map()
 
     init().then(() => {
         console.log(time_since("2019-10-12T07:20:50.52Z"))
@@ -33,9 +36,10 @@ function App() {
                                         nicknames={item.nicknames}
                                         description={item.description}
                                         // TODO - run the calculation per input correctly
-                                        age={time_since("2003-11-18T04:32:05Z")}
+                                        // age={ime_since("2003-11-18T04:32:05Z")}
                                         // age={time_since(item.birthdate)}
-                                        // age="1"
+                                        // age={init().then( () => time_since("2003-11-18T04:32:05Z"))}
+                                        age="1"
                                         images={item.images}
                                     />
                                 </div>
