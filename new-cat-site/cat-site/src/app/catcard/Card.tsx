@@ -14,41 +14,29 @@ import {text} from "stream/consumers";
  */
 export default function BasicCard(props: any) {
 
-    function Item(props: any)
-    {
+    function CatPicture(props: any) {
         return (
-            <AspectRatio minHeight="120px" maxHeight="200px">
-                <img
-                    src={props.item}
-                    // src="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286"
-                    srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
-                    loading="lazy"
-                    alt=""
+            <div style={{height: "100%"}}>
+                <img width={"100%"} height={"auto"}
+                     src={props.image}
+                     loading="lazy"
+                    // TODO - get alt text dynamically
+                     alt=""
                 />
-            </AspectRatio>
+            </div>
         )
     }
 
     return (
-        <Card sx={{ width: "80%", marginBottom: "2em"}}>
+        <Card sx={{width: "80%", marginBottom: "2em"}}>
             <div>
                 <Typography level="title-lg">{props.name}</Typography>
-                 {/*TODO - render nicknames as list so we can append non-breaking-space char*/}
                 <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
             <Carousel>
                 {
-                    props.images.map( (image: any, i: number) => (
-                        // <Item key={i} item={image}/>
-                        // TODO - move this into a separate component either in this file or entirely
-                        <AspectRatio minHeight="300px" maxHeight="400px">
-                            <img
-                                src={image}
-                                loading="lazy"
-                                // TODO - get alt text dynamically
-                                alt=""
-                            />
-                        </AspectRatio>
+                    props.images.map((image: any, i: number) => (
+                        <CatPicture image={image}/>
                     ))
                 }
             </Carousel>
