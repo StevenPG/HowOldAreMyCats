@@ -1,17 +1,9 @@
 import * as React from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import Carousel from "react-material-ui-carousel";
 
-import textContent from "../contents.json";
-import {text} from "stream/consumers";
-
-/**
- * TODO - add props type AND format location better
- * @constructor
- */
 export default function BasicCard(props: any) {
 
     function CatPicture(props: any) {

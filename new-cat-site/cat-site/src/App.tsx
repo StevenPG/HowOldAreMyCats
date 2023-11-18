@@ -19,7 +19,6 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                {/*// TODO - rename and stretch across whole screen*/}
                 {/*// TODO - add a filter that will hide cards when you type in the filter*/}
                 <div style={{marginBottom: "3em"}}>
                     <TopBar/>
@@ -34,9 +33,9 @@ function App() {
                                         nicknames={item.nicknames}
                                         description={item.description}
                                         // TODO - run the calculation per input correctly
-                                        // age={time_since("2003-11-18T04:32:05Z")}
+                                        age={time_since("2003-11-18T04:32:05Z")}
                                         // age={time_since(item.birthdate)}
-                                        age="1"
+                                        // age="1"
                                         images={item.images}
                                     />
                                 </div>
