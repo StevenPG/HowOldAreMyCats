@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import init, {time_since} from "age-calc-lib";
 import BasicCard from "./app/catcard/Card";
 import TopBar from "./app/TopBar";
 
@@ -10,15 +9,27 @@ import {text} from "stream/consumers"; // Grid version 2
 
 function App() {
 
-    // TODO - put map of ages on load, and then pass map into thing referenced by name
-    // TODO - insert by name
-    let ageMap = textContent.cards.map()
+    /**
+     * Returns the number of years and months of age
+     * @param isoBirthdate incoming iso Birthdate
+     */
+    function time_since(isoBirthdate: string): string {
+        console.log("Incoming " + isoBirthdate);
+        let currDate = new Date();
+        let birthDate = new Date(isoBirthdate);
+        let differenceInTimeMillis = currDate.getTime() - birthDate.getTime();
+        let differenceInTimeSeconds = differenceInTimeMillis / 1000;
+        let differenceInTimeMinutes = differenceInTimeSeconds / 60;
+        let differenceInTimeHours = differenceInTimeMinutes / 60;
+        let differenceInTimeDays = differenceInTimeHours / 24;
+        let yearQuotient = Math.floor(differenceInTimeDays / 365);
+        let yearRemainder = differenceInTimeDays % 365;
+        let monthQuotient = Math.floor(yearRemainder / 30);
+        console.log("Years: " + yearQuotient);
+        console.log("Days: " + yearRemainder);
+        return yearQuotient + " Years " + monthQuotient + " Months old";
+    }
 
-    init().then(() => {
-        console.log(time_since("2019-10-12T07:20:50.52Z"))
-    })
-
-    // TODO - add carousel to images in card: https://www.npmjs.com/package/react-responsive-carousel
     return (
         <div className="App">
             <header className="App-header">
@@ -35,11 +46,7 @@ function App() {
                                         name={item.name}
                                         nicknames={item.nicknames}
                                         description={item.description}
-                                        // TODO - run the calculation per input correctly
-                                        // age={ime_since("2003-11-18T04:32:05Z")}
-                                        // age={time_since(item.birthdate)}
-                                        // age={init().then( () => time_since("2003-11-18T04:32:05Z"))}
-                                        age="1"
+                                        age={time_since(item.birthdate)}
                                         images={item.images}
                                     />
                                 </div>
