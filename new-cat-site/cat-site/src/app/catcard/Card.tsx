@@ -25,13 +25,13 @@ export default function BasicCard(props: any) {
                 <Typography level="title-lg">{props.name}</Typography>
                 <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
-            <Carousel>
+            {/*<Carousel>*/}
                 {
                     props.images.map((image: any, i: number) => (
                         <CatPicture image={image}/>
                     ))
                 }
-            </Carousel>
+            {/*</Carousel>*/}
             <CardContent orientation="horizontal">
                 <div>
                     <Typography fontSize="sm" fontWeight="md">
