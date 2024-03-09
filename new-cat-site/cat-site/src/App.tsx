@@ -14,7 +14,6 @@ function App() {
      * @param isoBirthdate incoming iso Birthdate
      */
     function time_since(isoBirthdate: string): string {
-        console.log("Incoming " + isoBirthdate);
         let currDate = new Date();
         let birthDate = new Date(isoBirthdate);
         let differenceInTimeMillis = currDate.getTime() - birthDate.getTime();
@@ -25,8 +24,6 @@ function App() {
         let yearQuotient = Math.floor(differenceInTimeDays / 365);
         let yearRemainder = differenceInTimeDays % 365;
         let monthQuotient = Math.floor(yearRemainder / 30);
-        console.log("Years: " + yearQuotient);
-        console.log("Days: " + yearRemainder);
         return yearQuotient + " Years " + monthQuotient + " Months old";
     }
 
@@ -35,7 +32,9 @@ function App() {
             <header className="App-header">
                 {/*// TODO - add a filter that will hide cards when you type in the filter*/}
                 <div style={{marginBottom: "3em"}}>
-                    <TopBar/>
+                    <TopBar
+                        content={textContent.cards}
+                    />
                 </div>
                 <Grid container spacing={1}>
                     {

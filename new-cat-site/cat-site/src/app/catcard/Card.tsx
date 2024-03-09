@@ -1,8 +1,6 @@
-import * as React from 'react';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import Carousel from "react-material-ui-carousel";
 
 export default function BasicCard(props: any) {
 

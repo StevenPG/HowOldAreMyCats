@@ -5,28 +5,41 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 import textContent from "./contents.json";
+import { nextBirthdayAsStr } from './birthday-calc';
 
-export default function TopBar() {
+export default function TopBar(props: any) {
 
     const initialText = textContent["topBar"]["textBeginning"];
 
+    const styles = {
+        maxWidth: {
+            width: "100%"
+        },
+        strikethru: {
+            textDecoration: "line-through"
+        }
+    };
+
     return (
         <Box>
-            <AppBar style={{width: "100%"}}>
+            <AppBar style={styles.maxWidth}>
                 <Toolbar>
                     {/* Align text with center of screen */}
                     <Typography variant="h5" component="div">
                         { initialText }
                     </Typography>
                     &nbsp;
-                    <Typography variant="h5" component="div" style={{textDecoration: "line-through"}}>
+                    <Typography variant="h5" component="div" style={styles.strikethru}>
                         { textContent["topBar"]["textStruckThrough"] }
                     </Typography>
                     &nbsp;
                     <Typography variant="h5" component="div">
                         { textContent["topBar"]["textEnd"]}
                     </Typography>
-                    {/* // TODO put strike-thrus */}
+                    &nbsp;
+                    <Typography variant="h5" component="div">
+                        - Next Birthday Is {nextBirthdayAsStr()}
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </Box>
