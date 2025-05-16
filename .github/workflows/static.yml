@@ -33,11 +33,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Copy CNAME file
+        run: |
+          if [ -f "CNAME" ]; then
+            cp CNAME build/
+          else
+            echo "CNAME file not found"
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
