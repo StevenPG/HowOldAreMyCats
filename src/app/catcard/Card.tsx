@@ -6,9 +6,9 @@ import {VolumeUp} from "@mui/icons-material";
 
 export default function BasicCard(props: any) {
 
-    function playMusic(sound: string){
-        const music = new Audio(sound);
-        music.play();
+    function playAudio(sound: string){
+        const audio = new Audio(sound);
+        audio.play();
     }
 
     function CatPicture(props: any) {
@@ -41,7 +41,7 @@ export default function BasicCard(props: any) {
             {/*<Carousel>*/}
                 {
                     props.images.map((image: any, i: number) => (
-                        <CatPicture image={image}/>
+                        <CatPicture image={image} key={i}/>
                     ))
                 }
             {/*</Carousel>*/}
@@ -58,7 +58,7 @@ export default function BasicCard(props: any) {
                             <IconButton
                                 key={i}
                                 aria-label="play sound"
-                                onClick={() => playMusic(sound)}
+                                onClick={() => playAudio(sound)}
                                 color="primary"
                             >
                                 <VolumeUp />

@@ -5,18 +5,24 @@ import TopBar from "./app/TopBar";
 
 import textContent from "./app/contents.json"
 import Grid from '@mui/material/Unstable_Grid2';
-import {text} from "stream/consumers"; // Grid version 2
 
 function App() {
 
     /**
      * Returns the number of years and months of age
      * @param isoBirthdate incoming iso Birthdate
+     * @param isoDeathDate incoming deathdate, if empty use birthDate
      */
-    function time_since(isoBirthdate: string): string {
+    function time_since(isoBirthdate: string, isoDeathDate: string): string {
         let currDate = new Date();
-        let birthDate = new Date(isoBirthdate);
-        let differenceInTimeMillis = currDate.getTime() - birthDate.getTime();
+        const useBirthDate = isoDeathDate === undefined || isoDeathDate === "" || isoDeathDate === null;
+        let calculationDate = new Date(useBirthDate ? isoBirthdate : isoDeathDate);
+        let differenceInTimeMillis;
+        if(useBirthDate) {
+            differenceInTimeMillis = currDate.getTime() - calculationDate.getTime();
+        } else {
+            differenceInTimeMillis = calculationDate.getTime() - new Date(isoBirthdate).getTime();
+        }
         let differenceInTimeSeconds = differenceInTimeMillis / 1000;
         let differenceInTimeMinutes = differenceInTimeSeconds / 60;
         let differenceInTimeHours = differenceInTimeMinutes / 60;
@@ -48,7 +54,7 @@ function App() {
                                         birthdate={item.birthdate}
                                         deathdate={item.deathdate}
                                         sounds={item.sounds}
-                                        age={time_since(item.birthdate)}
+                                        age={time_since(item.birthdate, item.deathdate)}
                                         images={item.images}
                                     />
                                 </div>
