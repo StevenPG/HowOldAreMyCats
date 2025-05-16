@@ -45,6 +45,9 @@ function App() {
                                         name={item.name}
                                         nicknames={item.nicknames}
                                         description={item.description}
+                                        birthdate={item.birthdate}
+                                        deathdate={item.deathdate}
+                                        sounds={item.sounds}
                                         age={time_since(item.birthdate)}
                                         images={item.images}
                                     />
