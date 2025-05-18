@@ -20,9 +20,9 @@
       ],
       "imageAlt": "Images of Eli the cat",
       "sounds": [
-        "EliChirp1.mp3",
-        "EliChirp2.mp3",
-        "EliChirp3.mp3"
+        "Eli_Excited_For_Food.mp3",
+        "Eli_Happy_For_Attention.mp3",
+        "Eli_Talking_Back.mp3"
       ]
     },
     {
@@ -43,7 +43,7 @@
       ],
       "imageAlt": "Images of Umbra the cat",
       "sounds": [
-        "UmbraHiss.mp3"
+        "Umbra_Hiss_At_Vacuum.mp3"
       ]
     },
     {
@@ -104,7 +104,9 @@
         "https://i.imgur.com/lW3ZpoF.jpg"
       ],
       "imageAlt": "Images of Wilson the cat",
-      "sounds": []
+      "sounds": [
+        "Wilson_Complaining_For_Attention.mp3"
+      ]
     },
     {
       "name": "Pixie",

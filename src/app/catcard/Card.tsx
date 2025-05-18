@@ -3,10 +3,11 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import {IconButton} from "@mui/joy";
 import {VolumeUp} from "@mui/icons-material";
+import {Tooltip} from "@mui/material";
 
 export default function BasicCard(props: any) {
 
-    function playAudio(sound: string){
+    function playAudio(sound: string) {
         const audio = new Audio(sound);
         audio.play();
     }
@@ -39,11 +40,11 @@ export default function BasicCard(props: any) {
                 <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
             {/*<Carousel>*/}
-                {
-                    props.images.map((image: any, i: number) => (
-                        <CatPicture image={image} key={i}/>
-                    ))
-                }
+            {
+                props.images.map((image: any, i: number) => (
+                    <CatPicture image={image} key={i}/>
+                ))
+            }
             {/*</Carousel>*/}
             <CardContent orientation="vertical">
                 <div>
@@ -55,14 +56,16 @@ export default function BasicCard(props: any) {
                     {/* TODO - audio icon & iterate over sounds object & space them out */}
                     {
                         props.sounds.map((sound: any, i: number) => (
-                            <IconButton
-                                key={i}
-                                aria-label="play sound"
-                                onClick={() => playAudio(sound)}
-                                color="primary"
-                            >
-                                <VolumeUp />
-                            </IconButton>
+                            <Tooltip title={sound.replace(".mp3", "").replaceAll("_", " ")}>
+                                <IconButton
+                                    key={i}
+                                    aria-label="play sound"
+                                    onClick={() => playAudio(sound)}
+                                    color="primary"
+                                >
+                                    <VolumeUp/>
+                                </IconButton>
+                            </Tooltip>
                         ))
                     }
                 </div>
