@@ -42,7 +42,9 @@
         "https://i.imgur.com/Hq23y2e.jpg"
       ],
       "imageAlt": "Images of Umbra the cat",
-      "sounds": []
+      "sounds": [
+        "UmbraHiss.mp3"
+      ]
     },
     {
       "name": "Bucket",
