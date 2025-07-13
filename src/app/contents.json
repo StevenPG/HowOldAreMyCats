@@ -47,7 +47,9 @@
       ],
       "imageAlt": "Images of Umbra the cat",
       "sounds": [
-        "Umbra_Hiss_At_Vacuum.mp3"
+        "Umbra_Hiss_At_Vacuum.mp3",
+        "Umbra_Sees_Wilson.mp3",
+        "Umbra_Surprise_Beep.mp3"
       ]
     },
     {
@@ -109,7 +111,8 @@
       ],
       "imageAlt": "Images of Wilson the cat",
       "sounds": [
-        "Wilson_Complaining_For_Attention.mp3"
+        "Wilson_Complaining_For_Attention.mp3",
+        "Wilson_In_The_Carrier.mp3"
       ]
     },
     {
@@ -220,7 +223,11 @@
         "https://i.imgur.com/4ICZldG.jpg"
       ],
       "imageAlt": "Images of Triscuit the cat",
-      "sounds": []
+      "sounds": [
+        "Triscuit_Whining.mp3",
+        "Triscuit_Wants_Outside.mp3",
+        "Triscuit_Wants_Outside2.mp3"
+      ]
     }
   ]
 }
