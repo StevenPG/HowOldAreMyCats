@@ -49,7 +49,9 @@
       "sounds": [
         "Umbra_Hiss_At_Vacuum.mp3",
         "Umbra_Sees_Wilson.mp3",
-        "Umbra_Surprise_Beep.mp3"
+        "Umbra_Surprise_Beep.mp3",
+        "UmbraWantsUp.mp3",
+        "UmbraChatting.mp3"
       ]
     },
     {
@@ -89,7 +91,10 @@
         "https://i.imgur.com/ZBYUwmF.jpg"
       ],
       "imageAlt": "Images of Bitty the cat",
-      "sounds": []
+      "sounds": [
+        "BittyPurring.mp3",
+        "BittyBeggingForAttention.mp3"
+      ]
     },
     {
       "name": "Wilson",
@@ -112,7 +117,9 @@
       "imageAlt": "Images of Wilson the cat",
       "sounds": [
         "Wilson_Complaining_For_Attention.mp3",
-        "Wilson_In_The_Carrier.mp3"
+        "Wilson_In_The_Carrier.mp3",
+        "WilsonTummyAche.mp3",
+        "WilsonBarking.mp3"
       ]
     },
     {
@@ -146,7 +153,9 @@
         "https://i.imgur.com/Da85dX9.jpg"
       ],
       "imageAlt": "Images of Milk the cat",
-      "sounds": []
+      "sounds": [
+        "MilkChirp.mp3"
+      ]
     },
     {
       "name": "Bones",
@@ -182,7 +191,9 @@
         "https://i.imgur.com/59SwZm0.jpg"
       ],
       "imageAlt": "Images of Wobbles the cat",
-      "sounds": []
+      "sounds": [
+        "WobbleBadoop.mp3"
+      ]
     },
     {
       "name": "Pancake",
@@ -199,7 +210,9 @@
         "https://i.imgur.com/IabygLh.jpg"
       ],
       "imageAlt": "Images of Pancake the cat",
-      "sounds": []
+      "sounds": [
+        "PancakePurringAndRunning.mp3"
+      ]
     },
     {
       "name": "Triscuit",
