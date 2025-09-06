@@ -70,7 +70,14 @@
         "https://i.imgur.com/ZZjSKWb.jpg"
       ],
       "imageAlt": "Images of Bucket the cat",
-      "sounds": []
+      "sounds": [
+        "BucketChirpPurr.mp3",
+        "BucketLittleMeow.mp3",
+        "BucketMeow.mp3",
+        "BucketNormalMeow.mp3",
+        "BucketPurring.mp3",
+        "BucketTalk2.mp3"
+      ]
     },
     {
       "name": "Bitty",
@@ -120,7 +127,8 @@
         "WilsonCryingForAttention.mp3",
         "Wilson_In_The_Carrier.mp3",
         "WilsonTummyAche.mp3",
-        "WilsonBarking.mp3"
+        "WilsonBarking.mp3",
+        "WilsonLaundryBloop.mp3"
       ]
     },
     {
