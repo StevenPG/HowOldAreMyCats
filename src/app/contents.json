@@ -181,7 +181,11 @@
         "https://i.imgur.com/rvWHEAo.jpg"
       ],
       "imageAlt": "Images of Bones the cat",
-      "sounds": []
+      "sounds": [
+        "BonesChirp.mp3",
+        "BonesChittering.mp3",
+        "BonesCrying.mp3"
+      ]
     },
     {
       "name": "Wobbles",
@@ -220,7 +224,10 @@
       ],
       "imageAlt": "Images of Pancake the cat",
       "sounds": [
-        "PancakePurringAndRunning.mp3"
+        "PancakePurringAndRunning.mp3",
+        "CakeCryOne.mp3",
+        "CakeCryTwo.mp3",
+        "CakeCryThree.mp3"
       ]
     },
     {
