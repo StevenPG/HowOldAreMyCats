@@ -76,7 +76,8 @@
         "BucketMeow.mp3",
         "BucketNormalMeow.mp3",
         "BucketPurring.mp3",
-        "BucketTalk2.mp3"
+        "BucketTalk2.mp3",
+        "BucketHatesGoingToTheVet.mp3"
       ]
     },
     {
@@ -184,7 +185,8 @@
       "sounds": [
         "BonesChirp.mp3",
         "BonesChittering.mp3",
-        "BonesCrying.mp3"
+        "BonesCrying.mp3",
+        "BonesChirping.mp3"
       ]
     },
     {
