@@ -77,7 +77,8 @@
         "BucketNormalMeow.mp3",
         "BucketPurring.mp3",
         "BucketTalk2.mp3",
-        "BucketHatesGoingToTheVet.mp3"
+        "BucketHatesGoingToTheVet.mp3",
+        "BucketBrowing.mp3"
       ]
     },
     {
@@ -145,10 +146,13 @@
       "birthdate": "April 19, 2019",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/7Z5UHr3.jpg"
+        "https://i.imgur.com/7Z5UHr3.jpg",
+        "PixieHappyCountertop.mp4"
       ],
       "imageAlt": "Images of Pixie the cat",
-      "sounds": []
+      "sounds": [
+        "PeteCrying.mp3"
+      ]
     },
     {
       "name": "Milky Moo",
@@ -186,7 +190,8 @@
         "BonesChirp.mp3",
         "BonesChittering.mp3",
         "BonesCrying.mp3",
-        "BonesChirping.mp3"
+        "BonesChirping.mp3",
+        "BonesChirping2.mp3"
       ]
     },
     {
