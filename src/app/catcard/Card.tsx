@@ -4,6 +4,8 @@ import Typography from '@mui/joy/Typography';
 import {IconButton} from "@mui/joy";
 import {VolumeUp} from "@mui/icons-material";
 import {Tooltip} from "@mui/material";
+import Carousel from "react-material-ui-carousel";
+import type { CSSProperties } from 'react';
 
 export default function BasicCard(props: any) {
 
@@ -13,14 +15,44 @@ export default function BasicCard(props: any) {
     }
 
     function CatPicture(props: any) {
+        const src: string = typeof props.image === 'string' ? props.image : '';
+        const isImage = /\.(png|jpe?g|gif|webp|bmp|svg)$/i.test(src);
+        const mediaStyle: CSSProperties = {
+            display: "block",
+            width: "100%",
+            height: "auto",
+            objectFit: "contain",
+            maxHeight: "70vh", // prevent image from extending under description on tall/wide screens
+            margin: "0 auto",
+        };
+
         return (
-            <div style={{height: "100%"}}>
-                <img width={"100%"} height={"auto"}
-                     src={props.image}
-                     loading="lazy"
-                    // TODO - get alt text dynamically
-                     alt=""
-                />
+            <div
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    maxHeight: "70vh",
+                }}
+            >
+                {isImage ? (
+                    <img
+                        src={src}
+                        loading="lazy"
+                        alt="An image of a cat"
+                        style={mediaStyle}
+                    />
+                ) : (
+                    <video
+                        src={src}
+                        autoPlay={true}
+                        muted={true}
+                        playsInline
+                        preload="metadata"
+                        style={mediaStyle}
+                    />
+                )}
             </div>
         )
     }
@@ -33,27 +65,28 @@ export default function BasicCard(props: any) {
     }
 
     return (
-        <Card sx={{width: "80%", marginBottom: "2em"}}>
+        <Card sx={{ width: "min(900px, 80%)", marginBottom: "2em", overflow: "visible" }}>
             <div>
                 <Typography level="title-lg">{props.name}</Typography>
                 <Typography level="title-sm">{props.birthdate}{renderDeathDate()}</Typography>
                 <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
-            {/*<Carousel>*/}
-            {
-                props.images.map((image: any, i: number) => (
-                    <CatPicture image={image} key={i}/>
-                ))
-            }
-            {/*</Carousel>*/}
-            <CardContent orientation="vertical">
+            <div style={{ marginBottom: '0.75rem' }}>
+                <Carousel navButtonsAlwaysVisible={true} indicators={false} autoPlay={false}>
+                    {
+                        props.images.map((image: any, i: number) => (
+                            <CatPicture image={image} key={i}/>
+                        ))
+                    }
+                </Carousel>
+            </div>
+            <CardContent orientation="vertical" sx={{ mt: 1 }}>
                 <div>
                     <Typography fontSize="sm" fontWeight="md">
                         {props.description}
                     </Typography>
                 </div>
                 <div>
-                    {/* TODO - audio icon & iterate over sounds object & space them out */}
                     {
                         props.sounds.map((sound: any, i: number) => (
                             <Tooltip title={sound.replace(".mp3", "").replaceAll("_", " ")}>
