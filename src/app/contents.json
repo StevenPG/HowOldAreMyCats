@@ -1,8 +1,8 @@
 {
   "topBar": {
     "textBeginning": "Meet our ",
-    "textStruckThrough": "Ten Eleven",
-    "textEnd": " Ten Cats"
+    "textStruckThrough": "Eleven Ten",
+    "textEnd": " Nine Cats"
   },
   "cards": [
     {
@@ -16,9 +16,13 @@
       "birthdate": "May 1, 2010",
       "deathdate": "May 15, 2025",
       "images": [
-        "https://i.imgur.com/9uYa4LC.jpg"
+        "https://i.imgur.com/9uYa4LC.jpg",
+        "EliCuteInBox.jpg",
+        "EliHouse.jpg",
+        "EliStopWorking.jpg",
+        "EliStretchingLimerick.jpg"
       ],
-      "imageAlt": "Images of Eli the cat",
+      "imageAlt": "Images of Eli, our first cat",
       "sounds": [
         "Eli_Excited_For_Food.mp3",
         "Eli_Happy_For_Attention.mp3",
@@ -43,7 +47,8 @@
       "birthdate": "December 8, 2015",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/Hq23y2e.jpg"
+        "https://i.imgur.com/Hq23y2e.jpg",
+        "UmbraChupSteps.jpg"
       ],
       "imageAlt": "Images of Umbra the cat",
       "sounds": [
@@ -65,9 +70,16 @@
       ],
       "description": "Bucket was brought home on the day of the eclipse! He’s the weirdest one of the group. He has the strangest meow, oddest mannerisms, and is an all-around goofball! He lies to sit leaning against walls which makes him look like a walrus. Fun fact: Bucket has no hip bone! He fell into the tub and broke his femur head clean off, so he had surgery to have it completely removed. You can’t tell in the slightest (and I have his femur head in a container for keeps). He’s also a big fan of grass, and for some reason loves whistling. His favorite toy is his bird on a stick. It jingles when you swing it and he gets so excited. He carries it around and cries to it.",
       "birthdate": "May 7, 2017",
-      "deathdate": "",
+      "deathdate": "November 29, 2025",
       "images": [
-        "https://i.imgur.com/ZZjSKWb.jpg"
+        "https://i.imgur.com/ZZjSKWb.jpg",
+        "BucketHugging.jpg",
+        "BucketLaying.jpg",
+        "BucketLoungingOnArm.jpg",
+        "BucketWallSit.jpg",
+        "BucketBlep.jpg",
+        "ComfyBucket.jpg",
+        "InfatuatedBucket.jpg"
       ],
       "imageAlt": "Images of Bucket the cat",
       "sounds": [
@@ -97,7 +109,8 @@
       "birthdate": "August 22, 2017",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/ZBYUwmF.jpg"
+        "https://i.imgur.com/ZBYUwmF.jpg",
+        "CakeAndBitty.jpg"
       ],
       "imageAlt": "Images of Bitty the cat",
       "sounds": [
@@ -121,7 +134,8 @@
       "birthdate": "April 27, 2018",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/lW3ZpoF.jpg"
+        "https://i.imgur.com/lW3ZpoF.jpg",
+        "PrettyWilson.jpg"
       ],
       "imageAlt": "Images of Wilson the cat",
       "sounds": [
@@ -164,7 +178,9 @@
       "birthdate": "May 27, 2019",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/Da85dX9.jpg"
+        "https://i.imgur.com/Da85dX9.jpg",
+        "MilkBasket.jpg",
+        "MilkReadyToAttack.gif"
       ],
       "imageAlt": "Images of Milk the cat",
       "sounds": [
@@ -183,7 +199,13 @@
       "birthdate": "September 9, 2019",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/rvWHEAo.jpg"
+        "https://i.imgur.com/rvWHEAo.jpg",
+        "BonesHidden.jpg",
+        "BonesTryingToPlay.mp4",
+        "BonesStretch.jpg",
+        "BabyBonesAndMilk.jpg",
+        "BabyBonesAndPete.jpg",
+        "BonesStupid.jpg"
       ],
       "imageAlt": "Images of Bones the cat",
       "sounds": [
@@ -208,7 +230,9 @@
       "birthdate": "November 24, 2020",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/59SwZm0.jpg"
+        "https://i.imgur.com/59SwZm0.jpg",
+        "PrettyWobbl.jpg",
+        "WobbleAndCake.jpg"
       ],
       "imageAlt": "Images of Wobbles the cat",
       "sounds": [
@@ -227,7 +251,8 @@
       "birthdate": "November 24, 2020",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/IabygLh.jpg"
+        "https://i.imgur.com/IabygLh.jpg",
+        "FluffyCake.jpg"
       ],
       "imageAlt": "Images of Pancake the cat",
       "sounds": [
@@ -256,7 +281,9 @@
       "birthdate": "August 25, 2023",
       "deathdate": "",
       "images": [
-        "https://i.imgur.com/4ICZldG.jpg"
+        "https://i.imgur.com/4ICZldG.jpg",
+        "TriscuitDesperate.jpg",
+        "TriscuitClimb.jpg"
       ],
       "imageAlt": "Images of Triscuit the cat",
       "sounds": [
