@@ -20,7 +20,7 @@ jobs:
       deployments: write
       issues: write
       repository-projects: write
-    name: Deploy Blog to Cloudflare Pages
+    name: Deploy HowOldAreMyCats to Cloudflare Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
