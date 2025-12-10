@@ -40,7 +40,7 @@ export default function BasicCard(props: any) {
                     <img
                         src={src}
                         loading="lazy"
-                        alt="An image of a cat"
+                        alt="a cat"
                         style={mediaStyle}
                     />
                 ) : (
