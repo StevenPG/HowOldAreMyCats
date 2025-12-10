@@ -29,7 +29,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
 
       - name: Verify Node installation
         run: |
@@ -37,6 +36,7 @@ jobs:
           which npm
           node --version
           npm --version
+
       - name: Install Wrangler
         run: npm install -g wrangler
 
