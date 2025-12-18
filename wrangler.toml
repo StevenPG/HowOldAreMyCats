@@ -1,3 +1,4 @@
+name = "howoldaremycats"
 pages_build_output_dir = "build"
 
 [[r2_buckets]]
