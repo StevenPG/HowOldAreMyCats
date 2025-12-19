@@ -17,20 +17,20 @@
       "deathdate": "May 15, 2025",
       "images": [
         "https://i.imgur.com/9uYa4LC.jpg",
-        "images/EliCuteInBox.jpg",
-        "images/EliHouse.jpg",
-        "images/EliStopWorking.jpg",
-        "images/EliStretchingLimerick.jpg"
+        "/images/EliCuteInBox.jpg",
+        "/images/EliHouse.jpg",
+        "/images/EliStopWorking.jpg",
+        "/images/EliStretchingLimerick.jpg"
       ],
       "imageAlt": "Images of Eli, our first cat",
       "sounds": [
-        "sounds/Eli_Excited_For_Food.mp3",
-        "sounds/Eli_Happy_For_Attention.mp3",
-        "sounds/Eli_Talking_Back.mp3",
-        "sounds/Eli_Chirping_By_The_Bath_Tub.mp3",
-        "sounds/Eli_Complaining_About_The_Cage.mp3",
-        "sounds/Eli_Cry_Chirp_Combo.mp3",
-        "sounds/Eli_Young_Bedroom_Chirping.mp3"
+        "/sounds/Eli_Excited_For_Food.mp3",
+        "/sounds/Eli_Happy_For_Attention.mp3",
+        "/sounds/Eli_Talking_Back.mp3",
+        "/sounds/Eli_Chirping_By_The_Bath_Tub.mp3",
+        "/sounds/Eli_Complaining_About_The_Cage.mp3",
+        "/sounds/Eli_Cry_Chirp_Combo.mp3",
+        "/sounds/Eli_Young_Bedroom_Chirping.mp3"
       ]
     },
     {
@@ -48,15 +48,15 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/Hq23y2e.jpg",
-        "images/UmbraChupSteps.jpg"
+        "/images/UmbraChupSteps.jpg"
       ],
       "imageAlt": "Images of Umbra the cat",
       "sounds": [
-        "sounds/Umbra_Hiss_At_Vacuum.mp3",
-        "sounds/Umbra_Sees_Wilson.mp3",
-        "sounds/Umbra_Surprise_Beep.mp3",
-        "sounds/UmbraWantsUp.mp3",
-        "sounds/UmbraChatting.mp3"
+        "/sounds/Umbra_Hiss_At_Vacuum.mp3",
+        "/sounds/Umbra_Sees_Wilson.mp3",
+        "/sounds/Umbra_Surprise_Beep.mp3",
+        "/sounds/UmbraWantsUp.mp3",
+        "/sounds/UmbraChatting.mp3"
       ]
     },
     {
@@ -73,24 +73,24 @@
       "deathdate": "November 29, 2025",
       "images": [
         "https://i.imgur.com/ZZjSKWb.jpg",
-        "images/BucketHugging.jpg",
-        "images/BucketLaying.jpg",
-        "images/BucketLoungingOnArm.jpg",
-        "images/BucketWallSit.jpg",
-        "images/BucketBlep.jpg",
-        "images/ComfyBucket.jpg",
-        "images/InfatuatedBucket.jpg"
+        "/images/BucketHugging.jpg",
+        "/images/BucketLaying.jpg",
+        "/images/BucketLoungingOnArm.jpg",
+        "/images/BucketWallSit.jpg",
+        "/images/BucketBlep.jpg",
+        "/images/ComfyBucket.jpg",
+        "/images/InfatuatedBucket.jpg"
       ],
       "imageAlt": "Images of Bucket the cat",
       "sounds": [
-        "sounds/BucketChirpPurr.mp3",
-        "sounds/BucketLittleMeow.mp3",
-        "sounds/BucketMeow.mp3",
-        "sounds/BucketNormalMeow.mp3",
-        "sounds/BucketPurring.mp3",
-        "sounds/BucketTalk2.mp3",
-        "sounds/BucketHatesGoingToTheVet.mp3",
-        "sounds/BucketBrowing.mp3"
+        "/sounds/BucketChirpPurr.mp3",
+        "/sounds/BucketLittleMeow.mp3",
+        "/sounds/BucketMeow.mp3",
+        "/sounds/BucketNormalMeow.mp3",
+        "/sounds/BucketPurring.mp3",
+        "/sounds/BucketTalk2.mp3",
+        "/sounds/BucketHatesGoingToTheVet.mp3",
+        "/sounds/BucketBrowing.mp3"
       ]
     },
     {
@@ -110,12 +110,12 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/ZBYUwmF.jpg",
-        "images/CakeAndBitty.jpg"
+        "/images/CakeAndBitty.jpg"
       ],
       "imageAlt": "Images of Bitty the cat",
       "sounds": [
-        "sounds/BittyPurring.mp3",
-        "sounds/BittyBeggingForAttention.mp3"
+        "/sounds/BittyPurring.mp3",
+        "/sounds/BittyBeggingForAttention.mp3"
       ]
     },
     {
@@ -135,16 +135,16 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/lW3ZpoF.jpg",
-        "images/PrettyWilson.jpg"
+        "/images/PrettyWilson.jpg"
       ],
       "imageAlt": "Images of Wilson the cat",
       "sounds": [
-        "sounds/Wilson_Complaining_For_Attention.mp3",
-        "sounds/WilsonCryingForAttention.mp3",
-        "sounds/Wilson_In_The_Carrier.mp3",
-        "sounds/WilsonTummyAche.mp3",
-        "sounds/WilsonBarking.mp3",
-        "sounds/WilsonLaundryBloop.mp3"
+        "/sounds/Wilson_Complaining_For_Attention.mp3",
+        "/sounds/WilsonCryingForAttention.mp3",
+        "/sounds/Wilson_In_The_Carrier.mp3",
+        "/sounds/WilsonTummyAche.mp3",
+        "/sounds/WilsonBarking.mp3",
+        "/sounds/WilsonLaundryBloop.mp3"
       ]
     },
     {
@@ -165,7 +165,7 @@
       ],
       "imageAlt": "Images of Pixie the cat",
       "sounds": [
-        "sounds/PeteCrying.mp3"
+        "/sounds/PeteCrying.mp3"
       ]
     },
     {
@@ -179,12 +179,12 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/Da85dX9.jpg",
-        "images/MilkBasket.jpg",
-        "images/MilkReadyToAttack.gif"
+        "/images/MilkBasket.jpg",
+        "/images/MilkReadyToAttack.gif"
       ],
       "imageAlt": "Images of Milk the cat",
       "sounds": [
-        "sounds/MilkChirp.mp3"
+        "/sounds/MilkChirp.mp3"
       ]
     },
     {
@@ -200,20 +200,20 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/rvWHEAo.jpg",
-        "images/BonesHidden.jpg",
-        "images/BonesTryingToPlay.mp4",
-        "images/BonesStretch.jpg",
-        "images/BabyBonesAndMilk.jpg",
-        "images/BabyBonesAndPete.jpg",
-        "images/BonesStupid.jpg"
+        "/images/BonesHidden.jpg",
+        "/images/BonesTryingToPlay.mp4",
+        "/images/BonesStretch.jpg",
+        "/images/BabyBonesAndMilk.jpg",
+        "/images/BabyBonesAndPete.jpg",
+        "/images/BonesStupid.jpg"
       ],
       "imageAlt": "Images of Bones the cat",
       "sounds": [
-        "sounds/BonesChirp.mp3",
-        "sounds/BonesChittering.mp3",
-        "sounds/BonesCrying.mp3",
-        "sounds/BonesChirping.mp3",
-        "sounds/BonesChirping2.mp3"
+        "/sounds/BonesChirp.mp3",
+        "/sounds/BonesChittering.mp3",
+        "/sounds/BonesCrying.mp3",
+        "/sounds/BonesChirping.mp3",
+        "/sounds/BonesChirping2.mp3"
       ]
     },
     {
@@ -231,12 +231,12 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/59SwZm0.jpg",
-        "images/PrettyWobbl.jpg",
-        "images/WobbleAndCake.jpg"
+        "/images/PrettyWobbl.jpg",
+        "/images/WobbleAndCake.jpg"
       ],
       "imageAlt": "Images of Wobbles the cat",
       "sounds": [
-        "sounds/WobbleBadoop.mp3"
+        "/sounds/WobbleBadoop.mp3"
       ]
     },
     {
@@ -252,14 +252,14 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/IabygLh.jpg",
-        "images/FluffyCake.jpg"
+        "/images/FluffyCake.jpg"
       ],
       "imageAlt": "Images of Pancake the cat",
       "sounds": [
-        "sounds/PancakePurringAndRunning.mp3",
-        "sounds/CakeCryOne.mp3",
-        "sounds/CakeCryTwo.mp3",
-        "sounds/CakeCryThree.mp3"
+        "/sounds/PancakePurringAndRunning.mp3",
+        "/sounds/CakeCryOne.mp3",
+        "/sounds/CakeCryTwo.mp3",
+        "/sounds/CakeCryThree.mp3"
       ]
     },
     {
@@ -282,14 +282,14 @@
       "deathdate": "",
       "images": [
         "https://i.imgur.com/4ICZldG.jpg",
-        "images/TriscuitDesperate.jpg",
-        "images/TriscuitClimb.jpg"
+        "/images/TriscuitDesperate.jpg",
+        "/images/TriscuitClimb.jpg"
       ],
       "imageAlt": "Images of Triscuit the cat",
       "sounds": [
-        "sounds/Triscuit_Whining.mp3",
-        "sounds/Triscuit_Wants_Outside.mp3",
-        "sounds/Triscuit_Wants_Outside2.mp3"
+        "/sounds/Triscuit_Whining.mp3",
+        "/sounds/Triscuit_Wants_Outside.mp3",
+        "/sounds/Triscuit_Wants_Outside2.mp3"
       ]
     }
   ]
