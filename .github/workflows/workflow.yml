@@ -46,10 +46,16 @@ jobs:
           npm run build
         working-directory: .
 
+      - name: Verify Wrangler Config
+        run: cat wrangler.toml
+
+      - name: Add Wrangler Config to Build
+        run: cp wrangler.toml ./build
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=howoldaremycats
+          command: pages deploy ./build --project-name=howoldaremycats
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
