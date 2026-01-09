@@ -48,6 +48,7 @@ export default function BasicCard(props: any) {
                         src={src}
                         autoPlay={true}
                         muted={true}
+                        loop={true}
                         playsInline
                         preload="metadata"
                         style={mediaStyle}
