@@ -291,6 +291,34 @@
         "/sounds/Triscuit_Wants_Outside.mp3",
         "/sounds/Triscuit_Wants_Outside2.mp3"
       ]
+    },
+    {
+      "name": "Jack",
+      "nicknames": [
+        ""
+      ],
+      "description": "",
+      "birthdate": "August 25, 2025",
+      "deathdate": "",
+      "images": [
+        "/images/jakandhester.png"
+      ],
+      "imageAlt": "Images of Jack the cat",
+      "sounds": []
+    },
+    {
+      "name": "Hester",
+      "nicknames": [
+        ""
+      ],
+      "description": "",
+      "birthdate": "August 25, 2025",
+      "deathdate": "",
+      "images": [
+        "/images/jakandhester.png"
+      ],
+      "imageAlt": "Images of Hester the cat",
+      "sounds": []
     }
   ]
 }

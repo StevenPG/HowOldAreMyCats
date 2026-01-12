@@ -66,9 +66,13 @@ export default function BasicCard(props: any) {
     }
 
     return (
-        <Card sx={{ width: "min(900px, 80%)", marginBottom: "2em", overflow: "visible" }}>
+        <Card id={props.name.replace(/\s+/g, '-')} sx={{ width: "min(900px, 80%)", marginBottom: "2em", overflow: "visible" }}>
             <div>
-                <Typography level="title-lg">{props.name}</Typography>
+                <Typography level="title-lg">
+                    <a href={`#${props.name.replace(/\s+/g, '-')}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                        {props.name}
+                    </a>
+                </Typography>
                 <Typography level="title-sm">{props.birthdate}{renderDeathDate()}</Typography>
                 <Typography level="body-sm">{props.nicknames} - {props.age}</Typography>
             </div>
