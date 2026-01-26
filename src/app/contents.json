@@ -19,6 +19,7 @@
         "https://i.imgur.com/9uYa4LC.jpg",
         "/images/EliCuteInBox.jpg",
         "/images/EliHouse.jpg",
+        "/images/EliBellyScratch.mp4",
         "/images/EliStopWorking.jpg",
         "/images/EliStretchingLimerick.jpg"
       ],
@@ -75,6 +76,7 @@
         "https://i.imgur.com/ZZjSKWb.jpg",
         "/images/BucketHugging.jpg",
         "/images/BucketLaying.jpg",
+        "/images/BucketAttack.mp4",
         "/images/BucketLoungingOnArm.jpg",
         "/images/BucketWallSit.jpg",
         "/images/BucketBlep.jpg",
@@ -205,6 +207,7 @@
         "/images/BonesStretch.jpg",
         "/images/BabyBonesAndMilk.jpg",
         "/images/BabyBonesAndPete.jpg",
+        "/images/BonesWheel.mp4",
         "/images/BonesStupid.jpg"
       ],
       "imageAlt": "Images of Bones the cat",
@@ -232,6 +235,7 @@
       "images": [
         "https://i.imgur.com/59SwZm0.jpg",
         "/images/PrettyWobbl.jpg",
+        "/images/WobbleWheelRoll.mp4",
         "/images/WobbleAndCake.jpg"
       ],
       "imageAlt": "Images of Wobbles the cat",
@@ -283,6 +287,8 @@
       "images": [
         "https://i.imgur.com/4ICZldG.jpg",
         "/images/TriscuitDesperate.jpg",
+        "/images/TriscuitEars.mp4",
+        "/images/TriscuitEatingFoodBadly.mp4",
         "/images/TriscuitClimb.jpg"
       ],
       "imageAlt": "Images of Triscuit the cat",
@@ -291,6 +297,48 @@
         "/sounds/Triscuit_Wants_Outside.mp3",
         "/sounds/Triscuit_Wants_Outside2.mp3"
       ]
+    },
+    {
+      "name": "Jack",
+      "nicknames": [
+        "JackJack, ",
+        "Glue, ",
+        "JackAttack, ",
+        "Yucky Baby, ",
+        "FartyMcFly, ",
+        "He"
+      ],
+      "description": "JackJack is our stinky cat, most known for his farts. He was a feral kitten that we adopted along with his sister and they absolutely adore each other. We sometimes call him \"Glue\" because he is constantly looking to be held or get attention. He loves cheese, cookies and goldfish crackers, and is incredibly sweet.",
+      "birthdate": "August 12, 2025",
+      "deathdate": "",
+      "images": [
+        "/images/JackCrazyEyes.jpeg",
+        "/images/JackJackTowerCute.jpeg",
+        "/images/JackKeyboard.gif"
+      ],
+      "imageAlt": "Images of Jack the cat",
+      "sounds": []
+    },
+    {
+      "name": "Shelby",
+      "nicknames": [
+        "Shellfish, ",
+        "Shelby Malibu, ",
+        "Shelby Silverado, ",
+        "Stinky Baby, ",
+        "Shells and Cheese, ",
+        "Babybel, ",
+        "She"
+      ],
+      "description": "Shelby is JackJack's sister and loves running away and crying out for her brother to come find her. Her favorite toy is a feather toy that she will carry around the entire house. She is very sweet, and randomly gets scared of nothing, but instantly melts the moment she's pet or held.",
+      "birthdate": "August 12, 2025",
+      "deathdate": "",
+      "images": [
+        "/images/ShelbyCuteFloor.jpeg",
+        "/images/ShelbyCuteFloor2.jpeg"
+      ],
+      "imageAlt": "Images of Hester the cat",
+      "sounds": []
     }
   ]
 }
