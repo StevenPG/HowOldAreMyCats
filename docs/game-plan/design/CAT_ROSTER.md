@@ -103,66 +103,88 @@ interface CatAbility {
 
 ## Cat Roster
 
-Fill in details for each cat:
+### v1 Starter Cats (3 cats)
 
-### Cat 1: [Name]
-| Property | Value |
-|----------|-------|
-| **Name** | |
-| **Description** | |
-| **Personality** | |
-| **Status** | Current / Memorial |
-| **Special Ability** | |
-| **Ability Description** | |
-
-**Visual Notes:**
-- Color/pattern:
-- Distinguishing features:
-
-**Sound Notes:**
-- Voice/meow style:
+These 3 were chosen for diverse abilities and distinct visual appearances.
 
 ---
 
-### Cat 2: [Name]
+### Cat 1: Milky Moo
 | Property | Value |
 |----------|-------|
-| **Name** | |
-| **Description** | |
-| **Personality** | |
-| **Status** | Current / Memorial |
-| **Special Ability** | |
-| **Ability Description** | |
+| **Name** | Milky Moo |
+| **Description** | The smallest cat at 8lbs, gets random zoomies and sprints across the house |
+| **Personality** | Energetic, chirpy, playful (throws hedgehog toy to herself) |
+| **Status** | Current |
+| **Special Ability** | Speed Boost (Zoomies) |
+| **Ability Description** | Temporary 2x speed burst for 2 seconds. 5s cooldown. |
 
 **Visual Notes:**
-- Color/pattern:
-- Distinguishing features:
+- Color/pattern: Light-colored / white-ish calico or tabby (check real photos)
+- Distinguishing features: Small and sleek, expressive face
+- Sprite priority: Smallest cat sprite (slightly smaller hitbox possible)
 
 **Sound Notes:**
-- Voice/meow style:
+- Voice/meow style: Chirpy! Uses existing `/sounds/MilkChirp.mp3`
 
 ---
 
-### Cat 3: [Name]
+### Cat 2: Bitty
 | Property | Value |
 |----------|-------|
-| **Name** | |
-| **Description** | |
-| **Personality** | |
-| **Status** | Current / Memorial |
-| **Special Ability** | |
-| **Ability Description** | |
+| **Name** | Bitty |
+| **Description** | The momma of the house (despite being a boy), food-obsessed, prettiest light green eyes |
+| **Personality** | Sweet, sensitive, chonky food lover |
+| **Status** | Current |
+| **Special Ability** | Ground Pound |
+| **Ability Description** | Slam down from mid-air, destroying obstacles below. 4s cooldown. |
 
 **Visual Notes:**
-- Color/pattern:
-- Distinguishing features:
+- Color/pattern: Tabby, noticeably chunkier/rounder than other cat sprites
+- Distinguishing features: Light green/white eyes, round body shape
+- Sprite priority: Largest/roundest cat sprite
 
 **Sound Notes:**
-- Voice/meow style:
+- Voice/meow style: Purring. Uses existing `/sounds/BittyPurring.mp3`
 
 ---
 
-<!-- Copy template above for additional cats -->
+### Cat 3: Bones
+| Property | Value |
+|----------|-------|
+| **Name** | Bones |
+| **Description** | Found as a tiny skinny kitten, biggest chicken, momma's boy |
+| **Personality** | Skittish, timid, but sweet. Plays tug-of-war like a dog. |
+| **Status** | Current |
+| **Special Ability** | Double Jump |
+| **Ability Description** | Can jump a second time mid-air. Passive ability (no cooldown). |
+
+**Visual Notes:**
+- Color/pattern: Dark/black cat, lean and lanky
+- Distinguishing features: Skinny/angular build, big eyes (scared look)
+- Sprite priority: Tallest/skinniest cat sprite
+
+**Sound Notes:**
+- Voice/meow style: Tiny, almost crying meow. Uses existing `/sounds/BonesCrying.mp3`
+
+---
+
+### Future Cats (Post-v1)
+
+| Cat | Suggested Ability | Priority | Notes |
+|-----|-------------------|----------|-------|
+| Triscuit | Screech (stun) | High | Found screaming, very vocal |
+| Wilson | Wall Cling | High | One-eyed, snuggly |
+| Umbra | Pounce (diagonal attack) | Medium | Grumpy hunter |
+| Pixie | Stealth (brief invincibility) | Medium | Partially blind but fearless |
+| Wobbles | Float/Glide (slow fall) | Medium | CH makes him wobbly |
+| Pancake | Dash | Medium | Flirty then runs away |
+| Bucket | Float/Glide | Memorial | No hip bone, goofball |
+| Eli | Healing Purr | Memorial | Elder cat, tripaw'd |
+| Jack | Dash | Low | Kitten, "Glue" |
+| Shelby | Speed Boost | Low | Kitten, runs and cries |
+
+<!-- Copy the Cat template above for each when adding to v1 -->
 
 ## Ability Ideas
 

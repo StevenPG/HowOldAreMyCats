@@ -12,17 +12,18 @@ All code must follow the standards in [CODE_STANDARDS.md](./technical/CODE_STAND
 ---
 
 ## Phase 1: Setup & Integration
-- [ ] Install Phaser 3 dependency
-- [ ] Set up ESLint + Prettier for code consistency
-- [ ] Create React wrapper component for Phaser
-- [ ] Set up `/play` route with React Router (or simple conditional rendering)
-- [ ] Add "Play" button to TopBar navigation
-- [ ] Create basic game container with proper sizing
-- [ ] Set up Jest for unit testing
+- [ ] Install `phaser` and `react-router-dom` dependencies
+- [ ] Wrap App in `BrowserRouter`, set up routes for `/` and `/play`
+- [ ] Create `PlayPage.tsx` with `React.lazy()` for code splitting
+- [ ] Create `GameContainer.tsx` React wrapper component for Phaser
+- [ ] Add "Play" button/link to TopBar navigation (links to `/play`)
+- [ ] Initialize Phaser game instance inside GameContainer with basic config
+- [ ] Verify game canvas renders and cleans up on unmount
 
 **Quality gates:**
 - [ ] ESLint passes with no errors
-- [ ] Basic smoke test for game initialization
+- [ ] Navigating to `/play` loads the game, back button returns to cat cards
+- [ ] Phaser instance properly destroyed on route change (no memory leaks)
 
 ---
 
@@ -61,25 +62,26 @@ All code must follow the standards in [CODE_STANDARDS.md](./technical/CODE_STAND
 
 ---
 
-## Phase 4: Individual Cat Implementation
-For each cat in the roster:
-- [ ] Create sprite sheet with all animations
-- [ ] Create portrait for selector bar
-- [ ] Record/source unique sounds
-- [ ] Define special ability
+## Phase 4: v1 Cat Implementation (3 cats)
+For each starter cat (Milky Moo, Bitty, Bones):
+- [ ] Generate AI pixel art sprite sheet (32x32 frames)
+- [ ] Generate AI pixel art portrait (48x48)
+- [ ] Map existing real cat sounds to game events
+- [ ] Implement special ability logic
 - [ ] Add configuration to cats.ts
 - [ ] Test in-game
 
-### Cat Checklist Template
+### v1 Cat Checklist
 | Cat | Sprites | Portrait | Sounds | Ability | Config | Tested |
 |-----|---------|----------|--------|---------|--------|--------|
-| | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Milky Moo | [ ] | [ ] | [x] MilkChirp | Speed Boost | [ ] | [ ] |
+| Bitty | [ ] | [ ] | [x] BittyPurring | Ground Pound | [ ] | [ ] |
+| Bones | [ ] | [ ] | [x] BonesCrying | Double Jump | [ ] | [ ] |
 
 **Quality gates:**
 - [ ] Each ability has unit tests
 - [ ] Config file is validated (no missing required fields)
+- [ ] All 3 cats can be swapped between during gameplay
 
 ---
 

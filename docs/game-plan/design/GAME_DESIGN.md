@@ -15,37 +15,38 @@ A tribute game showcasing beloved cats (past and present). Players control a cat
 ### Core Actions
 | Action | Description |
 |--------|-------------|
-| **Run** | Horizontal movement (or auto-scroll?) |
-| **Jump** | Vertical movement to reach platforms, avoid obstacles |
-| **Attack** | Basic attack to hit obstacles/enemies |
-| **Swap Cat** | Switch to a different cat from the roster |
-| **Special Ability** | Unique ability per cat |
+| **Run** | Player-controlled horizontal movement (left/right) |
+| **Jump** | Variable-height jump (hold for higher), single jump by default |
+| **Attack** | Basic paw swipe attack, short range melee |
+| **Swap Cat** | Cycle to next cat from the roster |
+| **Special Ability** | Unique ability per cat (cooldown-based) |
 
 ### Player Movement
-- **Horizontal**: Auto-scroll or player-controlled?
-- **Jump**: Single jump? Double jump? Variable height?
-- **Attack**: Swipe/paw animation, short range
+- **Horizontal**: Player-controlled (left/right input), camera follows player
+- **Jump**: Single jump with variable height (hold jump key longer = higher). Some cats may have double jump as a special ability.
+- **Attack**: Paw swipe animation, short range. Destroys breakable obstacles.
 
 ### Character Swap System
-- **Trigger**: Button press (keyboard key / on-screen button)
-- **Behavior**: Instant swap or brief transition animation?
-- **Restrictions**: Cooldown? Mid-air allowed?
+- **Trigger**: Q key (keyboard) / tap portrait (mobile)
+- **Behavior**: Instant swap with brief particle effect (no freeze/pause)
+- **Restrictions**: 0.5s cooldown between swaps. Mid-air swap allowed.
 - **UI**: Cat selector bar at bottom of screen (see [CAT_ROSTER.md](./CAT_ROSTER.md))
 
 ### Controls
 | Action | Keyboard | Mobile |
 |--------|----------|--------|
-| Jump | | |
-| Move Left | | |
-| Move Right | | |
-| Attack | | |
-| Swap Cat | | |
-| Pause | | |
+| Jump | Space / W / Up Arrow | Tap right side of screen |
+| Move Left | A / Left Arrow | Virtual D-pad (left) |
+| Move Right | D / Right Arrow | Virtual D-pad (right) |
+| Attack | J / Z | Attack button |
+| Swap Cat | Q | Tap cat portrait |
+| Special | K / X | Special button |
+| Pause | Escape / P | Pause button |
 
 ### Scrolling Behavior
-- **Direction**: Left-to-right / Right-to-left / Vertical
-- **Speed**: Constant / Accelerating over time
-- **Camera**: Fixed on player / Leading ahead
+- **Direction**: Camera follows player horizontally, world scrolls in both directions
+- **Speed**: Player-controlled (not auto-scroll). World generates platforms ahead of player.
+- **Camera**: Follows player with slight lead in the direction of movement
 
 ---
 
@@ -54,47 +55,55 @@ A tribute game showcasing beloved cats (past and present). Players control a cat
 ### Platforms
 | Type | Behavior | Sprite Notes |
 |------|----------|--------------|
-| | | |
+| Ground | Static, solid | Grass/dirt tile, tileable |
+| Floating | Static, one-way (pass through from below) | Wooden plank |
+| Crumbling | Falls after 1s of standing on it | Cracks appear, then falls |
+| Bouncy | Launches player extra high | Spring/trampoline visual |
 
 ### Obstacles
 | Type | Behavior | Damage/Effect |
 |------|----------|---------------|
-| | | |
+| Spike | Static, ground-level | Instant death / 1 damage |
+| Vacuum | Static, placed on platforms | 1 damage, knockback |
+| Water spray | Periodic activation | 1 damage (cats hate water!) |
 
 ### Collectibles
 | Item | Points | Effect |
 |------|--------|--------|
-| | | |
+| Treat | 10 | Basic score pickup |
+| Catnip | 50 | Bonus score, brief speed boost |
+| Toy mouse | 100 | Rare, high value |
 
 ### Power-ups
 | Power-up | Duration | Effect |
 |----------|----------|--------|
-| | | |
+| Churu tube | 5s | Invincibility |
+| Cardboard box | 3s | Shield (absorb 1 hit) |
 
 ---
 
 ## Scoring System
-- **Base Score**:
-- **Collectible Bonus**:
-- **Distance Bonus**:
-- **Combo System**:
-- **Cat-specific bonuses?**:
+- **Base Score**: 1 point per pixel traveled to the right
+- **Collectible Bonus**: Treats (10), Catnip (50), Toy mouse (100)
+- **Distance Bonus**: Milestone bonuses at 1000, 5000, 10000 distance
+- **Combo System**: Collecting items within 2s of each other increases multiplier (2x, 3x, max 5x)
+- **Cat-specific bonuses?**: Deferred to later phase
 
 ---
 
 ## Difficulty Progression
-- **How does difficulty increase?**
-- **Speed curve**:
-- **Platform density**:
-- **Obstacle frequency**:
+- **How does difficulty increase?**: Platform gaps widen, obstacles more frequent, crumbling platforms appear
+- **Speed curve**: N/A (player-controlled speed), but platform generation gets harder
+- **Platform density**: Decreases over distance (more gaps)
+- **Obstacle frequency**: Increases logarithmically with distance traveled
 
 ---
 
 ## Visual Style
-- **Art Style**: Pixel art / Vector / Hand-drawn
-- **Color Palette**:
-- **Animation Style**:
-- **Cat Portraits**: Style for selector bar icons
+- **Art Style**: Pixel art (AI-generated, 32x32 base frame size)
+- **Color Palette**: Warm, cozy tones. Each cat retains real-life coloring.
+- **Animation Style**: 2-frame idle, 4-frame run, snappy jumps
+- **Cat Portraits**: 48x48 pixel art portraits for selector bar
 
 ---
 

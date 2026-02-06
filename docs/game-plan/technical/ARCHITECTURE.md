@@ -2,10 +2,11 @@
 
 ## Overview
 ```
-React App
-├── TopBar (add Play button)
-├── Main Content (existing cat cards)
-└── /play route
+React App (BrowserRouter from react-router-dom v6)
+├── TopBar (add Play button linking to /play)
+├── Route: / (existing cat cards page)
+│   └── Main Content (cat card grid)
+└── Route: /play (lazy-loaded)
     └── GameContainer (React component)
         └── Phaser Game Instance
             ├── BootScene (load all cat assets)
@@ -13,6 +14,8 @@ React App
             ├── GameScene (main gameplay + cat selector UI)
             └── GameOverScene (end screen)
 ```
+
+**Note:** The `/play` route should use `React.lazy()` + `Suspense` so Phaser (~1MB) is only loaded when the user navigates to the game.
 
 ---
 
@@ -283,6 +286,17 @@ const config: Phaser.Types.Core.GameConfig = {
 
 ### Recommended Pattern
 ```tsx
+// App.tsx - lazy load the game page
+const PlayPage = React.lazy(() => import('./pages/PlayPage'));
+
+// In routes:
+<Route path="/play" element={
+  <Suspense fallback={<div>Loading game...</div>}>
+    <PlayPage />
+  </Suspense>
+} />
+
+// GameContainer.tsx
 const GameContainer: React.FC = () => {
   const gameRef = useRef<Phaser.Game | null>(null);
 
@@ -357,7 +371,8 @@ preload() {
 ## Dependencies to Add
 ```json
 {
-  "phaser": "^3.80.0"
+  "phaser": "^3.80.0",
+  "react-router-dom": "^6.20.0"
 }
 ```
 

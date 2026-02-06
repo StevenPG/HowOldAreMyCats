@@ -14,9 +14,9 @@ All cats must implement these core animations and abilities.
 ### Base Sprite Specifications
 
 #### Dimensions (Standardized)
-- **Frame Size**: (e.g., 32x32, 64x64 pixels) - all cats use same size
-- **Scale in Game**:
-- **Portrait Size**: (for selector bar icons)
+- **Frame Size**: 32x32 pixels - all cats use same frame size
+- **Scale in Game**: 2x (renders at 64x64 on screen)
+- **Portrait Size**: 48x48 pixels (for selector bar icons)
 
 #### Required Animations (All Cats)
 | Animation | Frames | Loop? | Notes |
@@ -46,13 +46,13 @@ These are defaults; individual cats may override.
 
 | Property | Default | Notes |
 |----------|---------|-------|
-| Hitbox Size | | Collision box |
+| Hitbox Size | 24x28 | Slightly smaller than frame for forgiveness |
 | Gravity Scale | 1.0 | Some cats may float/fall slower |
-| Jump Force | | |
-| Move Speed | | |
-| Max Fall Speed | | Terminal velocity |
-| Attack Range | | Swipe distance |
-| Attack Cooldown | | Seconds |
+| Jump Force | -400 | Negative = up in Phaser |
+| Move Speed | 200 | Pixels per second |
+| Max Fall Speed | 600 | Terminal velocity |
+| Attack Range | 40px | Paw swipe distance |
+| Attack Cooldown | 0.3s | Fast swipes |
 
 ---
 

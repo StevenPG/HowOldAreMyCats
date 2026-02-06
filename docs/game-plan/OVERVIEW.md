@@ -10,15 +10,25 @@ A 2D infinite scrolling platformer game built with Phaser, integrated into the e
 - Tribute to real cats (current and memorial)
 
 ## Goals
-- [ ] Add a "Play" button to the main site navigation
-- [ ] Create a `/play` route that hosts the game
-- [ ] Build an engaging infinite scrolling platformer
-- [ ] Implement character swap system with cat roster
+- [ ] Install react-router-dom and set up `/play` route
+- [ ] Add a "Play" button to the TopBar navigation
+- [ ] Build an engaging 2D platformer with player-controlled movement
+- [ ] Implement character swap system with 1-3 starter cats
+- [ ] Generate AI pixel art sprites for each starter cat
 - [ ] Integrate seamlessly with existing React/MUI styling
+- [ ] Lazy-load the game route to minimize impact on main page load
+
+## Key Decisions
+- **Routing**: React Router (`react-router-dom`) for `/play` route
+- **Movement**: Player-controlled (left/right/jump/attack), NOT auto-runner
+- **v1 Scope**: Start with 1-3 playable cats, expand incrementally
+- **Art**: AI-generated pixel art based on each cat's real appearance
+- **Memorial Cats**: Eli and Bucket (deferred to later phase)
 
 ## Tech Stack
 - **Game Engine**: Phaser 3
 - **Frontend**: React 18 + TypeScript
+- **Routing**: react-router-dom v6
 - **UI Framework**: MUI (existing)
 - **Build Tool**: Create React App (existing)
 

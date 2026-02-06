@@ -10,34 +10,32 @@ For each cat in the roster, create:
 
 | Asset | Dimensions | Frames | Format | Naming Convention |
 |-------|------------|--------|--------|-------------------|
-| Sprite sheet | | | PNG | `cat_[name]_spritesheet.png` |
-| Portrait/Icon | | 1 | PNG | `cat_[name]_portrait.png` |
+| Sprite sheet | 256x288 (8 cols x 9 rows of 32x32) | varies per anim | PNG | `cat_[name]_spritesheet.png` |
+| Portrait/Icon | 48x48 | 1 | PNG | `cat_[name]_portrait.png` |
 | Attack sound | - | - | MP3/OGG | `cat_[name]_attack.*` |
 | Meow/Voice | - | - | MP3/OGG | `cat_[name]_meow.*` |
 | Special ability sound | - | - | MP3/OGG | `cat_[name]_special.*` |
 
-### Cat Roster Status
+### v1 Cat Roster Status
 
 | Cat Name | Sprite Sheet | Portrait | Sounds | Status |
 |----------|--------------|----------|--------|--------|
-| | [ ] | [ ] | [ ] | |
-| | [ ] | [ ] | [ ] | |
-| | [ ] | [ ] | [ ] | |
-| | [ ] | [ ] | [ ] | |
-| | [ ] | [ ] | [ ] | |
+| Milky Moo | [ ] | [ ] | [x] MilkChirp.mp3 | v1 starter |
+| Bitty | [ ] | [ ] | [x] BittyPurring.mp3 | v1 starter |
+| Bones | [ ] | [ ] | [x] BonesCrying.mp3 | v1 starter |
 
 ### Sprite Sheet Contents (Per Cat)
 | Animation | Frames | Row | Status |
 |-----------|--------|-----|--------|
-| Idle | | 0 | [ ] |
-| Run | | 1 | [ ] |
-| Jump | | 2 | [ ] |
-| Fall | | 3 | [ ] |
-| Land | | 4 | [ ] |
-| Attack | | 5 | [ ] |
-| Hurt | | 6 | [ ] |
-| Death | | 7 | [ ] |
-| Special Ability | | 8 | [ ] |
+| Idle | 2-4 | 0 | [ ] |
+| Run | 4-6 | 1 | [ ] |
+| Jump | 2-3 | 2 | [ ] |
+| Fall | 2 | 3 | [ ] |
+| Land | 2 | 4 | [ ] |
+| Attack | 3-4 | 5 | [ ] |
+| Hurt | 2 | 6 | [ ] |
+| Death | 4 | 7 | [ ] |
+| Special Ability | 3-4 | 8 | [ ] |
 
 ---
 
@@ -146,21 +144,22 @@ For each cat in the roster, create:
 ---
 
 ## Asset Sources
-<!-- Note where assets will come from -->
-- **Custom made**:
-- **Asset packs**:
-- **Generated**:
+- **Custom made**: Cat-specific sounds (already exist in `/sounds/` directory)
+- **Asset packs**: Platform tiles, UI elements (explore itch.io free packs)
+- **Generated**: Cat sprite sheets and portraits via AI pixel art generation
+- **SFX**: BFXR/SFXR for jump, land, collect, hit, game over sounds
 
 ---
 
 ## Technical Specifications
 
-- **Sprite sheet format**: JSON Hash (Phaser compatible) or row-based
-- **Standard frame size**: TBD (32x32, 64x64, etc.)
-- **Portrait size**: TBD (for cat selector bar)
-- **Audio formats**: Provide both MP3 and OGG for browser compatibility
+- **Sprite sheet format**: Row-based (one animation per row, consistent frame width)
+- **Standard frame size**: 32x32 pixels
+- **Portrait size**: 48x48 pixels (for cat selector bar)
+- **Audio formats**: MP3 primary (all target browsers support it). OGG as fallback.
 - **Recommended tools**:
-  - Aseprite (pixel art)
-  - TexturePacker (sprite sheets)
+  - AI image generation for cat sprites (then manual cleanup if needed)
+  - Aseprite (pixel art touch-ups)
+  - TexturePacker (sprite sheet assembly)
   - Audacity (audio editing)
   - BFXR/SFXR (retro sound effects)
