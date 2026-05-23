@@ -136,6 +136,7 @@
       "birthdate": "April 27, 2018",
       "deathdate": "",
       "images": [
+        "/images/WilsonBeautiful.jpeg",
         "https://i.imgur.com/lW3ZpoF.jpg",
         "/images/PrettyWilson.jpg"
       ],
@@ -301,6 +302,11 @@
     {
       "name": "Jack",
       "nicknames": [
+        "Bonky, ",
+        "Bonkers, ",
+        "Bonkenharbor, ",
+        "Jonk, ",
+        "Binky, ",
         "JackJack, ",
         "Glue, ",
         "JackAttack, ",
@@ -312,33 +318,52 @@
       "birthdate": "August 12, 2025",
       "deathdate": "",
       "images": [
+        "/images/BonkyBusiness.jpeg",
+        "/images/BonkyHandsome.jpeg",
+        "/images/BonkyBigFeet.jpeg",
+        "/images/BonkyPeek.jpeg",
+        "/images/BonkyStretch.jpeg",
         "/images/JackCrazyEyes.jpeg",
         "/images/JackJackTowerCute.jpeg",
         "/images/JackKeyboard.gif"
       ],
       "imageAlt": "Images of Jack the cat",
-      "sounds": []
+      "sounds": [
+        "/sounds/BonkyLanding.mp3",
+        "/sounds/BonkyHungry.mp3",
+        "/sounds/BonkyPurring.mp3",
+        "/sounds/BonkyPigeon.mp3"
+      ]
     },
     {
       "name": "Shelby",
       "nicknames": [
+        "Shelbitha, ",
+        "Shelbita, ",
         "Shellfish, ",
         "Shelby Malibu, ",
         "Shelby Silverado, ",
         "Stinky Baby, ",
-        "Shells and Cheese, ",
-        "Babybel, ",
+        "Shelvita, Shells and Cheese, ",
+        "Shelby Babybel Bee, ",
         "She"
       ],
       "description": "Shelby is JackJack's sister and loves running away and crying out for her brother to come find her. Her favorite toy is a feather toy that she will carry around the entire house. She is very sweet, and randomly gets scared of nothing, but instantly melts the moment she's pet or held.",
       "birthdate": "August 12, 2025",
       "deathdate": "",
       "images": [
+        "/images/ShelbyCute.jpg",
+        "/images/ShelbySunlight.jpeg",
+        "/images/ShelbyOutside.jpeg",
         "/images/ShelbyCuteFloor.jpeg",
         "/images/ShelbyCuteFloor2.jpeg"
       ],
       "imageAlt": "Images of Hester the cat",
-      "sounds": []
+      "sounds": [
+        "/sounds/ShelbyWhining1.mp3",
+        "/sounds/ShelbyWhining2.mp3",
+        "/sounds/ShelbyWhining3.mp3"
+      ]
     }
   ]
 }
