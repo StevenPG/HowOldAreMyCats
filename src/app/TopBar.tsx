@@ -26,12 +26,12 @@ export default function TopBar(props: any) {
                     <Typography variant="h5" component="div">
                         { textContent["topBar"]["textBeginning"] }
                     </Typography>
-                    {textContent["topBar"]["textStruckThrough"] && (<>
+                    {textContent["topBar"]["textStruckThrough"] ? (<>
                     &nbsp;
                     <Typography variant="h5" component="div" style={styles.strikethru}>
                         { textContent["topBar"]["textStruckThrough"] }
                     </Typography>
-                    &nbsp;</>)}
+                    &nbsp;</>) : <>&nbsp;</>}
                     <Typography variant="h5" component="div">
                         { textContent["topBar"]["textEnd"]}
                     </Typography>
