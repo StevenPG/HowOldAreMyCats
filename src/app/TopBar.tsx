@@ -9,8 +9,6 @@ import { nextBirthdayAsStr } from './birthday-calc';
 
 export default function TopBar(props: any) {
 
-    const initialText = textContent["topBar"]["textBeginning"];
-
     const styles = {
         maxWidth: {
             width: "100%"
@@ -26,13 +24,14 @@ export default function TopBar(props: any) {
                 <Toolbar>
                     {/* Align text with center of screen */}
                     <Typography variant="h5" component="div">
-                        { initialText }
+                        { textContent["topBar"]["textBeginning"] }
                     </Typography>
+                    {textContent["topBar"]["textStruckThrough"] && (<>
                     &nbsp;
                     <Typography variant="h5" component="div" style={styles.strikethru}>
                         { textContent["topBar"]["textStruckThrough"] }
                     </Typography>
-                    &nbsp;
+                    &nbsp;</>)}
                     <Typography variant="h5" component="div">
                         { textContent["topBar"]["textEnd"]}
                     </Typography>
