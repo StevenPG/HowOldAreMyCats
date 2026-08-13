@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import BasicCard from "./app/catcard/Card";
 import TopBar from "./app/TopBar";
+import BirthdayCalendar from "./app/calendar/BirthdayCalendar";
 
 import textContent from "./app/contents.json"
 import Grid from '@mui/material/Unstable_Grid2';
@@ -41,6 +42,9 @@ function App() {
                     <TopBar
                         content={textContent.cards}
                     />
+                </div>
+                <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
+                    <BirthdayCalendar/>
                 </div>
                 <Grid container spacing={1}>
                     {

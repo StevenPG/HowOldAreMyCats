@@ -70,7 +70,13 @@ export default function BasicCard(props: any) {
             <div>
                 <Typography level="title-lg">
                     <a href={`#${props.name.replace(/\s+/g, '-')}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                        {props.name}
+                        {props.deathdate ? (
+                            <span title={`${props.name} has passed away`}>
+                                <span role="img" aria-label="in memory of">😇</span>
+                                {' '}{props.name}{' '}
+                                <span role="img" aria-hidden="true">😇</span>
+                            </span>
+                        ) : props.name}
                     </a>
                 </Typography>
                 <Typography level="title-sm">{props.birthdate}{renderDeathDate()}</Typography>

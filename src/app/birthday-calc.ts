@@ -4,8 +4,68 @@ import textContent from "./contents.json";
  * Checks if the deathdate is empty or undefined
  * @param deathdate the deathdate of the cat
  */
-function isAlive(deathdate: string): boolean {
+export function isAlive(deathdate: string): boolean {
     return deathdate === "" || deathdate === undefined;
+}
+
+export type CatEvent = {
+    name: string;
+    /** "birthday" for every cat, "memorial" for cats that have passed */
+    kind: "birthday" | "memorial";
+    /** 0-indexed month, matching Date#getMonth */
+    month: number;
+    /** day of the month, matching Date#getDate */
+    day: number;
+    /** the original year the event happened */
+    year: number;
+    /** true when this cat has passed away */
+    passed: boolean;
+};
+
+/**
+ * Flattens contents.json into the day-of-year events the calendar renders.
+ * Every cat contributes a birthday; cats that have passed also contribute a memorial day.
+ */
+export function catEvents(): CatEvent[] {
+    const events: CatEvent[] = [];
+    textContent.cards.forEach(details => {
+        const passed = !isAlive(details.deathdate);
+        const birth = new Date(details.birthdate);
+        events.push({
+            name: details.name,
+            kind: "birthday",
+            month: birth.getMonth(),
+            day: birth.getDate(),
+            year: birth.getFullYear(),
+            passed,
+        });
+
+        if (passed) {
+            const death = new Date(details.deathdate);
+            events.push({
+                name: details.name,
+                kind: "memorial",
+                month: death.getMonth(),
+                day: death.getDate(),
+                year: death.getFullYear(),
+                passed,
+            });
+        }
+    });
+    return events;
+}
+
+/**
+ * Number of days between today and the next occurrence of a month/day, where
+ * today counts as 0.
+ */
+export function daysUntil(month: number, day: number, from: Date = new Date()): number {
+    const today = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+    let next = new Date(today.getFullYear(), month, day);
+    if (next.getTime() < today.getTime()) {
+        next = new Date(today.getFullYear() + 1, month, day);
+    }
+    return Math.round((next.getTime() - today.getTime()) / (1000 * 3600 * 24));
 }
 
 /**
