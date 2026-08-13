@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import textContent from "./contents.json";
 import { nextBirthdayAsStr } from './birthday-calc';
+import BirthdayCalendarButton from './calendar/BirthdayCalendarButton';
 
 export default function TopBar(props: any) {
 
@@ -36,9 +37,9 @@ export default function TopBar(props: any) {
                         { textContent["topBar"]["textEnd"]}
                     </Typography>
                     &nbsp;
-                    <Typography variant="h5" component="div">
-                        - Next Birthday Is {nextBirthdayAsStr()}
-                    </Typography>
+                    <Box sx={{ ml: 1 }}>
+                        <BirthdayCalendarButton label={`Next Birthday Is ${nextBirthdayAsStr()}`}/>
+                    </Box>
                 </Toolbar>
             </AppBar>
         </Box>

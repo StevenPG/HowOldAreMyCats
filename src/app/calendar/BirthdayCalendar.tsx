@@ -1,9 +1,7 @@
 import * as React from 'react';
-import Card from '@mui/joy/Card';
 import Typography from '@mui/joy/Typography';
 import { IconButton } from '@mui/joy';
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
-import { Tooltip } from '@mui/material';
 
 import { catEvents, daysUntil, CatEvent } from '../birthday-calc';
 
@@ -11,7 +9,7 @@ const MONTH_NAMES = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
-const DAY_NAMES = ["S", "M", "T", "W", "T", "F", "S"];
+const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const EVENTS = catEvents();
 
@@ -35,7 +33,7 @@ function ordinal(n: number): string {
     return `${n}th`;
 }
 
-/** "Bones turns 6" / "Remembering Eli" - the text shown when hovering a marked day. */
+/** "Bones' 6th birthday" / "Remembering Eli" - the full text behind each name chip. */
 function describe(event: CatEvent, displayedYear: number): string {
     const age = displayedYear - event.year;
     if (event.kind === "birthday") {
@@ -46,7 +44,38 @@ function describe(event: CatEvent, displayedYear: number): string {
     return `Remembering ${event.name}`;
 }
 
-export default function BirthdayCalendar() {
+/** One cat's name inside a day cell, linking to their card. */
+function EventChip(props: { event: CatEvent, displayedYear: number, onNavigate?: () => void }) {
+    const { event, displayedYear, onNavigate } = props;
+    const isBirthday = event.kind === "birthday";
+
+    return (
+        <a
+            href={anchorFor(event.name)}
+            onClick={onNavigate}
+            title={describe(event, displayedYear)}
+            style={{
+                display: "block",
+                width: "100%",
+                fontSize: "0.65rem",
+                lineHeight: 1.25,
+                padding: "1px 3px",
+                borderRadius: "4px",
+                textDecoration: "none",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                fontStyle: isBirthday ? "normal" : "italic",
+                color: isBirthday ? "#0b4f9e" : "#5a5a5a",
+                backgroundColor: isBirthday ? "rgba(25, 118, 210, 0.16)" : "rgba(0, 0, 0, 0.06)",
+            }}
+        >
+            {isBirthday ? "🎂 " : ""}{event.name}
+        </a>
+    );
+}
+
+export default function BirthdayCalendar(props: { onNavigate?: () => void }) {
     const today = new Date();
     const [month, setMonth] = React.useState(today.getMonth());
     const [year, setYear] = React.useState(today.getFullYear());
@@ -76,7 +105,7 @@ export default function BirthdayCalendar() {
         .slice(0, 3);
 
     return (
-        <Card sx={{ width: "min(560px, 90%)", marginBottom: "2em" }}>
+        <div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <IconButton aria-label="previous month" onClick={() => shiftMonth(-1)}>
                     <ChevronLeft/>
@@ -87,7 +116,7 @@ export default function BirthdayCalendar() {
                 </IconButton>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: "2px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: "3px" }}>
                 {DAY_NAMES.map((dayName, i) => (
                     <Typography key={i} level="body-xs" sx={{ textAlign: "center", opacity: 0.7 }}>
                         {dayName}
@@ -102,61 +131,50 @@ export default function BirthdayCalendar() {
                     const isToday = day === today.getDate()
                         && month === today.getMonth()
                         && year === today.getFullYear();
-                    const hasBirthday = dayEvents.some(event => event.kind === "birthday");
-                    const label = dayEvents.map(event => describe(event, year)).join(", ");
-
-                    const cell = (
-                        <div
-                            style={{
-                                minHeight: "40px",
-                                padding: "2px",
-                                display: "flex",
-                                flexDirection: "column",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                borderRadius: "6px",
-                                fontSize: "0.8rem",
-                                lineHeight: 1,
-                                border: isToday ? "2px solid #1976d2" : "2px solid transparent",
-                                backgroundColor: hasBirthday ? "rgba(25, 118, 210, 0.12)" : undefined,
-                            }}
-                        >
-                            <span>{day}</span>
-                            <span style={{ fontSize: "0.7rem", minHeight: "0.8rem" }}>
-                                {dayEvents.map(event => event.kind === "birthday" ? "🎂" : "😇").join("")}
-                            </span>
-                        </div>
-                    );
-
-                    if (dayEvents.length === 0) {
-                        return <div key={i}>{cell}</div>;
-                    }
 
                     return (
-                        <Tooltip key={i} title={label} arrow>
-                            <a
-                                href={anchorFor(dayEvents[0].name)}
-                                aria-label={label}
-                                style={{ color: "inherit", textDecoration: "none" }}
-                            >
-                                {cell}
-                            </a>
-                        </Tooltip>
+                        <div
+                            key={i}
+                            style={{
+                                minHeight: "58px",
+                                padding: "2px",
+                                borderRadius: "6px",
+                                border: isToday ? "2px solid #1976d2" : "2px solid transparent",
+                                backgroundColor: dayEvents.length > 0 ? "rgba(25, 118, 210, 0.05)" : undefined,
+                            }}
+                        >
+                            <Typography level="body-xs" sx={{ fontWeight: isToday ? "lg" : "md" }}>
+                                {day}
+                            </Typography>
+                            {dayEvents.map(event => (
+                                <EventChip
+                                    key={`${event.name}-${event.kind}`}
+                                    event={event}
+                                    displayedYear={year}
+                                    onNavigate={props.onNavigate}
+                                />
+                            ))}
+                        </div>
                     );
                 })}
             </div>
 
-            <Typography level="body-sm" sx={{ mt: 1 }}>
+            <Typography level="body-xs" sx={{ mt: 1, opacity: 0.7 }}>
+                🎂 birthday &nbsp;·&nbsp; <i>italics</i> = in memory
+            </Typography>
+
+            <Typography level="body-sm" sx={{ mt: 0.5 }}>
+                Coming up:{" "}
                 {upcoming.map(({ event, days }, i) => (
                     <React.Fragment key={event.name}>
                         {i > 0 && " • "}
-                        <a href={anchorFor(event.name)} style={{ color: "inherit" }}>
+                        <a href={anchorFor(event.name)} onClick={props.onNavigate} style={{ color: "inherit" }}>
                             {event.name}
                         </a>
                         {days === 0 ? " today! 🎉" : ` in ${days} day${days === 1 ? "" : "s"}`}
                     </React.Fragment>
                 ))}
             </Typography>
-        </Card>
+        </div>
     );
 }
