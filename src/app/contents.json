@@ -25,13 +25,13 @@
       ],
       "imageAlt": "Images of Eli, our first cat",
       "sounds": [
-        "/sounds/Eli_Excited_For_Food.mp3",
-        "/sounds/Eli_Happy_For_Attention.mp3",
-        "/sounds/Eli_Talking_Back.mp3",
-        "/sounds/Eli_Chirping_By_The_Bath_Tub.mp3",
-        "/sounds/Eli_Complaining_About_The_Cage.mp3",
-        "/sounds/Eli_Cry_Chirp_Combo.mp3",
-        "/sounds/Eli_Young_Bedroom_Chirping.mp3"
+        "/sounds/Eli/Eli_Excited_For_Food.mp3",
+        "/sounds/Eli/Eli_Happy_For_Attention.mp3",
+        "/sounds/Eli/Eli_Talking_Back.mp3",
+        "/sounds/Eli/Eli_Chirping_By_The_Bath_Tub.mp3",
+        "/sounds/Eli/Eli_Complaining_About_The_Cage.mp3",
+        "/sounds/Eli/Eli_Cry_Chirp_Combo.mp3",
+        "/sounds/Eli/Eli_Young_Bedroom_Chirping.mp3"
       ]
     },
     {
@@ -54,11 +54,11 @@
       ],
       "imageAlt": "Images of Umbra the cat",
       "sounds": [
-        "/sounds/Umbra_Hiss_At_Vacuum.mp3",
-        "/sounds/Umbra_Sees_Wilson.mp3",
-        "/sounds/Umbra_Surprise_Beep.mp3",
-        "/sounds/UmbraWantsUp.mp3",
-        "/sounds/UmbraChatting.mp3"
+        "/sounds/Umbra/Umbra_Hiss_At_Vacuum.mp3",
+        "/sounds/Umbra/Umbra_Sees_Wilson.mp3",
+        "/sounds/Umbra/Umbra_Surprise_Beep.mp3",
+        "/sounds/Umbra/UmbraWantsUp.mp3",
+        "/sounds/Umbra/UmbraChatting.mp3"
       ]
     },
     {
@@ -86,14 +86,14 @@
       ],
       "imageAlt": "Images of Bucket the cat",
       "sounds": [
-        "/sounds/BucketChirpPurr.mp3",
-        "/sounds/BucketLittleMeow.mp3",
-        "/sounds/BucketMeow.mp3",
-        "/sounds/BucketNormalMeow.mp3",
-        "/sounds/BucketPurring.mp3",
-        "/sounds/BucketTalk2.mp3",
-        "/sounds/BucketHatesGoingToTheVet.mp3",
-        "/sounds/BucketBrowing.mp3"
+        "/sounds/Bucket/BucketChirpPurr.mp3",
+        "/sounds/Bucket/BucketLittleMeow.mp3",
+        "/sounds/Bucket/BucketMeow.mp3",
+        "/sounds/Bucket/BucketNormalMeow.mp3",
+        "/sounds/Bucket/BucketPurring.mp3",
+        "/sounds/Bucket/BucketTalk2.mp3",
+        "/sounds/Bucket/BucketHatesGoingToTheVet.mp3",
+        "/sounds/Bucket/BucketBrowing.mp3"
       ]
     },
     {
@@ -117,8 +117,8 @@
       ],
       "imageAlt": "Images of Bitty the cat",
       "sounds": [
-        "/sounds/BittyPurring.mp3",
-        "/sounds/BittyBeggingForAttention.mp3"
+        "/sounds/Bitty/BittyPurring.mp3",
+        "/sounds/Bitty/BittyBeggingForAttention.mp3"
       ]
     },
     {
@@ -145,12 +145,12 @@
       ],
       "imageAlt": "Images of Wilson the cat",
       "sounds": [
-        "/sounds/Wilson_Complaining_For_Attention.mp3",
-        "/sounds/WilsonCryingForAttention.mp3",
-        "/sounds/Wilson_In_The_Carrier.mp3",
-        "/sounds/WilsonTummyAche.mp3",
-        "/sounds/WilsonBarking.mp3",
-        "/sounds/WilsonLaundryBloop.mp3"
+        "/sounds/Wilson/Wilson_Complaining_For_Attention.mp3",
+        "/sounds/Wilson/WilsonCryingForAttention.mp3",
+        "/sounds/Wilson/Wilson_In_The_Carrier.mp3",
+        "/sounds/Wilson/WilsonTummyAche.mp3",
+        "/sounds/Wilson/WilsonBarking.mp3",
+        "/sounds/Wilson/WilsonLaundryBloop.mp3"
       ]
     },
     {
@@ -172,7 +172,7 @@
       ],
       "imageAlt": "Images of Pixie the cat",
       "sounds": [
-        "/sounds/PeteCrying.mp3"
+        "/sounds/Pixie/PeteCrying.mp3"
       ]
     },
     {
@@ -191,7 +191,7 @@
       ],
       "imageAlt": "Images of Milk the cat",
       "sounds": [
-        "/sounds/MilkChirp.mp3"
+        "/sounds/Milk/MilkChirp.mp3"
       ]
     },
     {
@@ -217,11 +217,11 @@
       ],
       "imageAlt": "Images of Bones the cat",
       "sounds": [
-        "/sounds/BonesChirp.mp3",
-        "/sounds/BonesChittering.mp3",
-        "/sounds/BonesCrying.mp3",
-        "/sounds/BonesChirping.mp3",
-        "/sounds/BonesChirping2.mp3"
+        "/sounds/Bones/BonesChirp.mp3",
+        "/sounds/Bones/BonesChittering.mp3",
+        "/sounds/Bones/BonesCrying.mp3",
+        "/sounds/Bones/BonesChirping.mp3",
+        "/sounds/Bones/BonesChirping2.mp3"
       ]
     },
     {
@@ -245,7 +245,7 @@
       ],
       "imageAlt": "Images of Wobbles the cat",
       "sounds": [
-        "/sounds/WobbleBadoop.mp3"
+        "/sounds/Wobbles/WobblesBadoop.mp3"
       ]
     },
     {
@@ -271,10 +271,10 @@
       ],
       "imageAlt": "Images of Pancake the cat",
       "sounds": [
-        "/sounds/PancakePurringAndRunning.mp3",
-        "/sounds/CakeCryOne.mp3",
-        "/sounds/CakeCryTwo.mp3",
-        "/sounds/CakeCryThree.mp3"
+        "/sounds/Pancake/PancakePurringAndRunning.mp3",
+        "/sounds/Pancake/CakeCryOne.mp3",
+        "/sounds/Pancake/CakeCryTwo.mp3",
+        "/sounds/Pancake/CakeCryThree.mp3"
       ]
     },
     {
@@ -307,9 +307,9 @@
       ],
       "imageAlt": "Images of Triscuit the cat",
       "sounds": [
-        "/sounds/Triscuit_Whining.mp3",
-        "/sounds/Triscuit_Wants_Outside.mp3",
-        "/sounds/Triscuit_Wants_Outside2.mp3"
+        "/sounds/Triscuit/Triscuit_Whining.mp3",
+        "/sounds/Triscuit/Triscuit_Wants_Outside.mp3",
+        "/sounds/Triscuit/Triscuit_Wants_Outside2.mp3"
       ]
     },
     {
@@ -342,10 +342,11 @@
       ],
       "imageAlt": "Images of Jack the cat",
       "sounds": [
-        "/sounds/BonkyLanding.mp3",
-        "/sounds/BonkyHungry.mp3",
-        "/sounds/BonkyPurring.mp3",
-        "/sounds/BonkyPigeon.mp3"
+        "/sounds/Bonky/BonkyLanding.mp3",
+        "/sounds/Bonky/BonkyHungry.mp3",
+        "/sounds/Bonky/BonkyPurring.mp3",
+        "/sounds/Bonky/BonkyPigeon.mp3",
+        "/sounds/Bonky/MoreBonkyHappyPurring.mp3"
       ]
     },
     {
@@ -371,11 +372,17 @@
         "/images/ShelbyCuteFloor.jpeg",
         "/images/ShelbyCuteFloor2.jpeg"
       ],
-      "imageAlt": "Images of Hester the cat",
+      "imageAlt": "Images of Shelby the cat",
       "sounds": [
-        "/sounds/ShelbyWhining1.mp3",
-        "/sounds/ShelbyWhining2.mp3",
-        "/sounds/ShelbyWhining3.mp3"
+        "/sounds/Shelby/ShelbyWhining1.mp3",
+        "/sounds/Shelby/ShelbyWhining2.mp3",
+        "/sounds/Shelby/ShelbyWhining3.mp3",
+        "/sounds/Shelby/ShelbyHungry.mp3",
+        "/sounds/Shelby/ShelbyHungry2.mp3",
+        "/sounds/Shelby/ShelbyArmChew.mp3",
+        "/sounds/Shelby/ShelbyOooh.mp3",
+        "/sounds/Shelby/ShelbyPurr1.mp3",
+        "/sounds/Shelby/ShelbySniff.mp3"
       ]
     }
   ]
