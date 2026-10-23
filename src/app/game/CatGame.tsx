@@ -6,6 +6,7 @@ import Sheet from '@mui/joy/Sheet';
 import Typography from '@mui/joy/Typography';
 
 import textContent from '../contents.json';
+import gamePhotos from './game-photos.json';
 import { CatSprite, Game, isMoveKey } from './engine';
 
 type Cat = typeof textContent.cards[number];
@@ -13,7 +14,11 @@ type Cat = typeof textContent.cards[number];
 // Cats who have passed away sit this one out.
 const livingCats = textContent.cards.filter(cat => !cat.deathdate);
 
+// Which photo each cat uses in the game, by name. Cats missing from the file fall back to their card photos.
+const chosenPhotos: Record<string, string> = gamePhotos;
+
 function photoOf(cat: Cat): string | undefined {
+    if (chosenPhotos[cat.name]) return chosenPhotos[cat.name];
     const photos = cat.images.filter(src => /\.(png|jpe?g|gif|webp|bmp)$/i.test(src));
     // Prefer photos hosted with the site over imgur links.
     return photos.find(src => src.startsWith('/')) ?? photos[0];
@@ -179,7 +184,11 @@ function GameCanvas(props: { cat: Cat; onWin: (score: number) => void }) {
             if (!isMoveKey(e.key)) return;
             e.preventDefault();
             const key = e.key.toLowerCase();
-            if (e.type === 'keydown') game.keys.add(key);
+            if (e.type === 'keydown') {
+                game.keys.add(key);
+                // Let go of the pointer so the cat doesn't drift back to it; moving or touching re-enables it.
+                game.pointer = null;
+            }
             else game.keys.delete(key);
         };
         const onPointer = (e: PointerEvent) => {
