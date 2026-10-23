@@ -25,7 +25,13 @@ export default function CatGameButton() {
             >
                 Play
             </Button>
-            <Modal open={open} onClose={() => setOpen(false)}>
+            {/* An opaque backdrop instead of Joy's default live blur, which flickers over the page's
+                autoplaying videos and carousels while the game redraws every frame. */}
+            <Modal
+                open={open}
+                onClose={() => setOpen(false)}
+                slotProps={{ backdrop: { sx: { backdropFilter: 'none', backgroundColor: 'background.body' } } }}
+            >
                 <ModalDialog layout="fullscreen" sx={{ display: 'flex', flexDirection: 'column' }}>
                     <ModalClose sx={{ zIndex: 2 }}/>
                     <CatGame/>

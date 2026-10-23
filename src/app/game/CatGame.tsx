@@ -24,14 +24,25 @@ function photoOf(cat: Cat): string | undefined {
     return photos.find(src => src.startsWith('/')) ?? photos[0];
 }
 
+const SPRITE_SIZE = 256;
+
 function loadSprite(cat: Cat): CatSprite {
+    const sprite: CatSprite = { name: cat.name, image: null, sounds: cat.sounds };
     const src = photoOf(cat);
-    let image: HTMLImageElement | null = null;
     if (src) {
-        image = new Image();
-        image.src = src;
+        const photo = new Image();
+        // Crop and shrink the photo once, rather than drawing a multi-megapixel original every frame.
+        photo.onload = () => {
+            const crop = document.createElement('canvas');
+            crop.width = crop.height = SPRITE_SIZE;
+            const s = Math.min(photo.naturalWidth, photo.naturalHeight);
+            crop.getContext('2d')?.drawImage(photo, (photo.naturalWidth - s) / 2, (photo.naturalHeight - s) / 2, s, s,
+                0, 0, SPRITE_SIZE, SPRITE_SIZE);
+            sprite.image = crop;
+        };
+        photo.src = src;
     }
-    return { name: cat.name, image, sounds: cat.sounds };
+    return sprite;
 }
 
 function highScoreKey(name: string): string {
@@ -151,7 +162,8 @@ function GameCanvas(props: { cat: Cat; onWin: (score: number) => void }) {
     React.useEffect(() => {
         const container = containerRef.current;
         const canvas = canvasRef.current;
-        const ctx = canvas?.getContext('2d');
+        // Opaque, so a frame that isn't drawn yet can never show the page behind the game.
+        const ctx = canvas?.getContext('2d', { alpha: false });
         if (!container || !canvas || !ctx) return;
 
         let audio: HTMLAudioElement | null = null;
@@ -171,10 +183,15 @@ function GameCanvas(props: { cat: Cat; onWin: (score: number) => void }) {
             const width = container.clientWidth || 1;
             const height = container.clientHeight || 1;
             const dpr = window.devicePixelRatio || 1;
-            canvas.width = Math.round(width * dpr);
-            canvas.height = Math.round(height * dpr);
+            const pixelWidth = Math.round(width * dpr);
+            const pixelHeight = Math.round(height * dpr);
+            // Resizing a canvas wipes it, so only do it on a real change and repaint straight away.
+            if (canvas.width === pixelWidth && canvas.height === pixelHeight) return;
+            canvas.width = pixelWidth;
+            canvas.height = pixelHeight;
             ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
             game.resize(width, height);
+            game.draw(ctx);
         };
         fitCanvas();
         const observer = new ResizeObserver(fitCanvas);

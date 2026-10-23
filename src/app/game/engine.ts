@@ -5,7 +5,8 @@
 
 export interface CatSprite {
     name: string;
-    image: HTMLImageElement | null;
+    // Already cropped to a square; null until the photo has loaded.
+    image: HTMLCanvasElement | null;
     sounds: string[];
 }
 
@@ -456,10 +457,8 @@ function drawCat(ctx: CanvasRenderingContext2D, cat: CatSprite, x: number, y: nu
     ctx.save();
     ctx.clip();
     const img = cat.image;
-    if (img && img.complete && img.naturalWidth > 0) {
-        // Center-crop to a square so faces aren't squashed.
-        const s = Math.min(img.naturalWidth, img.naturalHeight);
-        ctx.drawImage(img, (img.naturalWidth - s) / 2, (img.naturalHeight - s) / 2, s, s, x - r, y - r, r * 2, r * 2);
+    if (img) {
+        ctx.drawImage(img, x - r, y - r, r * 2, r * 2);
     } else {
         ctx.fillStyle = '#f4a261';
         ctx.fillRect(x - r, y - r, r * 2, r * 2);
