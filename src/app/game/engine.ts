@@ -265,7 +265,7 @@ export class Game {
             r = this.winRadius * rand(0.05, 0.6);
         } else {
             const p = this.player.r;
-            const threat = !this.isRunaway && Math.random() < 0.3;
+            const threat = !this.isRunaway && Math.random() < 0.2;
             r = threat ? p * rand(1.15, 1.5) : p * rand(0.3, 0.9);
             r = clamp(r, this.baseRadius * 0.5, this.maxCreatureRadius);
         }
@@ -389,23 +389,11 @@ export class Game {
                 drawCat(ctx, rival, cx, cy, r);
                 return;
             }
-            // Emoji shapes make size hard to judge, so show the actual body as a circle:
-            // green is safe to eat, red will shrink you.
-            if (c.eatenFor === null) {
-                const edible = this.phase !== 'playing' || c.r < this.player.r;
-                ctx.beginPath();
-                ctx.arc(cx, cy, r, 0, Math.PI * 2);
-                ctx.fillStyle = edible ? 'rgba(80, 200, 120, 0.25)' : 'rgba(230, 70, 70, 0.3)';
-                ctx.fill();
-                ctx.lineWidth = Math.max(1.5, r * 0.06);
-                ctx.strokeStyle = edible ? 'rgba(60, 170, 95, 0.9)' : 'rgba(210, 45, 45, 0.9)';
-                ctx.stroke();
-            }
             ctx.save();
             ctx.translate(cx, cy);
             // Emoji animals mostly face left, so mirror the ones swimming right.
             if (c.vx > 0) ctx.scale(-1, 1);
-            ctx.font = `${r * 1.5}px serif`;
+            ctx.font = `${r * 1.9}px serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(c.emoji, 0, 0);
