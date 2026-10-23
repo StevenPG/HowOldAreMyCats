@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import textContent from "./contents.json";
 import { nextBirthdayAsStr } from './birthday-calc';
 import BirthdayCalendarButton from './calendar/BirthdayCalendarButton';
+import CatGameButton from './game/CatGameButton';
 
 export default function TopBar(props: any) {
 
@@ -39,6 +40,9 @@ export default function TopBar(props: any) {
                     &nbsp;
                     <Box sx={{ ml: 1 }}>
                         <BirthdayCalendarButton label={`Next Birthday Is ${nextBirthdayAsStr()}`}/>
+                    </Box>
+                    <Box sx={{ ml: 1 }}>
+                        <CatGameButton/>
                     </Box>
                 </Toolbar>
             </AppBar>
