@@ -34,7 +34,9 @@ export const LEVEL_COUNT = 12;
 // The player starts at 1/SIZE_RANGE of the winning radius, whatever the screen size.
 const SIZE_RANGE = 40;
 const LEVEL_GROWTH = Math.pow(SIZE_RANGE, 1 / LEVEL_COUNT);
-const GROWTH_PER_AREA = 0.5;
+const GROWTH_PER_AREA = 0.3;
+// No creature gets wider than this share of the short side of the screen, so there's always room to dodge.
+const MAX_CREATURE_SHARE = 0.3;
 const VICTORY_SECONDS = 5;
 export const EAT_ANIMATION_SECONDS = 0.4;
 
@@ -106,6 +108,15 @@ export class Game {
 
     get baseRadius(): number {
         return this.winRadius / SIZE_RANGE;
+    }
+
+    get maxCreatureRadius(): number {
+        return Math.min(this.width, this.height) * MAX_CREATURE_SHARE;
+    }
+
+    /** Once nothing on screen can be bigger than you, it's a sprint to the finish. */
+    get isRunaway(): boolean {
+        return this.player.r * 1.15 >= this.maxCreatureRadius;
     }
 
     /** Radius at the very start of a (1-based) level. */
@@ -215,8 +226,9 @@ export class Game {
         const victory = this.phase === 'victory';
         this.spawnTimer -= dt;
         const preyCount = this.creatures.filter(c => !c.rival).length;
-        if (this.spawnTimer <= 0 && preyCount < (victory ? 40 : 14)) {
-            this.spawnTimer = victory ? 0.08 : rand(0.35, 0.8);
+        const runaway = this.isRunaway;
+        if (this.spawnTimer <= 0 && preyCount < (victory ? 40 : runaway ? 20 : 14)) {
+            this.spawnTimer = victory ? 0.08 : runaway ? rand(0.15, 0.35) : rand(0.35, 0.8);
             this.creatures.push(this.makePrey());
         }
 
@@ -253,21 +265,21 @@ export class Game {
             r = this.winRadius * rand(0.05, 0.6);
         } else {
             const p = this.player.r;
-            r = Math.random() < 0.7 ? p * rand(0.3, 0.9) : p * rand(1.15, 1.8);
+            const threat = !this.isRunaway && Math.random() < 0.3;
+            r = threat ? p * rand(1.15, 1.5) : p * rand(0.3, 0.9);
+            r = clamp(r, this.baseRadius * 0.5, this.maxCreatureRadius);
         }
-        // Nothing spawns bigger than most of the screen, so the last stretch turns into a runaway.
-        r = clamp(r, this.baseRadius * 0.5, this.winRadius * 0.9);
         return this.makeCreature(r, rand(0.08, 0.2), this.emojiFor(r), null);
     }
 
     private makeRival(): Creature {
-        const r = clamp(this.player.r * rand(0.8, 1.4), this.baseRadius, this.winRadius * 0.6);
+        const r = clamp(this.player.r * rand(0.8, 1.4), this.baseRadius, this.maxCreatureRadius);
         return this.makeCreature(r, rand(0.05, 0.1), '', pick(this.rivals));
     }
 
     private emojiFor(r: number): string {
         const min = this.baseRadius * 0.5;
-        const t = Math.log(r / min) / Math.log(this.winRadius * 0.9 / min);
+        const t = Math.log(r / min) / Math.log(this.maxCreatureRadius / min);
         const index = Math.round(clamp(t, 0, 1) * (PREY.length - 1)) + Math.floor(rand(-1, 2));
         return PREY[clamp(index, 0, PREY.length - 1)];
     }

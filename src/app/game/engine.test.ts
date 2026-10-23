@@ -80,3 +80,14 @@ test('growing past the screen starts the auto-eat victory, then wins', () => {
     expect(game.phase).toBe('won');
     expect(onWin).toHaveBeenCalledWith(game.score);
 });
+
+test('spawned threats stay small enough to dodge, and stop once the player outgrows them', () => {
+    const game = newGame();
+    const spawn = () => (game as any).makePrey() as Creature;
+    game.player.r = game.levelRadius(6);
+    for (let i = 0; i < 500; i++) expect(spawn().r).toBeLessThanOrEqual(game.maxCreatureRadius);
+
+    game.player.r = game.maxCreatureRadius;
+    expect(game.isRunaway).toBe(true);
+    for (let i = 0; i < 500; i++) expect(spawn().r).toBeLessThan(game.player.r);
+});
